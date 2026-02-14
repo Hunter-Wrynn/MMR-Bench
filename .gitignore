@@ -1,0 +1,35 @@
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+
+# Outputs / artifacts
+outputs/
+tmp/
+
+# Data (keep docs)
+data/*
+!data/README.md
+!data/.gitkeep
+*.json
+*.csv
+*.parquet
+*.joblib
+*.pt
+*.pth
+*.ckpt
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Envs
+.venv/
+venv/
+env/
+ENV/
+
+# OS
+.DS_Store

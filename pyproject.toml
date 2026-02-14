@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mmrbench"
+version = "0.1.0"
+description = "MMR-Bench: a benchmark + baselines for multimodal LLM routing"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [{ name = "MMR-Bench Authors" }]
+dependencies = [
+  "numpy>=1.23",
+  "pandas>=1.5",
+  "scikit-learn>=1.2",
+  "matplotlib>=3.7",
+  "tqdm>=4.66",
+  "pillow>=10.0",
+]
+
+[project.optional-dependencies]
+embedding = [
+  "torch>=2.1",
+  "torchvision>=0.16",
+  "timm>=0.9",
+  "open-clip-torch>=2.24.0",
+  "sentence-transformers>=2.6.0",
+]
+hf = [
+  "huggingface-hub>=0.20",
+]
+
+[project.scripts]
+mmrbench = "mmrbench.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
