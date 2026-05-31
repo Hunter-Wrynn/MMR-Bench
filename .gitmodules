@@ -1,0 +1,6 @@
+[submodule "third_party/LAMDA-ORBIT"]
+	path = third_party/LAMDA-ORBIT
+	url = git@github.com:AIGNLAI/LAMDA-ORBIT.git
+[submodule "third_party/VLMEvalKit"]
+	path = third_party/VLMEvalKit
+	url = git@github.com:open-compass/VLMEvalKit.git

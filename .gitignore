@@ -33,3 +33,7 @@ ENV/
 
 # OS
 .DS_Store
+
+#codex
+.agents/
+AGENTS.md
