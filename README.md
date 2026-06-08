@@ -107,6 +107,30 @@ pip install -e '.[hf]'
 python scripts/prepare_hf_mmr_bench.py --dest data
 ```
 
+## VLMEvalKit local judge
+
+For benchmarks whose VLMEvalKit evaluation needs an LLM judge, you can use the
+OpenAI-compatible Qwen3.5-122B-A10B vLLM service on `33.3.180.241` instead of an
+OpenAI API key:
+
+```bash
+scripts/run_vlmeval_with_qwen35_judge.sh \
+  --data MathVista_MINI \
+  --model Qwen2.5-VL-7B-Instruct \
+  --mode all
+```
+
+The wrapper forwards all arguments to `third_party/VLMEvalKit/run.py` and adds:
+
+- `--judge Qwen3.5-122B-A10B`
+- `--judge-base-url http://33.3.180.241:8000/v1`
+- `--judge-args '{"temperature":0,"max_tokens":1024,"chat_template_kwargs":{"enable_thinking":false}}'`
+
+Override these defaults with `MMR_QWEN35_JUDGE_MODEL`,
+`MMR_QWEN35_JUDGE_BASE_URL`, `MMR_QWEN35_JUDGE_KEY`,
+`MMR_QWEN35_JUDGE_NPROC`, `MMR_QWEN35_JUDGE_RETRY`,
+`MMR_QWEN35_JUDGE_TIMEOUT`, or `MMR_QWEN35_JUDGE_ARGS`.
+
 ## Data format
 
 MMR-Bench is evaluated **offline**: for each instance and each candidate model, you provide:

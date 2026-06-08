@@ -1,0 +1,30 @@
+{
+  "MMStar": {
+    "class": "ImageMCQDataset",
+    "dataset": "MMStar"
+  },
+  "RealWorldQA": {
+    "class": "ImageMCQDataset",
+    "dataset": "RealWorldQA"
+  },
+  "SEEDBench2_Plus": {
+    "class": "ImageMCQDataset",
+    "dataset": "SEEDBench2_Plus"
+  },
+  "OCRBench": {
+    "class": "OCRBench",
+    "dataset": "OCRBench"
+  },
+  "MathVista_MINI": {
+    "class": "MathVista",
+    "dataset": "MathVista_MINI"
+  },
+  "MathVision": {
+    "class": "MathVision",
+    "dataset": "MathVision"
+  },
+  "MathVerse_MINI_Vision_Only": {
+    "class": "MathVerse",
+    "dataset": "MathVerse_MINI_Vision_Only"
+  }
+}
