@@ -4,7 +4,9 @@ This repo evaluates routing **offline** using precomputed per-instance outcomes.
 
 ## Recommended layout (HF: `gh0stHunter/MMR-Bench`)
 
-Place the merged CSV and image folders under `data/`:
+Place the merged CSV and image folders under `data/`. The HF repo currently
+stores the table as `MMR-Bench.csv`; the download helper normalizes it to
+`MMR_Bench.csv` for the loader.
 
 ```
 data/

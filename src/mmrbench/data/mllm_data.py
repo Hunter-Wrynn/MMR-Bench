@@ -100,6 +100,32 @@ def _img_path_from_dataset_idx(data_root: Path, dataset_idx: str) -> tuple[str, 
     return (folder, str((base / f"{remainder}.jpg").resolve()))
 
 
+def _coerce_correctness(series: pd.Series) -> pd.Series:
+    """
+    Convert offline correctness labels to floats.
+
+    HF MMR-Bench currently mixes string booleans ("True"/"False") with
+    numeric labels ("1"/"0") in the same *_correct columns.
+    """
+    if series.dtype == bool:
+        return series.astype(float)
+    if series.dtype.kind in {"f", "i", "u"}:
+        return pd.to_numeric(series, errors="coerce").astype(float)
+
+    normalized = series.astype(str).str.strip().str.lower()
+    mapped = normalized.map(
+        {
+            "true": 1.0,
+            "false": 0.0,
+            "1": 1.0,
+            "0": 0.0,
+            "yes": 1.0,
+            "no": 0.0,
+        }
+    )
+    return mapped.astype(float)
+
+
 class MMData:
     """
     Load MMR-Bench-style *offline outcomes* for routing.
@@ -259,8 +285,10 @@ class MMData:
         for model_name in self.model_list:
             correct_col = f"{model_name}_correct"
             cost_col = f"{model_name}_cost"
-            out[f"{model_name}_is_correct"] = df[correct_col].astype(float) if correct_col in df.columns else np.nan
-            out[f"{model_name}_cost"] = df[cost_col].astype(float) if cost_col in df.columns else np.nan
+            out[f"{model_name}_is_correct"] = (
+                _coerce_correctness(df[correct_col]) if correct_col in df.columns else np.nan
+            )
+            out[f"{model_name}_cost"] = pd.to_numeric(df[cost_col], errors="coerce") if cost_col in df.columns else np.nan
 
         # Fill missing numeric entries with column means (nan-safe)
         for col in out.columns:

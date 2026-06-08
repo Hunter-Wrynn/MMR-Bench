@@ -15,6 +15,7 @@ data/*
 !data/README.md
 !data/.gitkeep
 *.json
+!configs/mmrbench_benchmark_registry.json
 *.csv
 *.parquet
 *.joblib
@@ -33,3 +34,7 @@ ENV/
 
 # OS
 .DS_Store
+
+#codex
+.agents/
+AGENTS.md
