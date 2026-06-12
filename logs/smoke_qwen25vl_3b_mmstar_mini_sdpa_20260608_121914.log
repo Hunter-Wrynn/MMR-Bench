@@ -1,0 +1,614 @@
+
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+RANK: 7, LOCAL_RANK: 7, WORLD_SIZE: 8,LOCAL_WORLD_SIZE: 8, CUDA_VISIBLE_DEVICES: 7
+RANK: 1, LOCAL_RANK: 1, WORLD_SIZE: 8,LOCAL_WORLD_SIZE: 8, CUDA_VISIBLE_DEVICES: 1
+RANK: 3, LOCAL_RANK: 3, WORLD_SIZE: 8,LOCAL_WORLD_SIZE: 8, CUDA_VISIBLE_DEVICES: 3
+RANK: 6, LOCAL_RANK: 6, WORLD_SIZE: 8,LOCAL_WORLD_SIZE: 8, CUDA_VISIBLE_DEVICES: 6
+RANK: 0, LOCAL_RANK: 0, WORLD_SIZE: 8,LOCAL_WORLD_SIZE: 8, CUDA_VISIBLE_DEVICES: 0
+RANK: 4, LOCAL_RANK: 4, WORLD_SIZE: 8,LOCAL_WORLD_SIZE: 8, CUDA_VISIBLE_DEVICES: 4
+RANK: 5, LOCAL_RANK: 5, WORLD_SIZE: 8,LOCAL_WORLD_SIZE: 8, CUDA_VISIBLE_DEVICES: 5
+RANK: 2, LOCAL_RANK: 2, WORLD_SIZE: 8,LOCAL_WORLD_SIZE: 8, CUDA_VISIBLE_DEVICES: 2
+[2026-06-08 12:19:24] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load.
+[2026-06-08 12:19:24] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load.
+[2026-06-08 12:19:24] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load.
+[2026-06-08 12:19:24] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load.
+[2026-06-08 12:19:24] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load.
+[2026-06-08 12:19:24] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load.
+[2026-06-08 12:19:24] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load.
+[2026-06-08 12:19:24] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load.
+[92m12:19:42 - LiteLLM:WARNING[0m: get_model_cost_map.py:271 - LiteLLM: Failed to fetch remote model cost map from https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json: The read operation timed out. Falling back to local backup.
+[2026-06-08 12:19:42] WARNING - get_model_cost_map.py: get_model_cost_map - 271: LiteLLM: Failed to fetch remote model cost map from https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json: The read operation timed out. Falling back to local backup.
+[92m12:19:43 - LiteLLM:WARNING[0m: get_model_cost_map.py:271 - LiteLLM: Failed to fetch remote model cost map from https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json: _ssl.c:1000: The handshake operation timed out. Falling back to local backup.
+[2026-06-08 12:19:43] WARNING - get_model_cost_map.py: get_model_cost_map - 271: LiteLLM: Failed to fetch remote model cost map from https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json: _ssl.c:1000: The handshake operation timed out. Falling back to local backup.
+[2026-06-08 12:19:49] ERROR - misc.py: load_env - 220: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load. 
+[2026-06-08 12:19:49] ERROR - misc.py: load_env - 220: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load. 
+[2026-06-08 12:19:49] ERROR - misc.py: load_env - 220: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load. 
+[2026-06-08 12:19:50] ERROR - misc.py: load_env - 220: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load. 
+[2026-06-08 12:19:52] ERROR - misc.py: load_env - 220: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load. 
+[2026-06-08 12:19:52] ERROR - misc.py: load_env - 220: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load. 
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Bootstrap: Using eth0:33.3.185.178<0>
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO cudaDriverVersion 13000
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO cudaDriverVersion 13000
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO NCCL version 2.28.9+cuda13.0
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO cudaDriverVersion 13000
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO cudaDriverVersion 13000
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO cudaDriverVersion 13000
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO cudaDriverVersion 13000
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Bootstrap: Using eth0:33.3.185.178<0>
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO NCCL version 2.28.9+cuda13.0
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Comm config Blocking set to 1
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Comm config Blocking set to 1
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Bootstrap: Using eth0:33.3.185.178<0>
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Bootstrap: Using eth0:33.3.185.178<0>
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Bootstrap: Using eth0:33.3.185.178<0>
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Bootstrap: Using eth0:33.3.185.178<0>
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO NCCL version 2.28.9+cuda13.0
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO NCCL version 2.28.9+cuda13.0
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO NCCL version 2.28.9+cuda13.0
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO NCCL version 2.28.9+cuda13.0
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Comm config Blocking set to 1
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Comm config Blocking set to 1
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Comm config Blocking set to 1
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Comm config Blocking set to 1
+[2026-06-08 12:19:53] ERROR - misc.py: load_env - 220: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load. 
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 1.
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO transport/net_ib.cc:852 -> 3
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Failed to initialize NET plugin IB
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO NET/Socket : Using [0]eth0:33.3.185.178<0> [1]eth1:2001:db8:804:df1:2:f000:0:564<0> [2]eth2:2001:db8:804:e68:2:f000:0:731<0> [3]eth3:2001:db8:804:e70:2:f000:0:864<0> [4]eth4:2001:db8:804:ea1:2:f000:0:536<0> [5]eth5:2001:db8:804:ee3:2:f000:0:239<0> [6]eth6:2001:db8:804:f0b:2:f000:0:265<0> [7]eth7:2001:db8:804:f38:2:f000:0:330<0> [8]eth8:2001:db8:804:f3b:2:f000:0:237<0>
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Initialized NET plugin Socket
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Assigned NET plugin Socket to comm
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Using network Socket
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 1.
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO transport/net_ib.cc:852 -> 3
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Failed to initialize NET plugin IB
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO NET/Socket : Using [0]eth0:33.3.185.178<0> [1]eth1:2001:db8:804:df1:2:f000:0:564<0> [2]eth2:2001:db8:804:e68:2:f000:0:731<0> [3]eth3:2001:db8:804:e70:2:f000:0:864<0> [4]eth4:2001:db8:804:ea1:2:f000:0:536<0> [5]eth5:2001:db8:804:ee3:2:f000:0:239<0> [6]eth6:2001:db8:804:f0b:2:f000:0:265<0> [7]eth7:2001:db8:804:f38:2:f000:0:330<0> [8]eth8:2001:db8:804:f3b:2:f000:0:237<0>
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Initialized NET plugin Socket
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Assigned NET plugin Socket to comm
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Using network Socket
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 1.
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO transport/net_ib.cc:852 -> 3
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Failed to initialize NET plugin IB
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 1.
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO transport/net_ib.cc:852 -> 3
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Failed to initialize NET plugin IB
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO NET/Socket : Using [0]eth0:33.3.185.178<0> [1]eth1:2001:db8:804:df1:2:f000:0:564<0> [2]eth2:2001:db8:804:e68:2:f000:0:731<0> [3]eth3:2001:db8:804:e70:2:f000:0:864<0> [4]eth4:2001:db8:804:ea1:2:f000:0:536<0> [5]eth5:2001:db8:804:ee3:2:f000:0:239<0> [6]eth6:2001:db8:804:f0b:2:f000:0:265<0> [7]eth7:2001:db8:804:f38:2:f000:0:330<0> [8]eth8:2001:db8:804:f3b:2:f000:0:237<0>
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO NET/Socket : Using [0]eth0:33.3.185.178<0> [1]eth1:2001:db8:804:df1:2:f000:0:564<0> [2]eth2:2001:db8:804:e68:2:f000:0:731<0> [3]eth3:2001:db8:804:e70:2:f000:0:864<0> [4]eth4:2001:db8:804:ea1:2:f000:0:536<0> [5]eth5:2001:db8:804:ee3:2:f000:0:239<0> [6]eth6:2001:db8:804:f0b:2:f000:0:265<0> [7]eth7:2001:db8:804:f38:2:f000:0:330<0> [8]eth8:2001:db8:804:f3b:2:f000:0:237<0>
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Initialized NET plugin Socket
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Initialized NET plugin Socket
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Assigned NET plugin Socket to comm
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Using network Socket
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Assigned NET plugin Socket to comm
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Using network Socket
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 1.
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO transport/net_ib.cc:852 -> 3
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Failed to initialize NET plugin IB
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO NET/Socket : Using [0]eth0:33.3.185.178<0> [1]eth1:2001:db8:804:df1:2:f000:0:564<0> [2]eth2:2001:db8:804:e68:2:f000:0:731<0> [3]eth3:2001:db8:804:e70:2:f000:0:864<0> [4]eth4:2001:db8:804:ea1:2:f000:0:536<0> [5]eth5:2001:db8:804:ee3:2:f000:0:239<0> [6]eth6:2001:db8:804:f0b:2:f000:0:265<0> [7]eth7:2001:db8:804:f38:2:f000:0:330<0> [8]eth8:2001:db8:804:f3b:2:f000:0:237<0>
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Initialized NET plugin Socket
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Assigned NET plugin Socket to comm
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Using network Socket
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 1.
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO transport/net_ib.cc:852 -> 3
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Failed to initialize NET plugin IB
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO NET/Socket : Using [0]eth0:33.3.185.178<0> [1]eth1:2001:db8:804:df1:2:f000:0:564<0> [2]eth2:2001:db8:804:e68:2:f000:0:731<0> [3]eth3:2001:db8:804:e70:2:f000:0:864<0> [4]eth4:2001:db8:804:ea1:2:f000:0:536<0> [5]eth5:2001:db8:804:ee3:2:f000:0:239<0> [6]eth6:2001:db8:804:f0b:2:f000:0:265<0> [7]eth7:2001:db8:804:f38:2:f000:0:330<0> [8]eth8:2001:db8:804:f3b:2:f000:0:237<0>
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Initialized NET plugin Socket
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Assigned NET plugin Socket to comm
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Using network Socket
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO ncclCommInitRankConfig comm 0x55d84815df60 rank 0 nranks 8 cudaDev 0 nvmlDev 0 busId c000 commId 0x2f8b84b137606314 - Init START
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO ncclCommInitRankConfig comm 0x5589a3f7cae0 rank 7 nranks 8 cudaDev 0 nvmlDev 7 busId db000 commId 0x2f8b84b137606314 - Init START
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO ncclCommInitRankConfig comm 0x55723997d7e0 rank 2 nranks 8 cudaDev 0 nvmlDev 2 busId 19000 commId 0x2f8b84b137606314 - Init START
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO ncclCommInitRankConfig comm 0x55cc45b7ee40 rank 6 nranks 8 cudaDev 0 nvmlDev 6 busId ba000 commId 0x2f8b84b137606314 - Init START
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO ncclCommInitRankConfig comm 0x560ada57d8e0 rank 5 nranks 8 cudaDev 0 nvmlDev 5 busId ab000 commId 0x2f8b84b137606314 - Init START
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO ncclCommInitRankConfig comm 0x5645d657dad0 rank 4 nranks 8 cudaDev 0 nvmlDev 4 busId 9a000 commId 0x2f8b84b137606314 - Init START
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO cudaDriverVersion 13000
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Bootstrap: Using eth0:33.3.185.178<0>
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO NCCL version 2.28.9+cuda13.0
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Comm config Blocking set to 1
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 1.
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO transport/net_ib.cc:852 -> 3
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Failed to initialize NET plugin IB
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO NET/Socket : Using [0]eth0:33.3.185.178<0> [1]eth1:2001:db8:804:df1:2:f000:0:564<0> [2]eth2:2001:db8:804:e68:2:f000:0:731<0> [3]eth3:2001:db8:804:e70:2:f000:0:864<0> [4]eth4:2001:db8:804:ea1:2:f000:0:536<0> [5]eth5:2001:db8:804:ee3:2:f000:0:239<0> [6]eth6:2001:db8:804:f0b:2:f000:0:265<0> [7]eth7:2001:db8:804:f38:2:f000:0:330<0> [8]eth8:2001:db8:804:f3b:2:f000:0:237<0>
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Initialized NET plugin Socket
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Assigned NET plugin Socket to comm
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Using network Socket
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO ncclCommInitRankConfig comm 0x5573cc95b050 rank 3 nranks 8 cudaDev 0 nvmlDev 3 busId 67000 commId 0x2f8b84b137606314 - Init START
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+[2026-06-08 12:19:56] ERROR - misc.py: load_env - 220: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load. 
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO cudaDriverVersion 13000
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Bootstrap: Using eth0:33.3.185.178<0>
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO NCCL version 2.28.9+cuda13.0
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Comm config Blocking set to 1
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 1.
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO transport/net_ib.cc:852 -> 3
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Failed to initialize NET plugin IB
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO NET/Socket : Using [0]eth0:33.3.185.178<0> [1]eth1:2001:db8:804:df1:2:f000:0:564<0> [2]eth2:2001:db8:804:e68:2:f000:0:731<0> [3]eth3:2001:db8:804:e70:2:f000:0:864<0> [4]eth4:2001:db8:804:ea1:2:f000:0:536<0> [5]eth5:2001:db8:804:ee3:2:f000:0:239<0> [6]eth6:2001:db8:804:f0b:2:f000:0:265<0> [7]eth7:2001:db8:804:f38:2:f000:0:330<0> [8]eth8:2001:db8:804:f3b:2:f000:0:237<0>
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Initialized NET plugin Socket
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Assigned NET plugin Socket to comm
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Using network Socket
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO ncclCommInitRankConfig comm 0x55d22df7e530 rank 1 nranks 8 cudaDev 0 nvmlDev 1 busId 13000 commId 0x2f8b84b137606314 - Init START
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Bootstrap timings total 2.316750 (create 0.000034, send 0.000073, recv 2.308853, ring 0.000178, delay 0.000011)
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Bootstrap timings total 0.008011 (create 0.000048, send 0.000069, recv 0.000125, ring 0.002971, delay 0.000011)
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Bootstrap timings total 2.289904 (create 0.000047, send 0.000065, recv 0.600474, ring 0.000126, delay 0.000010)
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Bootstrap timings total 2.295274 (create 0.000054, send 0.000070, recv 0.000103, ring 2.272110, delay 0.000011)
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Bootstrap timings total 2.272715 (create 0.000046, send 0.000069, recv 0.000091, ring 2.271718, delay 0.000009)
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Bootstrap timings total 1.689538 (create 0.000050, send 0.000065, recv 0.000106, ring 1.688969, delay 0.000008)
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Bootstrap timings total 2.272207 (create 0.000049, send 0.000064, recv 0.000060, ring 2.271221, delay 0.000008)
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Bootstrap timings total 2.271707 (create 0.000047, send 0.000089, recv 0.000052, ring 1.688868, delay 0.000009)
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO MNNVL busId 0x13000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO MNNVL busId 0x19000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO MNNVL busId 0xc000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO MNNVL busId 0xdb000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO MNNVL busId 0xab000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO MNNVL busId 0x9a000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO MNNVL busId 0xba000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO MNNVL busId 0x67000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 2 is 0-23,96-119. (GPU affinity = 0-23,96-119 ; CPU affinity = 0-191).
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO NCCL_NVLS_ENABLE set by environment to 0.
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 7 is 72-95,168-191. (GPU affinity = 72-95,168-191 ; CPU affinity = 0-191).
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO NCCL_NVLS_ENABLE set by environment to 0.
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 6 is 48-71,144-167. (GPU affinity = 48-71,144-167 ; CPU affinity = 0-191).
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO NCCL_NVLS_ENABLE set by environment to 0.
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 5 is 48-71,144-167. (GPU affinity = 48-71,144-167 ; CPU affinity = 0-191).
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO NCCL_NVLS_ENABLE set by environment to 0.
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 3 is 24-47,120-143. (GPU affinity = 24-47,120-143 ; CPU affinity = 0-191).
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO NCCL_NVLS_ENABLE set by environment to 0.
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 0 is 0-23,96-119. (GPU affinity = 0-23,96-119 ; CPU affinity = 0-191).
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO NCCL_NVLS_ENABLE set by environment to 0.
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 4 is 48-71,144-167. (GPU affinity = 48-71,144-167 ; CPU affinity = 0-191).
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO NCCL_NVLS_ENABLE set by environment to 0.
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 1 is 0-23,96-119. (GPU affinity = 0-23,96-119 ; CPU affinity = 0-191).
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO NCCL_NVLS_ENABLE set by environment to 0.
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO comm 0x55cc45b7ee40 rank 6 nRanks 8 nNodes 1 localRanks 8 localRank 6 MNNVL 0
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO comm 0x5573cc95b050 rank 3 nRanks 8 nNodes 1 localRanks 8 localRank 3 MNNVL 0
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO comm 0x560ada57d8e0 rank 5 nRanks 8 nNodes 1 localRanks 8 localRank 5 MNNVL 0
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO comm 0x5645d657dad0 rank 4 nRanks 8 nNodes 1 localRanks 8 localRank 4 MNNVL 0
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO comm 0x55723997d7e0 rank 2 nRanks 8 nNodes 1 localRanks 8 localRank 2 MNNVL 0
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO comm 0x55d22df7e530 rank 1 nRanks 8 nNodes 1 localRanks 8 localRank 1 MNNVL 0
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO comm 0x5589a3f7cae0 rank 7 nRanks 8 nNodes 1 localRanks 8 localRank 7 MNNVL 0
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO comm 0x55d84815df60 rank 0 nRanks 8 nNodes 1 localRanks 8 localRank 0 MNNVL 0
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Trees [0] 7/-1/-1->6->5 [1] 7/-1/-1->6->5 [2] 7/-1/-1->6->5 [3] 7/-1/-1->6->5 [4] 7/-1/-1->6->5 [5] 7/-1/-1->6->5 [6] 7/-1/-1->6->5 [7] 7/-1/-1->6->5 [8] 7/-1/-1->6->5 [9] 7/-1/-1->6->5 [10] 7/-1/-1->6->5 [11] 7/-1/-1->6->5 [12] 7/-1/-1->6->5 [13] 7/-1/-1->6->5 [14] 7/-1/-1->6->5 [15] 7/-1/-1->6->5 [16] 7/-1/-1->6->5 [17] 7/-1/-1->6->5 [18] 7/-1/-1->6->5 [19] 7/-1/-1->6->5 [20] 7/-1/-1->6->5 [21] 7/-1/-1->6->5 [22] 7/-1/-1->6->5 [23] 7/-1/-1->6->5
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 00/24 : 0 1 2 3 4 5 6 7
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 01/24 : 0 1 2 3 4 5 6 7
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Trees [0] 4/-1/-1->3->2 [1] 4/-1/-1->3->2 [2] 4/-1/-1->3->2 [3] 4/-1/-1->3->2 [4] 4/-1/-1->3->2 [5] 4/-1/-1->3->2 [6] 4/-1/-1->3->2 [7] 4/-1/-1->3->2 [8] 4/-1/-1->3->2 [9] 4/-1/-1->3->2 [10] 4/-1/-1->3->2 [11] 4/-1/-1->3->2 [12] 4/-1/-1->3->2 [13] 4/-1/-1->3->2 [14] 4/-1/-1->3->2 [15] 4/-1/-1->3->2 [16] 4/-1/-1->3->2 [17] 4/-1/-1->3->2 [18] 4/-1/-1->3->2 [19] 4/-1/-1->3->2 [20] 4/-1/-1->3->2 [21] 4/-1/-1->3->2 [22] 4/-1/-1->3->2 [23] 4/-1/-1->3->2
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 02/24 : 0 1 2 3 4 5 6 7
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 03/24 : 0 1 2 3 4 5 6 7
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Trees [0] 6/-1/-1->5->4 [1] 6/-1/-1->5->4 [2] 6/-1/-1->5->4 [3] 6/-1/-1->5->4 [4] 6/-1/-1->5->4 [5] 6/-1/-1->5->4 [6] 6/-1/-1->5->4 [7] 6/-1/-1->5->4 [8] 6/-1/-1->5->4 [9] 6/-1/-1->5->4 [10] 6/-1/-1->5->4 [11] 6/-1/-1->5->4 [12] 6/-1/-1->5->4 [13] 6/-1/-1->5->4 [14] 6/-1/-1->5->4 [15] 6/-1/-1->5->4 [16] 6/-1/-1->5->4 [17] 6/-1/-1->5->4 [18] 6/-1/-1->5->4 [19] 6/-1/-1->5->4 [20] 6/-1/-1->5->4 [21] 6/-1/-1->5->4 [22] 6/-1/-1->5->4 [23] 6/-1/-1->5->4
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 04/24 : 0 1 2 3 4 5 6 7
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Trees [0] 5/-1/-1->4->3 [1] 5/-1/-1->4->3 [2] 5/-1/-1->4->3 [3] 5/-1/-1->4->3 [4] 5/-1/-1->4->3 [5] 5/-1/-1->4->3 [6] 5/-1/-1->4->3 [7] 5/-1/-1->4->3 [8] 5/-1/-1->4->3 [9] 5/-1/-1->4->3 [10] 5/-1/-1->4->3 [11] 5/-1/-1->4->3 [12] 5/-1/-1->4->3 [13] 5/-1/-1->4->3 [14] 5/-1/-1->4->3 [15] 5/-1/-1->4->3 [16] 5/-1/-1->4->3 [17] 5/-1/-1->4->3 [18] 5/-1/-1->4->3 [19] 5/-1/-1->4->3 [20] 5/-1/-1->4->3 [21] 5/-1/-1->4->3 [22] 5/-1/-1->4->3 [23] 5/-1/-1->4->3
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 05/24 : 0 1 2 3 4 5 6 7
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 06/24 : 0 1 2 3 4 5 6 7
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Trees [0] -1/-1/-1->7->6 [1] -1/-1/-1->7->6 [2] -1/-1/-1->7->6 [3] -1/-1/-1->7->6 [4] -1/-1/-1->7->6 [5] -1/-1/-1->7->6 [6] -1/-1/-1->7->6 [7] -1/-1/-1->7->6 [8] -1/-1/-1->7->6 [9] -1/-1/-1->7->6 [10] -1/-1/-1->7->6 [11] -1/-1/-1->7->6 [12] -1/-1/-1->7->6 [13] -1/-1/-1->7->6 [14] -1/-1/-1->7->6 [15] -1/-1/-1->7->6 [16] -1/-1/-1->7->6 [17] -1/-1/-1->7->6 [18] -1/-1/-1->7->6 [19] -1/-1/-1->7->6 [20] -1/-1/-1->7->6 [21] -1/-1/-1->7->6 [22] -1/-1/-1->7->6 [23] -1/-1/-1->7->6
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 07/24 : 0 1 2 3 4 5 6 7
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 08/24 : 0 1 2 3 4 5 6 7
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 09/24 : 0 1 2 3 4 5 6 7
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 10/24 : 0 1 2 3 4 5 6 7
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 11/24 : 0 1 2 3 4 5 6 7
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO P2P Chunksize set to 524288
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 12/24 : 0 1 2 3 4 5 6 7
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 13/24 : 0 1 2 3 4 5 6 7
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO P2P Chunksize set to 524288
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 14/24 : 0 1 2 3 4 5 6 7
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 15/24 : 0 1 2 3 4 5 6 7
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO P2P Chunksize set to 524288
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 16/24 : 0 1 2 3 4 5 6 7
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 17/24 : 0 1 2 3 4 5 6 7
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 18/24 : 0 1 2 3 4 5 6 7
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO P2P Chunksize set to 524288
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 19/24 : 0 1 2 3 4 5 6 7
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 20/24 : 0 1 2 3 4 5 6 7
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 21/24 : 0 1 2 3 4 5 6 7
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 22/24 : 0 1 2 3 4 5 6 7
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 23/24 : 0 1 2 3 4 5 6 7
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO P2P Chunksize set to 524288
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1 [2] 1/-1/-1->0->-1 [3] 1/-1/-1->0->-1 [4] 1/-1/-1->0->-1 [5] 1/-1/-1->0->-1 [6] 1/-1/-1->0->-1 [7] 1/-1/-1->0->-1 [8] 1/-1/-1->0->-1 [9] 1/-1/-1->0->-1 [10] 1/-1/-1->0->-1 [11] 1/-1/-1->0->-1 [12] 1/-1/-1->0->-1 [13] 1/-1/-1->0->-1 [14] 1/-1/-1->0->-1 [15] 1/-1/-1->0->-1 [16] 1/-1/-1->0->-1 [17] 1/-1/-1->0->-1 [18] 1/-1/-1->0->-1 [19] 1/-1/-1->0->-1 [20] 1/-1/-1->0->-1 [21] 1/-1/-1->0->-1 [22] 1/-1/-1->0->-1 [23] 1/-1/-1->0->-1
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 3/-1/-1->2->1 [2] 3/-1/-1->2->1 [3] 3/-1/-1->2->1 [4] 3/-1/-1->2->1 [5] 3/-1/-1->2->1 [6] 3/-1/-1->2->1 [7] 3/-1/-1->2->1 [8] 3/-1/-1->2->1 [9] 3/-1/-1->2->1 [10] 3/-1/-1->2->1 [11] 3/-1/-1->2->1 [12] 3/-1/-1->2->1 [13] 3/-1/-1->2->1 [14] 3/-1/-1->2->1 [15] 3/-1/-1->2->1 [16] 3/-1/-1->2->1 [17] 3/-1/-1->2->1 [18] 3/-1/-1->2->1 [19] 3/-1/-1->2->1 [20] 3/-1/-1->2->1 [21] 3/-1/-1->2->1 [22] 3/-1/-1->2->1 [23] 3/-1/-1->2->1
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Trees [0] 2/-1/-1->1->0 [1] 2/-1/-1->1->0 [2] 2/-1/-1->1->0 [3] 2/-1/-1->1->0 [4] 2/-1/-1->1->0 [5] 2/-1/-1->1->0 [6] 2/-1/-1->1->0 [7] 2/-1/-1->1->0 [8] 2/-1/-1->1->0 [9] 2/-1/-1->1->0 [10] 2/-1/-1->1->0 [11] 2/-1/-1->1->0 [12] 2/-1/-1->1->0 [13] 2/-1/-1->1->0 [14] 2/-1/-1->1->0 [15] 2/-1/-1->1->0 [16] 2/-1/-1->1->0 [17] 2/-1/-1->1->0 [18] 2/-1/-1->1->0 [19] 2/-1/-1->1->0 [20] 2/-1/-1->1->0 [21] 2/-1/-1->1->0 [22] 2/-1/-1->1->0 [23] 2/-1/-1->1->0
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO P2P Chunksize set to 524288
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO P2P Chunksize set to 524288
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO P2P Chunksize set to 524288
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+wings-a14ad96389c1-master-0:12230:12605 [0] NCCL INFO [Proxy Service] Device 0 CPU core 67
+wings-a14ad96389c1-master-0:12230:12606 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 68
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+wings-a14ad96389c1-master-0:12228:12607 [0] NCCL INFO [Proxy Service] Device 0 CPU core 70
+wings-a14ad96389c1-master-0:12228:12608 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 71
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+wings-a14ad96389c1-master-0:12231:12609 [0] NCCL INFO [Proxy Service] Device 0 CPU core 73
+wings-a14ad96389c1-master-0:12231:12610 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 74
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+wings-a14ad96389c1-master-0:12229:12611 [0] NCCL INFO [Proxy Service] Device 0 CPU core 145
+wings-a14ad96389c1-master-0:12229:12612 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 146
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+wings-a14ad96389c1-master-0:12225:12613 [0] NCCL INFO [Proxy Service] Device 0 CPU core 97
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+wings-a14ad96389c1-master-0:12225:12614 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 98
+wings-a14ad96389c1-master-0:12226:12615 [0] NCCL INFO [Proxy Service] Device 0 CPU core 1
+wings-a14ad96389c1-master-0:12226:12616 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 2
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+wings-a14ad96389c1-master-0:12227:12617 [0] NCCL INFO [Proxy Service] Device 0 CPU core 121
+wings-a14ad96389c1-master-0:12227:12618 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 122
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+wings-a14ad96389c1-master-0:12224:12619 [0] NCCL INFO [Proxy Service] Device 0 CPU core 114
+wings-a14ad96389c1-master-0:12224:12620 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 115
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 32 p2p channels per peer
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 32 p2p channels per peer
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 32 p2p channels per peer
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 32 p2p channels per peer
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 32 p2p channels per peer
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 32 p2p channels per peer
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 32 p2p channels per peer
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO CC Off, workFifoBytes 1048576
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 32 p2p channels per peer
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO ncclCommInitRankConfig comm 0x55d22df7e530 rank 1 nranks 8 cudaDev 0 nvmlDev 1 busId 13000 commId 0x2f8b84b137606314 - Init COMPLETE
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO ncclCommInitRankConfig comm 0x560ada57d8e0 rank 5 nranks 8 cudaDev 0 nvmlDev 5 busId ab000 commId 0x2f8b84b137606314 - Init COMPLETE
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 1 nranks 8 total 0.61 (kernels 0.28, alloc 0.13, bootstrap 0.01, allgathers 0.00, topo 0.07, graphs 0.03, connections 0.05, rest 0.03)
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO ncclCommInitRankConfig comm 0x5573cc95b050 rank 3 nranks 8 cudaDev 0 nvmlDev 3 busId 67000 commId 0x2f8b84b137606314 - Init COMPLETE
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO ncclCommInitRankConfig comm 0x5589a3f7cae0 rank 7 nranks 8 cudaDev 0 nvmlDev 7 busId db000 commId 0x2f8b84b137606314 - Init COMPLETE
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 5 nranks 8 total 3.70 (kernels 0.41, alloc 0.83, bootstrap 2.27, allgathers 0.03, topo 0.07, graphs 0.02, connections 0.05, rest 0.02)
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO ncclCommInitRankConfig comm 0x55d84815df60 rank 0 nranks 8 cudaDev 0 nvmlDev 0 busId c000 commId 0x2f8b84b137606314 - Init COMPLETE
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 3 nranks 8 total 2.37 (kernels 0.29, alloc 0.21, bootstrap 1.69, allgathers 0.02, topo 0.07, graphs 0.02, connections 0.05, rest 0.02)
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO ncclCommInitRankConfig comm 0x5645d657dad0 rank 4 nranks 8 cudaDev 0 nvmlDev 4 busId 9a000 commId 0x2f8b84b137606314 - Init COMPLETE
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 7 nranks 8 total 3.70 (kernels 0.40, alloc 0.82, bootstrap 2.30, allgathers 0.03, topo 0.07, graphs 0.02, connections 0.05, rest 0.02)
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 0 nranks 8 total 3.71 (kernels 0.40, alloc 0.80, bootstrap 2.32, allgathers 0.02, topo 0.07, graphs 0.02, connections 0.05, rest 0.02)
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 4 nranks 8 total 3.70 (kernels 0.42, alloc 0.83, bootstrap 2.27, allgathers 0.02, topo 0.07, graphs 0.02, connections 0.05, rest 0.02)
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO ncclCommInitRankConfig comm 0x55cc45b7ee40 rank 6 nranks 8 cudaDev 0 nvmlDev 6 busId ba000 commId 0x2f8b84b137606314 - Init COMPLETE
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO ncclCommInitRankConfig comm 0x55723997d7e0 rank 2 nranks 8 cudaDev 0 nvmlDev 2 busId 19000 commId 0x2f8b84b137606314 - Init COMPLETE
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 6 nranks 8 total 3.70 (kernels 0.41, alloc 0.84, bootstrap 2.27, allgathers 0.03, topo 0.07, graphs 0.02, connections 0.05, rest 0.03)
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 2 nranks 8 total 3.71 (kernels 0.41, alloc 0.82, bootstrap 2.29, allgathers 0.03, topo 0.06, graphs 0.02, connections 0.06, rest 0.02)
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Channel 00/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Channel 01/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Channel 02/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Channel 03/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Channel 04/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Channel 05/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Channel 00/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Channel 06/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Channel 00/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Channel 01/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Channel 00/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Channel 01/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Channel 07/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Channel 02/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Channel 02/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Channel 00/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Channel 08/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Channel 01/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Channel 03/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Channel 00/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Channel 03/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Channel 09/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Channel 04/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Channel 02/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Channel 04/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Channel 01/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Channel 03/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Channel 01/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Channel 00/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Channel 02/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Channel 05/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Channel 10/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Channel 03/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Channel 04/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Channel 04/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Channel 05/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Channel 02/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Channel 05/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Channel 06/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Channel 11/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Channel 01/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Channel 06/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Channel 03/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Channel 06/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Channel 05/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Channel 12/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Channel 02/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Channel 07/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Channel 07/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Channel 07/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Channel 04/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Channel 03/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Channel 08/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Channel 08/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Channel 06/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Channel 13/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Channel 04/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Channel 05/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Channel 09/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Channel 05/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Channel 09/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Channel 07/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Channel 10/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Channel 08/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Channel 06/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Channel 06/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Channel 10/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Channel 11/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Channel 14/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Channel 08/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Channel 12/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Channel 09/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Channel 07/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 02/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Channel 11/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Channel 15/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Channel 09/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Channel 12/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Channel 07/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Channel 08/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 03/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Channel 10/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Channel 13/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Channel 11/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Channel 10/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Channel 13/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Channel 08/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Channel 09/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Channel 16/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Channel 14/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Channel 12/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Channel 11/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Channel 09/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 04/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Channel 10/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Channel 17/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Channel 15/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Channel 13/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Channel 12/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Channel 14/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 05/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Channel 10/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Channel 18/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 06/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Channel 11/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Channel 13/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Channel 15/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Channel 14/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Channel 11/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Channel 19/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Channel 16/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Channel 12/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Channel 14/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Channel 16/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Channel 15/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Channel 17/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 07/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Channel 17/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Channel 12/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Channel 20/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Channel 13/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Channel 15/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Channel 16/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Channel 18/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Channel 18/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Channel 13/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Channel 14/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 08/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Channel 16/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Channel 15/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Channel 21/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Channel 17/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Channel 19/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Channel 19/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 09/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Channel 17/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Channel 22/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Channel 14/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Channel 18/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Channel 20/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 10/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Channel 20/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Channel 16/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Channel 23/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Channel 19/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Channel 18/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Channel 15/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 11/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Channel 16/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Channel 19/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Channel 21/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Channel 17/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Channel 21/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 12/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Channel 17/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Channel 22/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Channel 20/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Channel 23/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Channel 20/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Channel 18/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Channel 22/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Channel 18/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 13/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Channel 23/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Channel 21/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Channel 19/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Channel 21/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 14/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Channel 20/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Channel 22/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 15/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Channel 22/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Channel 23/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 16/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Channel 19/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Channel 23/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Channel 21/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 17/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Channel 20/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Channel 22/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 18/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Channel 23/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Channel 21/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 19/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Channel 22/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 20/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Channel 23/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 21/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 22/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Channel 23/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+[2026-06-08 12:19:57] WARNING - vlmeval.__main__: --reuse is not set, this run will start from a fresh output directory
+[2026-06-08 12:19:57] INFO - vlmeval.__main__: =========== Qwen2.5-VL-3B-Instruct ===========
+[2026-06-08 12:19:57] INFO - vlmeval.__main__: =========== Qwen2.5-VL-3B-Instruct ===========
+[2026-06-08 12:19:57] INFO - vlmeval.__main__: =========== Qwen2.5-VL-3B-Instruct ===========
+[2026-06-08 12:19:57] INFO - vlmeval.__main__: =========== Qwen2.5-VL-3B-Instruct ===========
+[2026-06-08 12:19:57] INFO - vlmeval.__main__: =========== Qwen2.5-VL-3B-Instruct ===========
+[2026-06-08 12:19:57] INFO - vlmeval.__main__: =========== Qwen2.5-VL-3B-Instruct ===========
+[2026-06-08 12:19:57] INFO - vlmeval.__main__: =========== Qwen2.5-VL-3B-Instruct ===========
+[2026-06-08 12:19:57] INFO - vlmeval.__main__: =========== Qwen2.5-VL-3B-Instruct ===========
+Loading weights:   0%|          | 0/824 [00:00<?, ?it/s]Loading weights:   0%|          | 0/824 [00:00<?, ?it/s]Loading weights:   0%|          | 0/824 [00:00<?, ?it/s]Loading weights:   0%|          | 0/824 [00:00<?, ?it/s]Loading weights:   0%|          | 0/824 [00:00<?, ?it/s]Loading weights:   0%|          | 0/824 [00:00<?, ?it/s]Loading weights:   0%|          | 0/824 [00:00<?, ?it/s]Loading weights:   0%|          | 0/824 [00:00<?, ?it/s]Loading weights:   0%|          | 1/824 [00:00<03:58,  3.45it/s]Loading weights:   0%|          | 1/824 [00:00<03:48,  3.61it/s]Loading weights:   0%|          | 1/824 [00:00<04:19,  3.18it/s]Loading weights:   0%|          | 1/824 [00:00<04:08,  3.32it/s]Loading weights:   0%|          | 1/824 [00:00<04:13,  3.25it/s]Loading weights:   0%|          | 1/824 [00:00<04:12,  3.27it/s]Loading weights:   0%|          | 1/824 [00:00<04:19,  3.17it/s]Loading weights:   0%|          | 1/824 [00:00<04:10,  3.29it/s]Loading weights:   2%|▏         | 13/824 [00:00<00:19, 41.43it/s]Loading weights:   2%|▏         | 13/824 [00:00<00:19, 41.95it/s]Loading weights:   2%|▏         | 15/824 [00:00<00:18, 43.44it/s]Loading weights:   2%|▏         | 15/824 [00:00<00:18, 43.56it/s]Loading weights:   2%|▏         | 15/824 [00:00<00:18, 42.79it/s]Loading weights:   2%|▏         | 13/824 [00:00<00:21, 36.96it/s]Loading weights:   2%|▏         | 15/824 [00:00<00:19, 42.28it/s]Loading weights:   2%|▏         | 15/824 [00:00<00:20, 39.91it/s]Loading weights:   3%|▎         | 24/824 [00:00<00:12, 62.28it/s]Loading weights:   3%|▎         | 25/824 [00:00<00:12, 65.88it/s]Loading weights:   3%|▎         | 27/824 [00:00<00:12, 64.44it/s]Loading weights:   3%|▎         | 26/824 [00:00<00:13, 60.52it/s]Loading weights:   3%|▎         | 26/824 [00:00<00:13, 60.64it/s]Loading weights:   3%|▎         | 25/824 [00:00<00:14, 57.04it/s]Loading weights:   3%|▎         | 27/824 [00:00<00:12, 63.50it/s]Loading weights:   4%|▎         | 29/824 [00:00<00:12, 64.50it/s]Loading weights:   4%|▍         | 35/824 [00:00<00:10, 75.40it/s]Loading weights:   4%|▍         | 35/824 [00:00<00:10, 73.80it/s]Loading weights:   5%|▍         | 39/824 [00:00<00:09, 78.67it/s]Loading weights:   5%|▍         | 39/824 [00:00<00:09, 78.98it/s]Loading weights:   4%|▍         | 36/824 [00:00<00:11, 70.26it/s]Loading weights:   5%|▍         | 38/824 [00:00<00:10, 72.52it/s]Loading weights:   5%|▍         | 39/824 [00:00<00:10, 74.53it/s]Loading weights:   6%|▌         | 49/824 [00:00<00:07, 99.01it/s]Loading weights:   6%|▌         | 51/824 [00:00<00:08, 96.31it/s]Loading weights:   6%|▌         | 47/824 [00:00<00:09, 84.94it/s]Loading weights:   6%|▋         | 53/824 [00:00<00:08, 91.67it/s]Loading weights:   6%|▋         | 53/824 [00:00<00:08, 88.45it/s]Loading weights:   6%|▋         | 53/824 [00:00<00:08, 88.57it/s]Loading weights:   6%|▋         | 53/824 [00:00<00:08, 89.54it/s]Loading weights:   6%|▋         | 53/824 [00:00<00:08, 87.94it/s]Loading weights:   8%|▊         | 62/824 [00:00<00:07, 99.56it/s]Loading weights:   8%|▊         | 62/824 [00:00<00:07, 100.95it/s]Loading weights:   7%|▋         | 61/824 [00:00<00:08, 93.64it/s]Loading weights:   8%|▊         | 64/824 [00:00<00:07, 95.90it/s]Loading weights:   8%|▊         | 64/824 [00:00<00:08, 93.29it/s]Loading weights:   8%|▊         | 64/824 [00:00<00:08, 94.02it/s]Loading weights:   8%|▊         | 64/824 [00:00<00:08, 90.97it/s]Loading weights:   8%|▊         | 69/824 [00:00<00:07, 105.80it/s]Loading weights:   9%|▉         | 75/824 [00:00<00:07, 105.87it/s]Loading weights:   9%|▉         | 73/824 [00:00<00:07, 94.92it/s]Loading weights:   9%|▉         | 74/824 [00:00<00:07, 98.65it/s] Loading weights:   9%|▉         | 76/824 [00:00<00:07, 102.03it/s]Loading weights:   9%|▉         | 77/824 [00:01<00:07, 97.56it/s]Loading weights:   9%|▉         | 76/824 [00:01<00:07, 94.67it/s]Loading weights:   9%|▉         | 76/824 [00:01<00:07, 93.85it/s]Loading weights:  10%|▉         | 81/824 [00:01<00:07, 106.12it/s]Loading weights:  11%|█         | 87/824 [00:01<00:07, 102.65it/s]Loading weights:  11%|█         | 87/824 [00:01<00:07, 102.85it/s]Loading weights:  11%|█         | 87/824 [00:01<00:07, 105.04it/s]Loading weights:  11%|█         | 89/824 [00:01<00:07, 103.46it/s]Loading weights:  11%|█         | 89/824 [00:01<00:07, 100.77it/s]Loading weights:  11%|█         | 89/824 [00:01<00:07, 102.99it/s]Loading weights:  11%|█         | 88/824 [00:01<00:07, 99.33it/s]Loading weights:  11%|█▏        | 93/824 [00:01<00:06, 107.92it/s]Loading weights:  12%|█▏        | 99/824 [00:01<00:06, 105.73it/s]Loading weights:  12%|█▏        | 99/824 [00:01<00:06, 105.44it/s]Loading weights:  12%|█▏        | 99/824 [00:01<00:07, 96.57it/s] Loading weights:  13%|█▎        | 107/824 [00:01<00:05, 123.45it/s]Loading weights:  13%|█▎        | 109/824 [00:01<00:05, 126.31it/s]Loading weights:  13%|█▎        | 105/824 [00:01<00:06, 117.67it/s]Loading weights:  13%|█▎        | 109/824 [00:01<00:05, 120.67it/s]Loading weights:  13%|█▎        | 109/824 [00:01<00:05, 126.29it/s]Loading weights:  13%|█▎        | 111/824 [00:01<00:06, 107.99it/s]Loading weights:  13%|█▎        | 111/824 [00:01<00:06, 108.24it/s]Loading weights:  13%|█▎        | 111/824 [00:01<00:07, 100.84it/s]Loading weights:  14%|█▍        | 118/824 [00:01<00:05, 119.95it/s]Loading weights:  15%|█▍        | 120/824 [00:01<00:05, 121.89it/s]Loading weights:  15%|█▍        | 122/824 [00:01<00:06, 111.73it/s]Loading weights:  15%|█▍        | 123/824 [00:01<00:06, 100.44it/s]Loading weights:  15%|█▍        | 123/824 [00:01<00:06, 104.28it/s]Loading weights:  15%|█▍        | 123/824 [00:01<00:06, 105.64it/s]Loading weights:  15%|█▍        | 123/824 [00:01<00:06, 100.44it/s]Loading weights:  15%|█▌        | 124/824 [00:01<00:06, 107.71it/s]Loading weights:  16%|█▌        | 131/824 [00:01<00:06, 113.26it/s]Loading weights:  16%|█▋        | 135/824 [00:01<00:06, 104.57it/s]Loading weights:  16%|█▋        | 134/824 [00:01<00:06, 99.32it/s] Loading weights:  16%|█▋        | 135/824 [00:01<00:06, 105.56it/s]Loading weights:  16%|█▋        | 135/824 [00:01<00:06, 100.38it/s]Loading weights:  16%|█▋        | 135/824 [00:01<00:06, 101.87it/s]Loading weights:  16%|█▌        | 133/824 [00:01<00:07, 98.14it/s] Loading weights:  17%|█▋        | 136/824 [00:01<00:07, 97.42it/s] Loading weights:  17%|█▋        | 143/824 [00:01<00:06, 109.43it/s]Loading weights:  18%|█▊        | 148/824 [00:01<00:06, 109.65it/s]Loading weights:  18%|█▊        | 148/824 [00:01<00:06, 105.74it/s]Loading weights:  18%|█▊        | 146/824 [00:01<00:06, 102.00it/s]Loading weights:  18%|█▊        | 148/824 [00:01<00:06, 107.87it/s]Loading weights:  18%|█▊        | 147/824 [00:01<00:06, 104.46it/s]Loading weights:  18%|█▊        | 149/824 [00:01<00:06, 98.36it/s]Loading weights:  18%|█▊        | 148/824 [00:01<00:07, 94.22it/s]Loading weights:  19%|█▉        | 155/824 [00:01<00:06, 100.93it/s]Loading weights:  19%|█▉        | 158/824 [00:01<00:06, 102.81it/s]Loading weights:  19%|█▉        | 159/824 [00:01<00:06, 104.18it/s]Loading weights:  19%|█▉        | 159/824 [00:01<00:06, 101.77it/s]Loading weights:  19%|█▉        | 160/824 [00:01<00:06, 102.92it/s]Loading weights:  19%|█▉        | 160/824 [00:01<00:06, 104.12it/s]Loading weights:  20%|█▉        | 161/824 [00:01<00:06, 96.49it/s]Loading weights:  19%|█▉        | 160/824 [00:01<00:07, 93.03it/s]Loading weights:  20%|██        | 166/824 [00:01<00:06, 98.71it/s] Loading weights:  21%|██        | 169/824 [00:01<00:06, 104.41it/s]Loading weights:  21%|██        | 170/824 [00:01<00:06, 104.42it/s]Loading weights:  21%|██        | 170/824 [00:01<00:06, 98.34it/s] Loading weights:  21%|██        | 171/824 [00:01<00:06, 101.72it/s]Loading weights:  21%|██        | 171/824 [00:01<00:07, 92.91it/s] Loading weights:  22%|██▏       | 181/824 [00:01<00:05, 117.72it/s]Loading weights:  22%|██▏       | 180/824 [00:01<00:05, 108.80it/s]Loading weights:  22%|██▏       | 180/824 [00:01<00:05, 118.98it/s]Loading weights:  22%|██▏       | 183/824 [00:01<00:05, 109.18it/s]Loading weights:  22%|██▏       | 183/824 [00:01<00:05, 109.19it/s]Loading weights:  22%|██▏       | 184/824 [00:01<00:05, 108.81it/s]Loading weights:  22%|██▏       | 183/824 [00:01<00:06, 101.32it/s]Loading weights:  23%|██▎       | 192/824 [00:02<00:05, 121.14it/s]Loading weights:  24%|██▎       | 195/824 [00:02<00:05, 121.87it/s]Loading weights:  24%|██▎       | 195/824 [00:02<00:05, 125.68it/s]Loading weights:  24%|██▎       | 195/824 [00:02<00:05, 107.95it/s]Loading weights:  24%|██▍       | 196/824 [00:02<00:05, 111.16it/s]Loading weights:  24%|██▍       | 197/824 [00:02<00:05, 115.00it/s]Loading weights:  24%|██▎       | 195/824 [00:02<00:05, 108.16it/s]Loading weights:  25%|██▌       | 207/824 [00:02<00:04, 125.40it/s]Loading weights:  25%|██▌       | 207/824 [00:02<00:04, 123.84it/s]Loading weights:  25%|██▌       | 208/824 [00:02<00:05, 103.86it/s]Loading weights:  25%|██▌       | 208/824 [00:02<00:05, 103.20it/s]Loading weights:  25%|██▌       | 208/824 [00:02<00:05, 104.25it/s]Loading weights:  25%|██▌       | 208/824 [00:02<00:05, 103.79it/s]Loading weights:  25%|██▌       | 209/824 [00:02<00:05, 104.47it/s]Loading weights:  25%|██▌       | 209/824 [00:02<00:05, 105.59it/s]Loading weights:  27%|██▋       | 220/824 [00:02<00:05, 106.83it/s]Loading weights:  27%|██▋       | 221/824 [00:02<00:05, 104.94it/s]Loading weights:  27%|██▋       | 221/824 [00:02<00:05, 104.26it/s]Loading weights:  27%|██▋       | 221/824 [00:02<00:05, 103.29it/s]Loading weights:  27%|██▋       | 221/824 [00:02<00:05, 105.49it/s]Loading weights:  27%|██▋       | 221/824 [00:02<00:05, 103.91it/s]Loading weights:  27%|██▋       | 221/824 [00:02<00:05, 103.22it/s]Loading weights:  27%|██▋       | 221/824 [00:02<00:06, 99.58it/s] Loading weights:  28%|██▊       | 232/824 [00:02<00:05, 107.37it/s]Loading weights:  28%|██▊       | 233/824 [00:02<00:05, 102.29it/s]Loading weights:  28%|██▊       | 233/824 [00:02<00:05, 104.58it/s]Loading weights:  28%|██▊       | 233/824 [00:02<00:05, 105.04it/s]Loading weights:  28%|██▊       | 233/824 [00:02<00:05, 105.26it/s]Loading weights:  28%|██▊       | 233/824 [00:02<00:05, 106.13it/s]Loading weights:  28%|██▊       | 233/824 [00:02<00:05, 104.27it/s]Loading weights:  28%|██▊       | 233/824 [00:02<00:05, 103.67it/s]Loading weights:  30%|██▉       | 245/824 [00:02<00:05, 106.51it/s]Loading weights:  30%|██▉       | 244/824 [00:02<00:05, 105.72it/s]Loading weights:  30%|██▉       | 245/824 [00:02<00:05, 108.79it/s]Loading weights:  30%|██▉       | 244/824 [00:02<00:05, 105.44it/s]Loading weights:  30%|██▉       | 244/824 [00:02<00:05, 100.75it/s]Loading weights:  30%|███       | 249/824 [00:02<00:04, 118.07it/s]Loading weights:  30%|███       | 251/824 [00:02<00:04, 122.01it/s]Loading weights:  30%|███       | 249/824 [00:02<00:05, 114.94it/s]Loading weights:  32%|███▏      | 263/824 [00:02<00:04, 125.28it/s]Loading weights:  32%|███▏      | 262/824 [00:02<00:04, 125.29it/s]Loading weights:  32%|███▏      | 264/824 [00:02<00:04, 124.83it/s]Loading weights:  32%|███▏      | 263/824 [00:02<00:04, 126.00it/s]Loading weights:  32%|███▏      | 264/824 [00:02<00:04, 124.04it/s]Loading weights:  32%|███▏      | 265/824 [00:02<00:04, 127.92it/s]Loading weights:  32%|███▏      | 262/824 [00:02<00:04, 122.81it/s]Loading weights:  32%|███▏      | 267/824 [00:02<00:04, 126.22it/s]Loading weights:  34%|███▎      | 277/824 [00:02<00:04, 128.39it/s]Loading weights:  34%|███▍      | 279/824 [00:02<00:04, 122.25it/s]Loading weights:  34%|███▍      | 279/824 [00:02<00:04, 126.90it/s]Loading weights:  34%|███▍      | 279/824 [00:02<00:04, 123.03it/s]Loading weights:  34%|███▍      | 279/824 [00:02<00:04, 127.48it/s]Loading weights:  34%|███▎      | 278/824 [00:02<00:04, 126.06it/s]Loading weights:  34%|███▍      | 279/824 [00:02<00:04, 109.86it/s]Loading weights:  34%|███▍      | 280/824 [00:02<00:04, 112.63it/s]Loading weights:  35%|███▌      | 291/824 [00:02<00:04, 126.18it/s]Loading weights:  35%|███▌      | 292/824 [00:02<00:04, 123.77it/s]Loading weights:  35%|███▌      | 292/824 [00:02<00:04, 125.80it/s]Loading weights:  35%|███▌      | 292/824 [00:02<00:04, 120.99it/s]Loading weights:  35%|███▌      | 292/824 [00:02<00:04, 124.17it/s]Loading weights:  35%|███▌      | 292/824 [00:02<00:04, 120.52it/s]Loading weights:  36%|███▌      | 297/824 [00:02<00:04, 126.72it/s]Loading weights:  36%|███▌      | 297/824 [00:02<00:04, 126.44it/s]Loading weights:  37%|███▋      | 305/824 [00:03<00:04, 112.06it/s]Loading weights:  37%|███▋      | 305/824 [00:03<00:04, 114.15it/s]Loading weights:  37%|███▋      | 305/824 [00:03<00:04, 112.97it/s]Loading weights:  37%|███▋      | 305/824 [00:03<00:04, 110.66it/s]Loading weights:  38%|███▊      | 311/824 [00:03<00:04, 128.12it/s]Loading weights:  37%|███▋      | 305/824 [00:03<00:04, 109.08it/s]Loading weights:  37%|███▋      | 305/824 [00:03<00:04, 113.43it/s]Loading weights:  38%|███▊      | 311/824 [00:03<00:04, 127.00it/s]Loading weights:  39%|███▊      | 318/824 [00:03<00:04, 118.17it/s]Loading weights:  39%|███▊      | 319/824 [00:03<00:04, 118.84it/s]Loading weights:  39%|███▉      | 323/824 [00:03<00:03, 126.58it/s]Loading weights:  39%|███▉      | 321/824 [00:03<00:04, 125.34it/s]Loading weights:  39%|███▉      | 323/824 [00:03<00:03, 128.31it/s]Loading weights:  39%|███▉      | 325/824 [00:03<00:03, 128.14it/s]Loading weights:  39%|███▉      | 323/824 [00:03<00:03, 125.54it/s]Loading weights:  39%|███▉      | 324/824 [00:03<00:03, 125.97it/s]Loading weights:  40%|████      | 331/824 [00:03<00:04, 117.81it/s]Loading weights:  40%|████      | 332/824 [00:03<00:04, 118.45it/s]Loading weights:  41%|████      | 334/824 [00:03<00:03, 124.61it/s]Loading weights:  41%|████      | 336/824 [00:03<00:03, 124.76it/s]Loading weights:  41%|████      | 337/824 [00:03<00:04, 119.68it/s]Loading weights:  41%|████      | 337/824 [00:03<00:04, 121.68it/s]Loading weights:  41%|████      | 337/824 [00:03<00:04, 116.73it/s]Loading weights:  41%|████      | 339/824 [00:03<00:04, 113.06it/s]Loading weights:  42%|████▏     | 343/824 [00:03<00:04, 107.73it/s]Loading weights:  42%|████▏     | 345/824 [00:03<00:04, 110.59it/s]Loading weights:  42%|████▏     | 347/824 [00:03<00:04, 113.99it/s]Loading weights:  42%|████▏     | 349/824 [00:03<00:04, 113.37it/s]Loading weights:  42%|████▏     | 350/824 [00:03<00:04, 115.91it/s]Loading weights:  42%|████▏     | 349/824 [00:03<00:04, 112.33it/s]Loading weights:  42%|████▏     | 350/824 [00:03<00:04, 114.55it/s]Loading weights:  43%|████▎     | 351/824 [00:03<00:04, 105.36it/s]Loading weights:  44%|████▍     | 363/824 [00:03<00:03, 120.79it/s]Loading weights:  44%|████▍     | 363/824 [00:03<00:03, 119.09it/s]Loading weights:  44%|████▍     | 363/824 [00:03<00:03, 116.55it/s]Loading weights:  44%|████▍     | 363/824 [00:03<00:03, 117.12it/s]Loading weights:  44%|████▍     | 363/824 [00:03<00:03, 117.21it/s]Loading weights:  44%|████▍     | 362/824 [00:03<00:04, 113.70it/s]Loading weights:  44%|████▍     | 362/824 [00:03<00:03, 121.14it/s]Loading weights:  45%|████▍     | 370/824 [00:03<00:03, 122.80it/s]Loading weights:  46%|████▌     | 381/824 [00:03<00:03, 134.99it/s]Loading weights:  46%|████▋     | 382/824 [00:03<00:03, 136.39it/s]Loading weights:  46%|████▋     | 382/824 [00:03<00:03, 136.49it/s]Loading weights:  46%|████▋     | 383/824 [00:03<00:03, 143.28it/s]Loading weights:  46%|████▌     | 377/824 [00:03<00:03, 121.52it/s]Loading weights:  46%|████▌     | 377/824 [00:03<00:03, 124.15it/s]Loading weights:  46%|████▋     | 383/824 [00:03<00:03, 134.90it/s]Loading weights:  47%|████▋     | 387/824 [00:03<00:03, 130.57it/s]Loading weights:  48%|████▊     | 399/824 [00:03<00:03, 140.15it/s]Loading weights:  48%|████▊     | 399/824 [00:03<00:02, 142.89it/s]Loading weights:  48%|████▊     | 399/824 [00:03<00:03, 138.60it/s]Loading weights:  48%|████▊     | 399/824 [00:03<00:03, 141.36it/s]Loading weights:  48%|████▊     | 399/824 [00:03<00:03, 137.00it/s]Loading weights:  48%|████▊     | 399/824 [00:03<00:03, 130.65it/s]Loading weights:  48%|████▊     | 399/824 [00:03<00:03, 129.72it/s]Loading weights:  50%|████▉     | 409/824 [00:03<00:02, 142.33it/s]Loading weights:  50%|█████     | 414/824 [00:03<00:02, 136.97it/s]Loading weights:  50%|█████     | 414/824 [00:03<00:02, 138.15it/s]Loading weights:  50%|█████     | 414/824 [00:03<00:03, 133.97it/s]Loading weights:  50%|█████     | 414/824 [00:03<00:02, 136.87it/s]Loading weights:  50%|█████     | 414/824 [00:03<00:03, 136.06it/s]Loading weights:  50%|█████     | 416/824 [00:03<00:02, 140.56it/s]Loading weights:  51%|█████     | 419/824 [00:03<00:02, 146.53it/s]Loading weights:  51%|█████▏    | 424/824 [00:03<00:03, 132.16it/s]Loading weights:  52%|█████▏    | 428/824 [00:03<00:03, 130.99it/s]Loading weights:  52%|█████▏    | 428/824 [00:03<00:02, 133.03it/s]Loading weights:  52%|█████▏    | 428/824 [00:03<00:02, 133.81it/s]Loading weights:  52%|█████▏    | 428/824 [00:03<00:02, 132.48it/s]Loading weights:  52%|█████▏    | 428/824 [00:03<00:03, 131.14it/s]Loading weights:  52%|█████▏    | 431/824 [00:03<00:02, 136.93it/s]Loading weights:  53%|█████▎    | 435/824 [00:03<00:02, 143.72it/s]Loading weights:  55%|█████▌    | 456/824 [00:04<00:02, 169.06it/s]Loading weights:  56%|█████▌    | 461/824 [00:04<00:01, 183.62it/s]Loading weights:  56%|█████▌    | 462/824 [00:04<00:01, 185.22it/s]Loading weights:  56%|█████▌    | 463/824 [00:04<00:01, 187.71it/s]Loading weights:  56%|█████▌    | 461/824 [00:04<00:01, 184.36it/s]Loading weights:  56%|█████▌    | 463/824 [00:04<00:01, 186.94it/s]Loading weights:  57%|█████▋    | 466/824 [00:04<00:01, 186.68it/s]Loading weights:  56%|█████▋    | 464/824 [00:04<00:01, 182.72it/s]Loading weights:  60%|██████    | 497/824 [00:04<00:01, 229.54it/s]Loading weights:  60%|██████    | 496/824 [00:04<00:01, 228.89it/s]Loading weights:  61%|██████    | 499/824 [00:04<00:01, 220.09it/s]Loading weights:  60%|██████    | 496/824 [00:04<00:01, 210.94it/s]Loading weights:  61%|██████    | 499/824 [00:04<00:01, 216.20it/s]Loading weights:  60%|██████    | 498/824 [00:04<00:01, 218.48it/s]Loading weights:  60%|██████    | 497/824 [00:04<00:01, 215.69it/s]Loading weights:  60%|██████    | 496/824 [00:04<00:01, 209.20it/s]Loading weights:  65%|██████▍   | 533/824 [00:04<00:01, 267.69it/s]Loading weights:  65%|██████▍   | 534/824 [00:04<00:01, 268.01it/s]Loading weights:  67%|██████▋   | 549/824 [00:04<00:00, 294.50it/s]Loading weights:  67%|██████▋   | 549/824 [00:04<00:00, 287.78it/s]Loading weights:  66%|██████▋   | 546/824 [00:04<00:00, 283.96it/s]Loading weights:  67%|██████▋   | 548/824 [00:04<00:00, 292.79it/s]Loading weights:  67%|██████▋   | 548/824 [00:04<00:00, 291.87it/s]Loading weights:  67%|██████▋   | 549/824 [00:04<00:00, 294.67it/s]Loading weights:  70%|██████▉   | 573/824 [00:04<00:00, 299.36it/s]Loading weights:  69%|██████▉   | 571/824 [00:04<00:00, 296.00it/s]Loading weights:  71%|███████   | 584/824 [00:04<00:00, 307.36it/s]Loading weights:  71%|███████   | 584/824 [00:04<00:00, 306.38it/s]Loading weights:  71%|███████   | 585/824 [00:04<00:00, 310.57it/s]Loading weights:  71%|███████   | 584/824 [00:04<00:00, 307.21it/s]Loading weights:  71%|███████   | 584/824 [00:04<00:00, 300.64it/s]Loading weights:  71%|███████   | 582/824 [00:04<00:00, 298.66it/s]Loading weights:  75%|███████▍  | 616/824 [00:04<00:00, 332.11it/s]Loading weights:  75%|███████▍  | 616/824 [00:04<00:00, 328.44it/s]Loading weights:  75%|███████▌  | 619/824 [00:04<00:00, 318.63it/s]Loading weights:  75%|███████▌  | 621/824 [00:04<00:00, 324.85it/s]Loading weights:  75%|███████▌  | 622/824 [00:04<00:00, 320.09it/s]Loading weights:  75%|███████▌  | 622/824 [00:04<00:00, 325.34it/s]Loading weights:  75%|███████▌  | 621/824 [00:04<00:00, 322.09it/s]Loading weights:  76%|███████▌  | 624/824 [00:04<00:00, 325.21it/s]Loading weights:  79%|███████▉  | 653/824 [00:04<00:00, 335.54it/s]Loading weights:  79%|███████▉  | 653/824 [00:04<00:00, 333.25it/s]Loading weights:  80%|████████  | 660/824 [00:04<00:00, 342.61it/s]Loading weights:  80%|████████  | 660/824 [00:04<00:00, 341.28it/s]Loading weights:  80%|████████  | 663/824 [00:04<00:00, 343.27it/s]Loading weights:  80%|███████▉  | 659/824 [00:04<00:00, 327.98it/s]Loading weights:  80%|████████  | 660/824 [00:04<00:00, 335.26it/s]Loading weights:  80%|████████  | 663/824 [00:04<00:00, 340.08it/s]Loading weights:  84%|████████▍ | 696/824 [00:04<00:00, 355.56it/s]Loading weights:  84%|████████▍ | 696/824 [00:04<00:00, 356.93it/s]Loading weights:  85%|████████▌ | 701/824 [00:04<00:00, 358.94it/s]Loading weights:  85%|████████▌ | 702/824 [00:04<00:00, 360.89it/s]Loading weights:  85%|████████▌ | 704/824 [00:04<00:00, 361.77it/s]Loading weights:  85%|████████▌ | 703/824 [00:04<00:00, 355.70it/s]Loading weights:  85%|████████▌ | 702/824 [00:04<00:00, 352.80it/s]Loading weights:  86%|████████▌ | 706/824 [00:04<00:00, 356.58it/s]Loading weights:  89%|████████▉ | 736/824 [00:04<00:00, 365.19it/s]Loading weights:  90%|████████▉ | 738/824 [00:04<00:00, 364.29it/s]Loading weights:  90%|█████████ | 743/824 [00:04<00:00, 368.40it/s]Loading weights:  90%|█████████ | 744/824 [00:04<00:00, 372.68it/s]Loading weights:  90%|█████████ | 745/824 [00:04<00:00, 369.82it/s]Loading weights:  91%|█████████ | 747/824 [00:04<00:00, 376.27it/s]Loading weights:  91%|█████████ | 747/824 [00:04<00:00, 371.86it/s]Loading weights:  91%|█████████ | 751/824 [00:04<00:00, 372.61it/s]Loading weights:  94%|█████████▍| 775/824 [00:04<00:00, 361.38it/s]Loading weights:  94%|█████████▍| 777/824 [00:04<00:00, 367.00it/s]Loading weights:  95%|█████████▌| 783/824 [00:04<00:00, 372.60it/s]Loading weights:  95%|█████████▍| 782/824 [00:04<00:00, 369.49it/s]Loading weights:  95%|█████████▌| 783/824 [00:04<00:00, 368.25it/s]Loading weights:  95%|█████████▌| 785/824 [00:04<00:00, 372.87it/s]Loading weights:  95%|█████████▌| 785/824 [00:04<00:00, 363.85it/s]Loading weights:  96%|█████████▌| 792/824 [00:04<00:00, 381.22it/s]Loading weights:  99%|█████████▉| 816/824 [00:05<00:00, 373.90it/s]Loading weights: 100%|█████████▉| 821/824 [00:05<00:00, 337.91it/s]Loading weights: 100%|█████████▉| 821/824 [00:05<00:00, 336.77it/s]Loading weights: 100%|█████████▉| 821/824 [00:05<00:00, 337.41it/s]Loading weights: 100%|██████████| 824/824 [00:05<00:00, 163.15it/s]
+Loading weights: 100%|█████████▉| 820/824 [00:05<00:00, 339.86it/s]Loading weights: 100%|██████████| 824/824 [00:05<00:00, 163.07it/s]
+Loading weights: 100%|█████████▉| 822/824 [00:05<00:00, 337.33it/s]Loading weights: 100%|██████████| 824/824 [00:05<00:00, 162.91it/s]
+Loading weights: 100%|██████████| 824/824 [00:05<00:00, 162.63it/s]
+Loading weights: 100%|██████████| 824/824 [00:05<00:00, 162.62it/s]
+Loading weights: 100%|██████████| 824/824 [00:05<00:00, 162.98it/s]
+Loading weights: 100%|██████████| 824/824 [00:05<00:00, 162.58it/s]
+Loading weights: 100%|█████████▉| 823/824 [00:05<00:00, 335.63it/s]Loading weights: 100%|██████████| 824/824 [00:05<00:00, 162.85it/s]
+[2026-06-08 12:20:04] INFO - vlmeval.__main__: ----------- MMStar_MINI -----------
+[2026-06-08 12:20:05] INFO - vlmeval.__main__: ----------- MMStar_MINI -----------
+[2026-06-08 12:20:05] INFO - vlmeval.__main__: ----------- MMStar_MINI -----------
+[2026-06-08 12:20:05] INFO - vlmeval.__main__: ----------- MMStar_MINI -----------
+[2026-06-08 12:20:05] INFO - vlmeval.__main__: ----------- MMStar_MINI -----------
+[2026-06-08 12:20:05] INFO - vlmeval.__main__: ----------- MMStar_MINI -----------
+[2026-06-08 12:20:05] INFO - vlmeval.__main__: ----------- MMStar_MINI -----------
+[2026-06-08 12:20:05] INFO - vlmeval.__main__: ----------- MMStar_MINI -----------
+/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+MMStar_MINI.tsv: 0.00B [00:00, ?B/s]MMStar_MINI.tsv:   0%|          | 8.19k/5.62M [00:00<03:07, 30.0kB/s]MMStar_MINI.tsv: 5.62MB [00:00, 15.9MB/s]                            
+/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[2026-06-08 12:20:06] INFO - vlmeval.__main__: {'nproc': 8, 'verbose': False, 'retry': 2, 'timeout': 900, 'temperature': 0, 'chat_template_kwargs': {'enable_thinking': False}, 'api_base': 'http://33.3.178.31:8000/v1/chat/completions', 'key': 'EMPTY', 'model': 'Qwen3.5-122B-A10B'}
+/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 2/8:   0%|          | 0/19 [00:00<?, ?it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 6/8:   0%|          | 0/18 [00:00<?, ?it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 1/8:   0%|          | 0/19 [00:00<?, ?it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 5/8:   0%|          | 0/19 [00:00<?, ?it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 4/8:   0%|          | 0/19 [00:00<?, ?it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 7/8:   0%|          | 0/18 [00:00<?, ?it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 3/8:   0%|          | 0/19 [00:00<?, ?it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 0/8:   0%|          | 0/19 [00:00<?, ?it/s][transformers] The following generation flags are not valid and may be ignored: ['temperature', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[transformers] The following generation flags are not valid and may be ignored: ['temperature', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[transformers] The following generation flags are not valid and may be ignored: ['temperature', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[transformers] The following generation flags are not valid and may be ignored: ['temperature', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[transformers] The following generation flags are not valid and may be ignored: ['temperature', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[transformers] The following generation flags are not valid and may be ignored: ['temperature', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[transformers] The following generation flags are not valid and may be ignored: ['temperature', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[transformers] The following generation flags are not valid and may be ignored: ['temperature', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 1/8:   5%|▌         | 1/19 [00:03<01:10,  3.92s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 5/8:   5%|▌         | 1/19 [00:03<01:10,  3.92s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 2/8:   5%|▌         | 1/19 [00:03<01:10,  3.93s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 7/8:   6%|▌         | 1/18 [00:03<01:06,  3.93s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 3/8:   5%|▌         | 1/19 [00:04<01:12,  4.05s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 0/8:   5%|▌         | 1/19 [00:04<01:14,  4.14s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 4/8:   5%|▌         | 1/19 [00:04<01:15,  4.19s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 1/8:  11%|█         | 2/19 [00:04<00:33,  1.97s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 5/8:  11%|█         | 2/19 [00:04<00:34,  2.03s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 7/8:  11%|█         | 2/18 [00:04<00:33,  2.08s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 3/8:  11%|█         | 2/19 [00:04<00:35,  2.08s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 0/8:  11%|█         | 2/19 [00:04<00:35,  2.10s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 4/8:  11%|█         | 2/19 [00:04<00:35,  2.11s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 2/8:  11%|█         | 2/19 [00:05<00:40,  2.35s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 6/8:   6%|▌         | 1/18 [00:05<01:30,  5.31s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 7/8:  17%|█▋        | 3/18 [00:05<00:21,  1.43s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 5/8:  16%|█▌        | 3/19 [00:05<00:23,  1.45s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 3/8:  16%|█▌        | 3/19 [00:05<00:23,  1.44s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 4/8:  16%|█▌        | 3/19 [00:05<00:22,  1.43s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 0/8:  16%|█▌        | 3/19 [00:05<00:22,  1.42s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 1/8:  16%|█▌        | 3/19 [00:05<00:24,  1.55s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 2/8:  16%|█▌        | 3/19 [00:05<00:25,  1.60s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 6/8:  11%|█         | 2/18 [00:05<00:40,  2.54s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 5/8:  21%|██        | 4/19 [00:05<00:16,  1.09s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 3/8:  21%|██        | 4/19 [00:06<00:16,  1.10s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 1/8:  21%|██        | 4/19 [00:06<00:16,  1.13s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 6/8:  17%|█▋        | 3/18 [00:06<00:23,  1.55s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 7/8:  22%|██▏       | 4/18 [00:06<00:17,  1.27s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 1/8:  26%|██▋       | 5/19 [00:06<00:12,  1.15it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 2/8:  21%|██        | 4/19 [00:06<00:18,  1.22s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 0/8:  21%|██        | 4/19 [00:06<00:19,  1.29s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 3/8:  26%|██▋       | 5/19 [00:06<00:12,  1.10it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 5/8:  26%|██▋       | 5/19 [00:06<00:13,  1.06it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 4/8:  21%|██        | 4/19 [00:06<00:20,  1.35s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 7/8:  28%|██▊       | 5/18 [00:06<00:13,  1.03s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 2/8:  26%|██▋       | 5/19 [00:07<00:13,  1.03it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 0/8:  26%|██▋       | 5/19 [00:07<00:14,  1.00s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 1/8:  32%|███▏      | 6/19 [00:07<00:09,  1.30it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 3/8:  32%|███▏      | 6/19 [00:07<00:10,  1.29it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 5/8:  32%|███▏      | 6/19 [00:07<00:10,  1.21it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 4/8:  26%|██▋       | 5/19 [00:07<00:15,  1.12s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 1/8:  37%|███▋      | 7/19 [00:07<00:07,  1.57it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 2/8:  32%|███▏      | 6/19 [00:07<00:10,  1.25it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 0/8:  32%|███▏      | 6/19 [00:07<00:10,  1.21it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 7/8:  33%|███▎      | 6/18 [00:07<00:10,  1.15it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 6/8:  22%|██▏       | 4/18 [00:07<00:20,  1.47s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 1/8:  42%|████▏     | 8/19 [00:07<00:06,  1.83it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 3/8:  37%|███▋      | 7/19 [00:07<00:09,  1.30it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 5/8:  37%|███▋      | 7/19 [00:07<00:09,  1.26it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 2/8:  37%|███▋      | 7/19 [00:08<00:08,  1.39it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 7/8:  39%|███▉      | 7/18 [00:08<00:08,  1.26it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 0/8:  37%|███▋      | 7/19 [00:08<00:09,  1.29it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 4/8:  32%|███▏      | 6/19 [00:08<00:13,  1.01s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 3/8:  42%|████▏     | 8/19 [00:08<00:07,  1.50it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 1/8:  47%|████▋     | 9/19 [00:08<00:05,  1.75it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 6/8:  28%|██▊       | 5/18 [00:08<00:16,  1.24s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 5/8:  42%|████▏     | 8/19 [00:08<00:07,  1.39it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 4/8:  37%|███▋      | 7/19 [00:08<00:09,  1.24it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 2/8:  42%|████▏     | 8/19 [00:08<00:07,  1.48it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 0/8:  42%|████▏     | 8/19 [00:08<00:08,  1.35it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 7/8:  44%|████▍     | 8/18 [00:08<00:07,  1.31it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 1/8:  53%|█████▎    | 10/19 [00:08<00:05,  1.78it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 5/8:  47%|████▋     | 9/19 [00:09<00:06,  1.52it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 4/8:  42%|████▏     | 8/19 [00:09<00:07,  1.43it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 2/8:  47%|████▋     | 9/19 [00:09<00:06,  1.54it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 0/8:  47%|████▋     | 9/19 [00:09<00:06,  1.47it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 7/8:  50%|█████     | 9/18 [00:09<00:06,  1.42it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 6/8:  33%|███▎      | 6/18 [00:09<00:14,  1.17s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 4/8:  47%|████▋     | 9/19 [00:09<00:06,  1.46it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 5/8:  53%|█████▎    | 10/19 [00:09<00:06,  1.48it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 1/8:  58%|█████▊    | 11/19 [00:09<00:05,  1.56it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 0/8:  53%|█████▎    | 10/19 [00:09<00:05,  1.65it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 2/8:  53%|█████▎    | 10/19 [00:09<00:06,  1.48it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 5/8:  58%|█████▊    | 11/19 [00:10<00:04,  1.61it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 1/8:  63%|██████▎   | 12/19 [00:10<00:04,  1.66it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 4/8:  53%|█████▎    | 10/19 [00:10<00:06,  1.45it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 2/8:  58%|█████▊    | 11/19 [00:10<00:04,  1.65it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 5/8:  63%|██████▎   | 12/19 [00:10<00:03,  1.78it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 6/8:  39%|███▉      | 7/18 [00:10<00:12,  1.18s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 7/8:  56%|█████▌    | 10/18 [00:10<00:07,  1.12it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 2/8:  63%|██████▎   | 12/19 [00:10<00:03,  1.78it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 1/8:  68%|██████▊   | 13/19 [00:11<00:03,  1.53it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 5/8:  68%|██████▊   | 13/19 [00:11<00:03,  1.79it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 2/8:  68%|██████▊   | 13/19 [00:11<00:02,  2.02it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 6/8:  44%|████▍     | 8/18 [00:11<00:09,  1.01it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 7/8:  61%|██████    | 11/18 [00:11<00:05,  1.22it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 2/8:  74%|███████▎  | 14/19 [00:11<00:02,  2.16it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 1/8:  74%|███████▎  | 14/19 [00:11<00:03,  1.57it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 5/8:  74%|███████▎  | 14/19 [00:11<00:02,  1.81it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 6/8:  50%|█████     | 9/18 [00:11<00:07,  1.16it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 7/8:  67%|██████▋   | 12/18 [00:12<00:04,  1.33it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 1/8:  79%|███████▉  | 15/19 [00:12<00:02,  1.74it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 2/8:  79%|███████▉  | 15/19 [00:12<00:01,  2.13it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 6/8:  56%|█████▌    | 10/18 [00:12<00:05,  1.40it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 4/8:  58%|█████▊    | 11/19 [00:12<00:08,  1.06s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 5/8:  79%|███████▉  | 15/19 [00:12<00:02,  1.78it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 1/8:  84%|████████▍ | 16/19 [00:12<00:01,  1.96it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 7/8:  72%|███████▏  | 13/18 [00:12<00:03,  1.42it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 3/8:  47%|████▋     | 9/19 [00:12<00:18,  1.84s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 5/8:  84%|████████▍ | 16/19 [00:12<00:01,  1.88it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 4/8:  63%|██████▎   | 12/19 [00:12<00:06,  1.13it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 6/8:  61%|██████    | 11/18 [00:12<00:04,  1.49it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 1/8:  89%|████████▉ | 17/19 [00:12<00:01,  1.98it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 7/8:  78%|███████▊  | 14/18 [00:13<00:02,  1.55it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 1/8:  95%|█████████▍| 18/19 [00:13<00:00,  2.10it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 5/8:  89%|████████▉ | 17/19 [00:13<00:01,  1.87it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 0/8:  58%|█████▊    | 11/19 [00:13<00:11,  1.50s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 4/8:  68%|██████▊   | 13/19 [00:13<00:04,  1.26it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 2/8:  84%|████████▍ | 16/19 [00:13<00:02,  1.38it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 6/8:  67%|██████▋   | 12/18 [00:13<00:03,  1.53it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 3/8:  53%|█████▎    | 10/19 [00:13<00:13,  1.50s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 7/8:  83%|████████▎ | 15/18 [00:13<00:01,  1.77it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 1/8: 100%|██████████| 19/19 [00:13<00:00,  1.93it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 1/8: 100%|██████████| 19/19 [00:13<00:00,  1.36it/s]
+Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 0/8:  63%|██████▎   | 12/19 [00:13<00:08,  1.22s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 6/8:  72%|███████▏  | 13/18 [00:13<00:03,  1.65it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 2/8:  89%|████████▉ | 17/19 [00:13<00:01,  1.48it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 5/8:  95%|█████████▍| 18/19 [00:13<00:00,  1.75it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 7/8:  89%|████████▉ | 16/18 [00:14<00:01,  1.74it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 4/8:  74%|███████▎  | 14/19 [00:14<00:03,  1.25it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 3/8:  58%|█████▊    | 11/19 [00:14<00:10,  1.34s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 0/8:  68%|██████▊   | 13/19 [00:14<00:06,  1.06s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 6/8:  78%|███████▊  | 14/18 [00:14<00:02,  1.57it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 2/8:  95%|█████████▍| 18/19 [00:14<00:00,  1.40it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 4/8:  79%|███████▉  | 15/19 [00:14<00:02,  1.34it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 5/8: 100%|██████████| 19/19 [00:14<00:00,  1.53it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 5/8: 100%|██████████| 19/19 [00:14<00:00,  1.28it/s]
+Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 7/8:  94%|█████████▍| 17/18 [00:15<00:00,  1.47it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 3/8:  63%|██████▎   | 12/19 [00:15<00:07,  1.11s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 0/8:  74%|███████▎  | 14/19 [00:15<00:04,  1.03it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 6/8:  83%|████████▎ | 15/18 [00:15<00:02,  1.40it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 4/8:  84%|████████▍ | 16/19 [00:15<00:02,  1.30it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 2/8: 100%|██████████| 19/19 [00:15<00:00,  1.32it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 2/8: 100%|██████████| 19/19 [00:15<00:00,  1.21it/s]
+Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 3/8:  68%|██████▊   | 13/19 [00:15<00:05,  1.04it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 7/8: 100%|██████████| 18/18 [00:15<00:00,  1.52it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 7/8: 100%|██████████| 18/18 [00:15<00:00,  1.15it/s]
+Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 6/8:  89%|████████▉ | 16/18 [00:15<00:01,  1.60it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 0/8:  79%|███████▉  | 15/19 [00:15<00:03,  1.16it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 3/8:  74%|███████▎  | 14/19 [00:16<00:04,  1.21it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 4/8:  89%|████████▉ | 17/19 [00:16<00:01,  1.38it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 6/8:  94%|█████████▍| 17/18 [00:16<00:00,  1.57it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 4/8:  95%|█████████▍| 18/19 [00:16<00:00,  1.49it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 3/8:  79%|███████▉  | 15/19 [00:16<00:03,  1.25it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 3/8:  84%|████████▍ | 16/19 [00:17<00:02,  1.49it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 4/8: 100%|██████████| 19/19 [00:17<00:00,  1.54it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 4/8: 100%|██████████| 19/19 [00:17<00:00,  1.09it/s]
+Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 6/8: 100%|██████████| 18/18 [00:17<00:00,  1.27it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 6/8: 100%|██████████| 18/18 [00:17<00:00,  1.01it/s]
+Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 3/8:  89%|████████▉ | 17/19 [00:18<00:01,  1.42it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 0/8:  84%|████████▍ | 16/19 [00:18<00:03,  1.24s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 3/8:  95%|█████████▍| 18/19 [00:18<00:00,  1.62it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 0/8:  89%|████████▉ | 17/19 [00:18<00:02,  1.03s/it]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 3/8: 100%|██████████| 19/19 [00:18<00:00,  1.85it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 3/8: 100%|██████████| 19/19 [00:18<00:00,  1.01it/s]
+Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 0/8:  95%|█████████▍| 18/19 [00:19<00:00,  1.11it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 0/8: 100%|██████████| 19/19 [00:19<00:00,  1.34it/s]Infer Qwen2.5-VL-3B-Instruct/MMStar_MINI, Rank 0/8: 100%|██████████| 19/19 [00:19<00:00,  1.03s/it]
+/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[2026-06-08 12:20:26] ERROR - misc.py: load_env - 220: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load. 
+[2026-06-08 12:20:26] INFO - vlmeval.api.base: BaseAPI received the following kwargs: {'chat_template_kwargs': {'enable_thinking': False}}
+[2026-06-08 12:20:26] INFO - vlmeval.api.base: Will try to use them as kwargs for `generate`. 
+[2026-06-08 12:20:26] INFO - vlmeval.api.gpt: Using API Base: http://33.3.178.31:8000/v1/chat/completions; API Key: EMPTY
+wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO comm 0x5645d657dad0 rank 4 nranks 8 cudaDev 0 busId 9a000 - Destroy COMPLETE
+wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO comm 0x55cc45b7ee40 rank 6 nranks 8 cudaDev 0 busId ba000 - Destroy COMPLETE
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO comm 0x560ada57d8e0 rank 5 nranks 8 cudaDev 0 busId ab000 - Destroy COMPLETE
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO comm 0x5573cc95b050 rank 3 nranks 8 cudaDev 0 busId 67000 - Destroy COMPLETE
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO comm 0x55723997d7e0 rank 2 nranks 8 cudaDev 0 busId 19000 - Destroy COMPLETE
+  0%|          | 0/150 [00:00<?, ?it/s]wings-a14ad96389c1-master-0:12228:12228 [0] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault
+ 40%|████      | 60/150 [00:00<00:00, 591.74it/s]wings-a14ad96389c1-master-0:12230:12230 [0] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault
+wings-a14ad96389c1-master-0:12229:12229 [0] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault
+wings-a14ad96389c1-master-0:12226:12226 [0] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault
+wings-a14ad96389c1-master-0:12227:12227 [0] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault
+ 80%|████████  | 120/150 [00:00<00:00, 232.49it/s]100%|██████████| 150/150 [00:00<00:00, 208.78it/s]
+[2026-06-08 12:20:28] INFO - vlmeval.__main__: The evaluation of model Qwen2.5-VL-3B-Instruct x dataset MMStar_MINI has finished! 
+[2026-06-08 12:20:28] INFO - vlmeval.__main__: Evaluation Results:
+[2026-06-08 12:20:28] INFO - vlmeval.__main__: 
+-----------------------  -------------------
+split                    none
+Overall                  0.56
+coarse perception        0.6521739130434783
+fine-grained perception  0.6
+instance reasoning       0.65
+logical reasoning        0.42857142857142855
+math                     0.6428571428571429
+science & technology     0.34782608695652173
+-----------------------  -------------------
+[2026-06-08 12:20:28] INFO - vlmeval.__main__: Run Summary Report:
+[2026-06-08 12:20:28] INFO - vlmeval.__main__: 
+benchmark    infer_fail_rate    judge_fail_rate    primary_metric      primary_metric_value  skip_reason    eval_error
+-----------  -----------------  -----------------  ----------------  ----------------------  -------------  ------------
+MMStar_MINI  0.00% (0/150)      0.00% (0/150)      Overall Acc                           56  -              -
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO comm 0x55d22df7e530 rank 1 nranks 8 cudaDev 0 busId 13000 - Destroy COMPLETE
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO comm 0x5589a3f7cae0 rank 7 nranks 8 cudaDev 0 busId db000 - Destroy COMPLETE
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO comm 0x55d84815df60 rank 0 nranks 8 cudaDev 0 busId c000 - Destroy COMPLETE
+wings-a14ad96389c1-master-0:12231:12231 [0] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault
+wings-a14ad96389c1-master-0:12224:12224 [0] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault
+wings-a14ad96389c1-master-0:12225:12225 [0] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault
+Skipping merge_to_mmr_csv because benchmarks are not exactly the standard 7 or --no-merge was set.
+latest_run_dir=/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/outputs/smoke_qwen25vl_3b_mmstar_mini_sdpa_20260608_121914/Qwen2.5-VL-3B-Instruct/T20260608-121953
+metric_csv=Qwen2.5-VL-3B-Instruct_MMStar_MINI_acc.csv overall=0.56

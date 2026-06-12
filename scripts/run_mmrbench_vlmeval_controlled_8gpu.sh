@@ -55,6 +55,8 @@ JUDGE_ARGS="${MMR_JUDGE_ARGS:-${JUDGE_ARGS}}"
 GPUS="${MMR_GPUS:-${GPUS:-0,1,2,3,4,5,6,7}}"
 NPROC="${MMR_NPROC:-${NPROC:-}}"
 MASTER_PORT="${MMR_MASTER_PORT:-${MASTER_PORT:-29551}}"
+MODE="${MMR_MODE:-${MODE:-all}}"
+USE_VLLM="${MMR_USE_VLLM:-${USE_VLLM:-0}}"
 USE_COT="${MMR_USE_COT:-${USE_COT:-1}}"
 API_NPROC="${MMR_API_NPROC:-${API_NPROC:-1}}"
 PREWARM_REMOTE_CODE="${MMR_PREWARM_REMOTE_CODE:-${PREWARM_REMOTE_CODE:-1}}"
@@ -108,6 +110,9 @@ Options:
   --work-dir DIR          VLMEvalKit output directory root.
   --csv PATH              MMR-Bench CSV to update.
   --run-name NAME         Name used for default output/log paths.
+  --mode all|infer|eval   VLMEvalKit mode. Default: all.
+  --use-vllm              Pass --use-vllm to VLMEvalKit run.py.
+  --no-use-vllm           Disable --use-vllm even if config enables it.
   --use-cot 0|1           Set USE_COT. Default comes from config.
   --no-prewarm-remote-code
                           Disable local trust_remote_code cache prewarm before torchrun.
@@ -139,6 +144,9 @@ while [[ $# -gt 0 ]]; do
     --work-dir) WORK_DIR="$2"; shift 2 ;;
     --csv) CSV_PATH="$2"; shift 2 ;;
     --run-name) RUN_NAME="$2"; shift 2 ;;
+    --mode) MODE="$2"; shift 2 ;;
+    --use-vllm) USE_VLLM=1; shift ;;
+    --no-use-vllm) USE_VLLM=0; shift ;;
     --use-cot) USE_COT="$2"; shift 2 ;;
     --no-prewarm-remote-code) PREWARM_REMOTE_CODE=0; shift ;;
     --merge) MERGE_REQUESTED=1; shift ;;
@@ -182,6 +190,14 @@ if [[ -z "${NPROC}" ]]; then
 fi
 if [[ "${NPROC}" -lt 1 ]]; then
   echo "Invalid --nproc: ${NPROC}" >&2
+  exit 2
+fi
+if [[ "${MODE}" != "all" && "${MODE}" != "infer" && "${MODE}" != "eval" ]]; then
+  echo "Invalid --mode: ${MODE}. Expected all, infer, or eval." >&2
+  exit 2
+fi
+if [[ "${USE_VLLM}" != "0" && "${USE_VLLM}" != "1" ]]; then
+  echo "Invalid USE_VLLM value: ${USE_VLLM}. Expected 0 or 1." >&2
   exit 2
 fi
 
@@ -274,6 +290,10 @@ elif [[ "${MERGE_MODE}" == "always" ]]; then
 else
   DO_MERGE="${MERGE_ALLOWED}"
 fi
+if [[ "${MODE}" == "infer" && "${DO_MERGE}" -eq 1 ]]; then
+  echo "Disabling merge_to_mmr_csv in --mode infer because score files are not generated."
+  DO_MERGE=0
+fi
 
 JUDGE_HOST="${JUDGE_BASE_URL#http://}"
 JUDGE_HOST="${JUDGE_HOST#https://}"
@@ -290,7 +310,7 @@ write_metadata() {
   "${CONDA_ENV}/bin/python" - \
     "$META_FILE" "$RUN_NAME" "$CONFIG_FILE" "$MODEL" "$MODEL_PATH" "$MODEL_CLASS" \
     "$MODEL_ARGS_JSON" "$GENERATED_CONFIG" "$BENCHMARK_REGISTRY" "$BENCHMARKS_CANON" \
-    "$CSV_PATH" "$WORK_DIR" "$LOG_FILE" "$USE_COT" "$JUDGE_MODEL" "$JUDGE_BASE_URL" \
+    "$CSV_PATH" "$WORK_DIR" "$LOG_FILE" "$MODE" "$USE_VLLM" "$USE_COT" "$JUDGE_MODEL" "$JUDGE_BASE_URL" \
     "$JUDGE_NPROC" "$JUDGE_RETRY" "$JUDGE_TIMEOUT" "$JUDGE_ARGS" "$GPUS" "$NPROC" \
     "$MASTER_PORT" "$DO_MERGE" <<'PY'
 import json
@@ -300,7 +320,7 @@ import sys
 (
     meta_path, run_name, runtime_config, model, model_path, model_class,
     model_args_json, generated_config, benchmark_registry, benchmarks,
-    csv_path, work_dir, log_file, use_cot, judge_model, judge_base_url,
+    csv_path, work_dir, log_file, vlmeval_mode, use_vllm, use_cot, judge_model, judge_base_url,
     judge_nproc, judge_retry, judge_timeout, judge_args, gpus, nproc,
     master_port, do_merge,
 ) = sys.argv[1:]
@@ -321,6 +341,8 @@ meta = {
     "protocol": "MMR-Bench controlled main-table v2",
     "inference": {
         "mode": "non-thinking",
+        "vlmeval_mode": vlmeval_mode,
+        "use_vllm": bool(int(use_vllm)),
         "use_cot": use_cot,
         "pred_format": "xlsx",
     },
@@ -362,7 +384,11 @@ CMD=(
   --judge-args "${JUDGE_ARGS}"
   --api-nproc "${API_NPROC}"
   --work-dir "${WORK_DIR}"
+  --mode "${MODE}"
 )
+if [[ "${USE_VLLM}" -eq 1 ]]; then
+  CMD+=(--use-vllm)
+fi
 
 echo "run_name=${RUN_NAME}"
 echo "runtime_config=${CONFIG_FILE}"
@@ -373,6 +399,8 @@ echo "benchmarks=${BENCHMARKS_CANON}"
 echo "judge_base_url=${JUDGE_BASE_URL}"
 echo "gpus=${GPUS}"
 echo "nproc=${NPROC}"
+echo "mode=${MODE}"
+echo "use_vllm=${USE_VLLM}"
 echo "merge_to_mmr_csv=${DO_MERGE}"
 echo "work_dir=${WORK_DIR}"
 echo "log_file=${LOG_FILE}"
@@ -481,6 +509,9 @@ prewarm_remote_code_cache
   export no_proxy="${NO_PROXY_VALUE}"
   export USE_COT="${USE_COT}"
   export PRED_FORMAT=xlsx
+  if [[ "${USE_VLLM}" -eq 1 ]]; then
+    export VLLM_WORKER_MULTIPROC_METHOD="${VLLM_WORKER_MULTIPROC_METHOD:-spawn}"
+  fi
   unset SPLIT_THINK
   "${CMD[@]}"
 ) >"${LOG_FILE}" 2>&1 || {

@@ -1,0 +1,95 @@
+repo_id=Qwen/Qwen2.5-VL-72B-Instruct
+local_dir=/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct
+hf_endpoint=https://hf-mirror.com
+max_workers=2
+Fetching 50 files:   0%|          | 0/50 [00:00<?, ?it/s]Downloading 'model-00001-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/6-E91IzGQuE9eT_lpRRXzXh0JRw=.4d35297e3d812dfc5008955f89d33c684a823e0798fcebd03afcb68d4b56b173.incomplete' (resume from 146800640/3900622992)
+Downloading 'merges.txt' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/PtHk0z_I45atnj23IIRhTExwT3w=.20024bfe7c83998e9aeaf98a0cd6a2ce6306c2f0.incomplete' (resume from 743280/1671839)
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/merges.txt
+Fetching 50 files:  14%|█▍        | 7/50 [00:02<00:16,  2.66it/s]Downloading 'model-00002-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/bNhlR8KhwJBvqMpTppcqCKjZTJs=.35039b606fd283b1c2d01779edf5b316793a0d495429b277baa5216177e6754f.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00001-of-00038.safetensors
+Fetching 50 files:  16%|█▌        | 8/50 [00:40<04:40,  6.68s/it]Downloading 'model-00003-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/Rvjm7r3Ip1WP7s86T-RlSsn7B08=.1f79cf3cf38a5b903e70fffbf7e46bf958cf55dfac9e2120dc74c4ba478c2ab7.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00002-of-00038.safetensors
+Fetching 50 files:  18%|█▊        | 9/50 [00:42<04:02,  5.91s/it]Downloading 'model-00004-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/t5PXtEwesZvO46cfZDaYR5y2GPw=.81efdd682f485f0c14844d4ea36cfc5cedaa7aa9e64474f24e1b0ca6b7d20748.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00003-of-00038.safetensors
+Fetching 50 files:  20%|██        | 10/50 [01:21<08:40, 13.01s/it]Downloading 'model-00005-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/hrdoAfrwEvyv4E9jMIr0SRsT8yw=.36316ff00732a185bb4f409c9d0d94a713ac35b3ad73996828921ba6b45ae456.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00004-of-00038.safetensors
+Fetching 50 files:  22%|██▏       | 11/50 [01:24<06:54, 10.64s/it]Downloading 'model-00006-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/9GmAfknu3GVzxolxnJI1VIdgET4=.791cef1c4fddd52492f69f9ee1043d23782b632a3f376d7426c42329cde3588b.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00005-of-00038.safetensors
+Fetching 50 files:  24%|██▍       | 12/50 [02:03<11:17, 17.83s/it]Downloading 'model-00007-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/6sAeFMbt-5k0vZiCjw1Y62QrvJc=.93f9e978e31dbc380661ac7bde41b12b8a56a8db98db5d56704daf63b4caaf3c.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00006-of-00038.safetensors
+Fetching 50 files:  26%|██▌       | 13/50 [02:04<08:12, 13.31s/it]Downloading 'model-00008-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/DNJnA7xlUsMv_9pjFhnjgKjudNA=.ef2c2ceb4b03037f9948406a5b432c114c59738e63bbf09a7b3584ef1555fd45.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00007-of-00038.safetensors
+Fetching 50 files:  28%|██▊       | 14/50 [02:45<12:32, 20.91s/it]Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00008-of-00038.safetensors
+Fetching 50 files:  30%|███       | 15/50 [02:45<08:47, 15.08s/it]Downloading 'model-00009-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/W7_cBB2sVtteGwcvN1cjffkvPb8=.bfbe73d620bdd03af42b21e264610ffd4372bc594d0ca7f04dfc90fdb924878d.incomplete'
+Downloading 'model-00010-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/I0BUyLddqH6DbG-cbEd6rrRKSzQ=.5c2835a35034783ed525ec38fd825b5dd4ca1621d3037f05a94870ae9441768a.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00010-of-00038.safetensors
+Downloading 'model-00011-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/yQuG5meAviSeFOdvD7MS19rLYmY=.c36b82dc4bd8a72daaa379d55e6d60383bbdbc3a4754f8631d19e33becb28a2f.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00009-of-00038.safetensors
+Fetching 50 files:  32%|███▏      | 16/50 [03:27<12:54, 22.77s/it]Downloading 'model-00012-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/LS4gSh5P3p3YpHTIVQTvzUiKnHw=.5f51e338bce17df8d6520157bceaa774edd206a330008af8dda1f59fc3171e9e.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00011-of-00038.safetensors
+Fetching 50 files:  36%|███▌      | 18/50 [04:08<11:37, 21.80s/it]Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00012-of-00038.safetensors
+Fetching 50 files:  38%|███▊      | 19/50 [04:08<08:33, 16.58s/it]Downloading 'model-00013-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/VZkGAGEgUZ5hrJJb8rd3jKCzGsY=.ed1303d2a83c83cce7664f99fafcd31c83b52349c3410e4eb06024b267714c57.incomplete'
+Downloading 'model-00014-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/lKz6WiexEkfz2XASgwhvxID4MK0=.1affc94d9512e9d9a154fc9f22b567a52628a9d6b5337515968fd7b447a8c5e6.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00014-of-00038.safetensors
+Downloading 'model-00015-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/gGTwpd0iioMRx7DVB_4JNywzo4I=.10ca486bf73e649fd2aef6f461a2f1bfe1aad64f0aa22d3bfb731a755dba0705.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00013-of-00038.safetensors
+Fetching 50 files:  40%|████      | 20/50 [04:51<11:38, 23.28s/it]Downloading 'model-00016-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/sY1IeBSVG3u2vTB0um6XTyhCLzY=.44e20834654311173ba25c20cb66836c5def42ad027b256ed1c6c0d0dfb675bc.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00015-of-00038.safetensors
+Fetching 50 files:  44%|████▍     | 22/50 [05:31<10:12, 21.89s/it]Downloading 'model-00017-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/V1A6zCFGJI19-aUtnJ20M-CRcTg=.c69a4d5191c423794bd9e2fa70bfddc0f57d87baafcaf39bb72476542b0b7498.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00016-of-00038.safetensors
+Fetching 50 files:  46%|████▌     | 23/50 [05:32<07:38, 16.99s/it]Downloading 'model-00018-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/Ga7TqIVE_XVTw7S7qs4bQ_jBCtw=.3dcf567915d92dcac0c05ecb2345280d843d302e0d3b4636e91e51a45726979c.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00018-of-00038.safetensors
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00017-of-00038.safetensors
+Fetching 50 files:  48%|████▊     | 24/50 [06:12<09:50, 22.72s/it]Downloading 'model-00019-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/ydH0bXl1zuN7zET1OrOsthLHk7E=.5d6723d2e6008332df186a8c083cb29228c620e2f0d9eb43682b39b56fe77713.incomplete'
+Downloading 'model-00020-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/Id4wDOU7pnooCkfU2AqQ-7j1QVg=.00c5d22593422b8874338c55a15870bae2a0026776a69653daef7eafb3501bd8.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00020-of-00038.safetensors
+Downloading 'model-00021-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/TmdaZk_62gZXkv2Tg-ewMJZ90Ew=.f6d3d0ef425638d2deb16fb0c879cb1da12e095d27bd2d14a5d95e9a859233a0.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00019-of-00038.safetensors
+Fetching 50 files:  52%|█████▏    | 26/50 [06:54<08:47, 21.96s/it]Downloading 'model-00022-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/GT765iVtQcWtlu7yndyH6IMNAMU=.7c82bc721d5414ec092e4daba3405f014cfbe6b80367b71f86b1a8616b37496b.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00022-of-00038.safetensors
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00021-of-00038.safetensors
+Fetching 50 files:  56%|█████▌    | 28/50 [07:34<07:50, 21.40s/it]Downloading 'model-00023-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/zJrjupXKxweERZpgGjxo3RfgSH0=.1b2476cada32a2c2f12ca3afdac36b306dbefabe3073bd66fdba20c7c2148578.incomplete'
+Downloading 'model-00024-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/F0l7SggDkjpC11rlT3m611dxsxQ=.827003d07370f5d85e4e29fde5952ed9c93d97d3db88c2a4e78e0f04101bdb41.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00024-of-00038.safetensors
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00023-of-00038.safetensors
+Fetching 50 files:  60%|██████    | 30/50 [08:16<07:04, 21.22s/it]Downloading 'model-00025-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/E25rD1JA8ZqNVFlxqpu2ovma7yk=.fa0b2212c92b06c192787613d8deb67440bdcb82452fe37e5be3f8de501a8bfe.incomplete'
+Downloading 'model-00026-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/GfpJ3ywhEr-IPI96ohvTIW56IVQ=.0d2886961a7cc06955bee921a2f844a9370cf658cd1de33839fca7e2e1b3f1ae.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00026-of-00038.safetensors
+Downloading 'model-00027-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/xMi7ZFsERO4M0kHRvfRQ1_3Yoko=.a6b22b083984170384370762bd46e1ef690db5cac3168c57ae04ca3228bfe710.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00025-of-00038.safetensors
+Fetching 50 files:  64%|██████▍   | 32/50 [08:58<06:20, 21.15s/it]Downloading 'model-00028-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/jCHRqLqLHTy_urks3Q3kIjzTqUI=.0940176e8d7a4d722b8a11d3f5158de867b4969f3d3ef90ecd4050ab4f011536.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00027-of-00038.safetensors
+Fetching 50 files:  68%|██████▊   | 34/50 [09:36<05:26, 20.41s/it]Downloading 'model-00029-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/IAwfPwZFcr6Xwcvc9QRiMf0pYAM=.a8317367d87a1b4c1f254c074225b16eba0acb3391cb52e682c9ec004cf08fa5.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00028-of-00038.safetensors
+Fetching 50 files:  70%|███████   | 35/50 [09:39<04:16, 17.08s/it]Downloading 'model-00030-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/hcw_oxMY2xMERSkY4kkAq6fbnxY=.b906665ccd0d2b5143c18e627333951545f70ca1415a18b24f953895d4ca6b3d.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00029-of-00038.safetensors
+Fetching 50 files:  72%|███████▏  | 36/50 [10:17<05:01, 21.56s/it]Downloading 'model-00031-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/b4_dGRGuaBgRg3HTJMk2a8GpTIw=.73bf6bd0686cc088f1aa5205283ab235dba92af949c48be6e6c04572d03b7972.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00030-of-00038.safetensors
+Fetching 50 files:  74%|███████▍  | 37/50 [10:19<03:40, 16.98s/it]Downloading 'model-00032-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/b2nTG2ibb9Zzs15ocWUf_lONLgY=.13ea8296dd40e99cf3ce8de4435bd6740cb88f4fa8b2dbf256b969606853143f.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00031-of-00038.safetensors
+Fetching 50 files:  76%|███████▌  | 38/50 [10:59<04:32, 22.73s/it]Downloading 'model-00033-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/fDmJqd_Jt5A2xuLBzPhE9TVQEUU=.f5a4eea30a8a0a2143fb90397a1600f223b9d0c395b007cfe03673eae1c43c5a.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00032-of-00038.safetensors
+Fetching 50 files:  78%|███████▊  | 39/50 [11:00<03:07, 17.08s/it]Downloading 'model-00034-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/UyUYZnFYHSoI_IoIR-sjVTTsRAk=.ea65a4c7d00503467334d843865a136a22064dc34010e35ef06208ccf9a59c55.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00034-of-00038.safetensors
+Downloading 'model-00035-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/VGmbnQc__7NKnNipcISz1f3_wGE=.ea4569e19f1aacdd8d5c0cf11bfb4f751bc9e8e02dc64c3555bebe883a759897.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00033-of-00038.safetensors
+Fetching 50 files:  80%|████████  | 40/50 [11:41<03:56, 23.66s/it]Downloading 'model-00036-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/sXIEuG-zxYWu3XoAhMFbKPqMIRU=.e8f0fbf12bd8123b338b2f7e14706307fab75047a56a1143648083e11564a8d1.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00035-of-00038.safetensors
+Fetching 50 files:  84%|████████▍ | 42/50 [12:21<02:55, 21.92s/it]Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00036-of-00038.safetensors
+Fetching 50 files:  86%|████████▌ | 43/50 [12:22<01:58, 16.93s/it]Downloading 'model-00038-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/secRvB7UMW4M7Ffr7_NpceTWP4s=.f9b524193abf7718f1c37f3110a7540c6ca4caef5a5584038c77660acc20f02d.incomplete'
+Downloading 'model-00037-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/9ecYVDSbrv84JudqMwF_sfxv8-s=.ef6c4895570177b6cc11d4415c214e2e7edf96771d01855727c0d7f397337a33.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00037-of-00038.safetensors
+Fetching 50 files:  88%|████████▊ | 44/50 [12:45<01:51, 18.55s/it]Downloading 'model.safetensors.index.json' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/yVzAsSxRSINSz-tQbpx-TLpfkLU=.b26343271b8d94f88de2ded0423523d2f92f3839.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model.safetensors.index.json
+Downloading 'preprocessor_config.json' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/PYH5dHjks7Ei0Yd3X0Z8xIwsCNQ=.7f3b746825e5eef53ed8ed57a91df9e86ee62c0a.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/model-00038-of-00038.safetensors
+Fetching 50 files:  90%|█████████ | 45/50 [12:47<01:11, 14.30s/it]Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/preprocessor_config.json
+Fetching 50 files:  94%|█████████▍| 47/50 [12:48<00:24,  8.26s/it]Downloading 'tokenizer.json' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/HgM_lKo9sdSCfRtVg7MMFS7EKqo=.443909a61d429dff23010e5bddd28ff530edda00.incomplete'
+Downloading 'tokenizer_config.json' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/vzaExXFZNBay89bvlQv-ZcI6BTg=.91684ea3dc135a7d815e2c932054ce88c1aab41f.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/tokenizer_config.json
+Downloading 'vocab.json' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/j3m-Hy6QvBddw8RXA1uSWl1AJ0c=.4783fe10ac3adce15ac8f358ef5462739852c569.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/vocab.json
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/tokenizer.json
+Fetching 50 files:  96%|█████████▌| 48/50 [13:09<00:22, 11.18s/it]Fetching 50 files: 100%|██████████| 50/50 [13:09<00:00, 15.78s/it]
+/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct
+exit_code=0
