@@ -1,0 +1,17 @@
+log=/root/storage/mahaoxuan.mhx/code/MMR-Bench/logs/mmrbench_controlled_InternVL3_5-8B-Instruct_resume_20260608_161950.log
+work_dir=/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/outputs/mmrbench_controlled_InternVL3_5-8B-Instruct_20260608_125928
+config=/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/outputs/mmrbench_controlled_InternVL3_5-8B-Instruct_20260608_125928/mmrbench_controlled_InternVL3_5-8B-Instruct_20260608_125928.vlmeval_config.json
+command=
+set -euo pipefail
+cd /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit
+unset HTTP_PROXY HTTPS_PROXY ALL_PROXY http_proxy https_proxy all_proxy
+export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+export NO_PROXY=localhost,127.0.0.1,::1,33.3.178.31
+export no_proxy=localhost,127.0.0.1,::1,33.3.178.31
+export USE_COT=1
+export PRED_FORMAT=xlsx
+unset SPLIT_THINK
+/root/storage/miniconda3/envs/vlmevalkit/bin/python -m torch.distributed.run --nproc-per-node=8 --master-port=29583 run.py   --config /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/outputs/mmrbench_controlled_InternVL3_5-8B-Instruct_20260608_125928/mmrbench_controlled_InternVL3_5-8B-Instruct_20260608_125928.vlmeval_config.json   --judge Qwen3.5-122B-A10B   --judge-base-url http://33.3.178.31:8000/v1   --judge-key EMPTY   --judge-api-nproc 8   --judge-retry 2   --judge-timeout 900   --judge-args '{"temperature":0,"chat_template_kwargs":{"enable_thinking":false}}'   --api-nproc 1   --work-dir /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/outputs/mmrbench_controlled_InternVL3_5-8B-Instruct_20260608_125928   --reuse   --reuse-aux all
+cd /root/storage/mahaoxuan.mhx/code/MMR-Bench
+PYTHONPATH=/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit:${PYTHONPATH:-} /root/storage/miniconda3/envs/vlmevalkit/bin/python scripts/merge_vlmeval_results_to_mmr.py   --csv /root/storage/mahaoxuan.mhx/code/MMR-Bench/data/MMR-Bench.csv   --run-root /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/outputs/mmrbench_controlled_InternVL3_5-8B-Instruct_20260608_125928   --model InternVL3_5-8B-Instruct   --model-path /root/storage/mahaoxuan.mhx/model/InternVL3_5-8B-Instruct   --judge Qwen3.5-122B-A10B   --fix-mistral-regex   --backup
+

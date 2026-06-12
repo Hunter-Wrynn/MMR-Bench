@@ -1,0 +1,5 @@
+log=/root/storage/mahaoxuan.mhx/code/MMR-Bench/logs/mmrbench_controlled_InternVL3_5-8B-Instruct_resume_20260608_162208.log
+work_dir=/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/outputs/mmrbench_controlled_InternVL3_5-8B-Instruct_20260608_125928
+config=/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/outputs/mmrbench_controlled_InternVL3_5-8B-Instruct_20260608_125928/mmrbench_controlled_InternVL3_5-8B-Instruct_20260608_125928.vlmeval_config.json
+judge_base_url=http://33.3.172.86:8000/v1
+master_port=29584

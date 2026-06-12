@@ -1,0 +1,182 @@
+hf_bin=/usr/local/bin/hf
+hf_endpoint=https://hf-mirror.com
+target_dir=/root/storage/mahaoxuan.mhx/model
+max_workers=8
+models=32B 30B-A3B
+
+repo=Qwen/Qwen3-VL-32B-Instruct
+local_dir=/root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct
+command= /usr/local/bin/hf download Qwen/Qwen3-VL-32B-Instruct --repo-type model --local-dir /root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct --max-workers 8
+Fetching 26 files:   0%|          | 0/26 [00:00<?, ?it/s]Downloading 'model-00001-of-00014.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/.cache/huggingface/download/pbG4UIGKQUSKaaleQUCWb3BgDkg=.6b9dfbc930e505402ae9d7e5091a9d7d656cda5f34614f01cfe70bfb0cca27cb.incomplete' (resume from 146800640/4932328944)
+Downloading 'model-00003-of-00014.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/.cache/huggingface/download/LYDRbilAGtHhnqBNw5RnUwUk03o=.54f22e8b3168f8dc962fac0d313607ebf52a12b433d4cf3098a0d82d9f042940.incomplete' (resume from 1384120320/4875990552)
+Downloading 'model-00005-of-00014.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/.cache/huggingface/download/qssoT8LuITVQuBhkJNOesU6Qio8=.fc993c8a0e2a5b0570f383e1a95dc3a1281d1b224b6f3ee908f4827941e1dfc2.incomplete' (resume from 272629760/4875990584)
+Downloading 'model-00007-of-00014.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/.cache/huggingface/download/FMVlalxmdWZYPtYpVAyWBRBPPM0=.fb91da8cb01ff4de3eef0eab1c3e769a734b3a1aafc61734068638a0d6c86934.incomplete' (resume from 1205862400/4875990584)
+Downloading 'model-00002-of-00014.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/.cache/huggingface/download/A6tXAQB1l2j5Br3hOJU9iovkqSg=.d8bb44b4ff303fe76fe9e894022fb3dc71b15a2e716592790fe0e3c3e60478fa.incomplete' (resume from 52428800/4875990528)
+Downloading 'model-00006-of-00014.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/.cache/huggingface/download/eipL52JHnWPRGMX6_EDOAWjqVE8=.82f05620d1f718a90c362b221d6a184ff1a0f53301d706882d3df49695fa1974.incomplete' (resume from 1289748480/4875990584)
+Downloading 'model-00004-of-00014.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/.cache/huggingface/download/b15Ugez01IDS0G-59YZxFQ21tbw=.ad09c74d3c13ee29b5d0d84548fd8a3424a651564eaccd519946c296e59c557f.incomplete' (resume from 1279262720/4875990584)
+Downloading 'model-00008-of-00014.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/.cache/huggingface/download/l4ATfjXWl2imEyd8zTIudfa16Ms=.431ca56535c8781944ce3801f5eb61c45531e853ecc5846d936ebaf4761b764f.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/model-00003-of-00014.safetensors
+Downloading 'model-00009-of-00014.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/.cache/huggingface/download/wVYU5DF-DdeRzCItwH217TmWlmE=.3825e3f4302f4d2f7d76aa7430d2ce0864fde6b9e540a5806bf0d8e38e4d9f47.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/model-00007-of-00014.safetensors
+Downloading 'model-00010-of-00014.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/.cache/huggingface/download/FeBMD7IVMpiZ2fE6T2dpeI9Q11k=.aded5a4d1d5e22dbd8b6f79266b6eb88c840411b09527c53917a1419ace22e2f.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/model-00004-of-00014.safetensors
+Downloading 'model-00011-of-00014.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/.cache/huggingface/download/fLViwTrXLyVARzBTm5JRcVuyOYI=.3820ffe8d8d6477f6fe8d614ef3c87abb264ee39accebf43a1507b970d80946f.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/model-00005-of-00014.safetensors
+Downloading 'model-00012-of-00014.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/.cache/huggingface/download/svjEyD1bi5A-F21SeJjwoP2ZsU4=.05ad2d08ce71963121c9b03f1d9ec5d7641052f4b23c6c12b80d71065eb8e98e.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/model-00002-of-00014.safetensors
+Downloading 'model-00013-of-00014.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/.cache/huggingface/download/c59Sgq7vlbtqH2ml1xcnUINsyRM=.b64f2289871261fdd1abbd3b78bcd66011b341de3dc8eeb2ed1a473ee7c8d95c.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/model-00001-of-00014.safetensors
+Fetching 26 files:  27%|██▋       | 7/26 [00:50<02:16,  7.20s/it]Downloading 'model-00014-of-00014.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/.cache/huggingface/download/5b0XfRAAFzOlkQ8pnDARoifyddc=.e45b6c9998c77ee5a6577f9f47bc76416c1d4d387169e50c4c9d3134ea51b13b.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/model-00008-of-00014.safetensors
+Downloading 'model.safetensors.index.json' to '/root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/.cache/huggingface/download/yVzAsSxRSINSz-tQbpx-TLpfkLU=.b7f68f12031a25c81d72d46a284fe9e1daa448b8.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/model.safetensors.index.json
+Downloading 'preprocessor_config.json' to '/root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/.cache/huggingface/download/PYH5dHjks7Ei0Yd3X0Z8xIwsCNQ=.2ea84a437d448ff71b08df68fdd949d5cc4ebb64.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/preprocessor_config.json
+Downloading 'tokenizer.json' to '/root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/.cache/huggingface/download/HgM_lKo9sdSCfRtVg7MMFS7EKqo=.c6cc1014128b19d1fc46b1d30a23e3b1d35db421.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/tokenizer.json
+Downloading 'tokenizer_config.json' to '/root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/.cache/huggingface/download/vzaExXFZNBay89bvlQv-ZcI6BTg=.d3d3763207692c78780f4bf42d4dadf49a5c8012.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/tokenizer_config.json
+Downloading 'video_preprocessor_config.json' to '/root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/.cache/huggingface/download/7uK9jxGLvsg8Gxgsd_3Bi0MthgM=.3ba673a5ad7d4d13f54155ecd38b2a94a6dac8fe.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/video_preprocessor_config.json
+Downloading 'vocab.json' to '/root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/.cache/huggingface/download/j3m-Hy6QvBddw8RXA1uSWl1AJ0c=.4783fe10ac3adce15ac8f358ef5462739852c569.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/vocab.json
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/model-00014-of-00014.safetensors
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/model-00009-of-00014.safetensors
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/model-00010-of-00014.safetensors
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/model-00012-of-00014.safetensors
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/model-00011-of-00014.safetensors
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen3-VL-32B-Instruct/model-00013-of-00014.safetensors
+Error while downloading from https://cas-bridge.xethub.hf.co/xet-bridge-us/68f4d9f1645feb80d4568236/572bb762fd7113a3442d27e11f89acbfbf9e1f46c1969410dd22bf6d7b8f4948?Expires=1780995866&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jYXMtYnJpZGdlLnhldGh1Yi5oZi5jby94ZXQtYnJpZGdlLXVzLzY4ZjRkOWYxNjQ1ZmViODBkNDU2ODIzNi81NzJiYjc2MmZkNzExM2EzNDQyZDI3ZTExZjg5YWNiZmJmOWUxZjQ2YzE5Njk0MTBkZDIyYmY2ZDdiOGY0OTQ4KiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4MDk5NTg2Nn19fV19&Signature=MEUCIQC8SeZq0U0ItaEWGb-giiCeXflXp%7E9acHbplg0iChZ-kAIgGGh2SsfujnuxJzzTv1SqsbeGxANKA1PCQW3pmBuOACY_&Key-Pair-Id=K1LYXO563TGWFU&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00006-of-00014.safetensors%3B+filename%3D%22model-00006-of-00014.safetensors%22%3B&X-Xet-Cas-Uid=62171e3b6a99db28e0b3159d&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=cas%2F20260609%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260609T080426Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=1eb069c932e71476399f0173a589c2009b28a2eb8cfdf688fa174cc120f79925: HTTPSConnectionPool(host='cas-bridge.xethub.hf.co', port=443): Read timed out.
+Trying to resume download...
+Fetching 26 files:  42%|████▏     | 11/26 [1:23:28<1:53:49, 455.29s/it]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/urllib3/response.py", line 899, in _error_catcher
+    yield
+  File "/usr/local/lib/python3.12/dist-packages/urllib3/response.py", line 1024, in _raw_read
+    data = self._fp_read(amt, read1=read1) if not fp_closed else b""
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/urllib3/response.py", line 1007, in _fp_read
+    return self._fp.read(amt) if amt is not None else self._fp.read()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/http/client.py", line 479, in read
+    s = self.fp.read(amt)
+        ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/ssl.py", line 1252, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/ssl.py", line 1104, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/requests/models.py", line 820, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "/usr/local/lib/python3.12/dist-packages/urllib3/response.py", line 1253, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/urllib3/response.py", line 1108, in read
+    data = self._raw_read(amt)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/urllib3/response.py", line 1023, in _raw_read
+    with self._error_catcher():
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/usr/local/lib/python3.12/dist-packages/urllib3/response.py", line 904, in _error_catcher
+    raise ReadTimeoutError(self._pool, None, "Read timed out.") from e  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='cas-bridge.xethub.hf.co', port=443): Read timed out.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/file_download.py", line 500, in http_get
+    for chunk in r.iter_content(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+  File "/usr/local/lib/python3.12/dist-packages/requests/models.py", line 826, in generate
+    raise ConnectionError(e)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='cas-bridge.xethub.hf.co', port=443): Read timed out.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_http.py", line 403, in hf_raise_for_status
+    response.raise_for_status()
+  File "/usr/local/lib/python3.12/dist-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://cas-bridge.xethub.hf.co/xet-bridge-us/68f4d9f1645feb80d4568236/572bb762fd7113a3442d27e11f89acbfbf9e1f46c1969410dd22bf6d7b8f4948?Expires=1780995866&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jYXMtYnJpZGdlLnhldGh1Yi5oZi5jby94ZXQtYnJpZGdlLXVzLzY4ZjRkOWYxNjQ1ZmViODBkNDU2ODIzNi81NzJiYjc2MmZkNzExM2EzNDQyZDI3ZTExZjg5YWNiZmJmOWUxZjQ2YzE5Njk0MTBkZDIyYmY2ZDdiOGY0OTQ4KiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4MDk5NTg2Nn19fV19&Signature=MEUCIQC8SeZq0U0ItaEWGb-giiCeXflXp~9acHbplg0iChZ-kAIgGGh2SsfujnuxJzzTv1SqsbeGxANKA1PCQW3pmBuOACY_&Key-Pair-Id=K1LYXO563TGWFU&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00006-of-00014.safetensors%3B+filename%3D%22model-00006-of-00014.safetensors%22%3B&X-Xet-Cas-Uid=62171e3b6a99db28e0b3159d&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=cas%2F20260609%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260609T080426Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=1eb069c932e71476399f0173a589c2009b28a2eb8cfdf688fa174cc120f79925
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/bin/hf", line 7, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/cli/hf.py", line 59, in main
+    service.run()
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/cli/download.py", line 136, in run
+    print(self._download())  # Print path to downloaded files
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/cli/download.py", line 169, in _download
+    return snapshot_download(
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/_snapshot_download.py", line 332, in snapshot_download
+    thread_map(
+  File "/usr/local/lib/python3.12/dist-packages/tqdm/contrib/concurrent.py", line 69, in thread_map
+    return _executor_map(ThreadPoolExecutor, fn, *iterables, **tqdm_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/tqdm/contrib/concurrent.py", line 51, in _executor_map
+    return list(tqdm_class(ex.map(fn, *iterables, chunksize=chunksize), **kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/_snapshot_download.py", line 306, in _inner_hf_hub_download
+    return hf_hub_download(
+           ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/file_download.py", line 994, in hf_hub_download
+    return _hf_hub_download_to_local_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/file_download.py", line 1304, in _hf_hub_download_to_local_dir
+    _download_to_tmp_and_move(
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/file_download.py", line 1742, in _download_to_tmp_and_move
+    http_get(
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/file_download.py", line 517, in http_get
+    return http_get(
+           ^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/file_download.py", line 423, in http_get
+    r = _request_wrapper(
+        ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/file_download.py", line 307, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_http.py", line 467, in hf_raise_for_status
+    raise _format(HfHubHTTPError, message, response) from e
+huggingface_hub.errors.HfHubHTTPError: (Amz CF ID: FGFi81VyWNPEFXlGTaLMSikFfjWsitCYb0Um8LfYjvvsVPE4OoL72A==)
+
+403 Forbidden: None.
+Cannot access content at: https://cas-bridge.xethub.hf.co/xet-bridge-us/68f4d9f1645feb80d4568236/572bb762fd7113a3442d27e11f89acbfbf9e1f46c1969410dd22bf6d7b8f4948?Expires=1780995866&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jYXMtYnJpZGdlLnhldGh1Yi5oZi5jby94ZXQtYnJpZGdlLXVzLzY4ZjRkOWYxNjQ1ZmViODBkNDU2ODIzNi81NzJiYjc2MmZkNzExM2EzNDQyZDI3ZTExZjg5YWNiZmJmOWUxZjQ2YzE5Njk0MTBkZDIyYmY2ZDdiOGY0OTQ4KiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4MDk5NTg2Nn19fV19&Signature=MEUCIQC8SeZq0U0ItaEWGb-giiCeXflXp~9acHbplg0iChZ-kAIgGGh2SsfujnuxJzzTv1SqsbeGxANKA1PCQW3pmBuOACY_&Key-Pair-Id=K1LYXO563TGWFU&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00006-of-00014.safetensors%3B+filename%3D%22model-00006-of-00014.safetensors%22%3B&X-Xet-Cas-Uid=62171e3b6a99db28e0b3159d&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=cas%2F20260609%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260609T080426Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=1eb069c932e71476399f0173a589c2009b28a2eb8cfdf688fa174cc120f79925.
+Make sure your token has the correct permissions.
+<?xml version="1.0" encoding="UTF-8"?><Error><Code>AccessDenied</Code><Message>Access denied</Message></Error>

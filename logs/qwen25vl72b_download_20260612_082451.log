@@ -1,0 +1,26 @@
+repo_id=Qwen/Qwen2.5-VL-72B-Instruct
+local_dir=/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct
+hf_endpoint=https://hf-mirror.com
+max_workers=8
+Fetching 50 files:   0%|          | 0/50 [00:00<?, ?it/s]Still waiting to acquire lock on /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/.gitignore.lock (elapsed: 0.1 seconds)
+Still waiting to acquire lock on /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/.gitignore.lock (elapsed: 0.1 seconds)
+Downloading 'model-00001-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/6-E91IzGQuE9eT_lpRRXzXh0JRw=.4d35297e3d812dfc5008955f89d33c684a823e0798fcebd03afcb68d4b56b173.incomplete'
+Downloading 'README.md' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/Xn7B-BWUGOee2Y6hCZtEhtFu4BE=.11fa7df79159e6b0dbe053b7eba3a7ae8f15ee08.incomplete'
+Downloading 'config.json' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/8_PA_wEVGiVa2goH2H4KQOQpvVY=.fa11f56d73521ea3697a2b80436e01e0a66950b8.incomplete'
+Downloading 'chat_template.json' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/BqEbVjUtvDkrcHAfaoo906xJg7Y=.732bd68bc5427d1fb6c06a59b3bf2456b2155d24.incomplete'
+Downloading '.gitattributes' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/wPaCkH-WbT7GsmxMKKrNZTV4nSM=.a6344aac8c09253b3b630fb776ae94478aa0275b.incomplete'
+Downloading 'generation_config.json' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/3EVKVggOldJcKSsGjSdoUCN1AyQ=.1dfafa23e24b68b694722c6211e7da36730e9917.incomplete'
+Downloading 'merges.txt' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/PtHk0z_I45atnj23IIRhTExwT3w=.20024bfe7c83998e9aeaf98a0cd6a2ce6306c2f0.incomplete'
+Downloading 'LICENSE' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/DhCjcNQuMpl4FL346qr3tvNUCgY=.b547357c30b670122b149c11a1a898db8ecfe4c8.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/config.json
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/README.md
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.gitattributes
+Fetching 50 files:   2%|▏         | 1/50 [00:01<01:37,  1.98s/it]Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/generation_config.json
+Downloading 'model-00002-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/bNhlR8KhwJBvqMpTppcqCKjZTJs=.35039b606fd283b1c2d01779edf5b316793a0d495429b277baa5216177e6754f.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/chat_template.json
+Downloading 'model-00003-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/Rvjm7r3Ip1WP7s86T-RlSsn7B08=.1f79cf3cf38a5b903e70fffbf7e46bf958cf55dfac9e2120dc74c4ba478c2ab7.incomplete'
+Download complete. Moving file to /root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/LICENSE
+Fetching 50 files:   4%|▍         | 2/50 [00:02<00:49,  1.02s/it]Downloading 'model-00004-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/t5PXtEwesZvO46cfZDaYR5y2GPw=.81efdd682f485f0c14844d4ea36cfc5cedaa7aa9e64474f24e1b0ca6b7d20748.incomplete'
+Downloading 'model-00005-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/hrdoAfrwEvyv4E9jMIr0SRsT8yw=.36316ff00732a185bb4f409c9d0d94a713ac35b3ad73996828921ba6b45ae456.incomplete'
+Downloading 'model-00006-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/9GmAfknu3GVzxolxnJI1VIdgET4=.791cef1c4fddd52492f69f9ee1043d23782b632a3f376d7426c42329cde3588b.incomplete'
+Downloading 'model-00007-of-00038.safetensors' to '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct/.cache/huggingface/download/6sAeFMbt-5k0vZiCjw1Y62QrvJc=.93f9e978e31dbc380661ac7bde41b12b8a56a8db98db5d56704daf63b4caaf3c.incomplete'

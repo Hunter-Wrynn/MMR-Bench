@@ -1,0 +1,924 @@
+
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+RANK: 0, LOCAL_RANK: 0, WORLD_SIZE: 8,LOCAL_WORLD_SIZE: 8, CUDA_VISIBLE_DEVICES: 0
+RANK: 1, LOCAL_RANK: 1, WORLD_SIZE: 8,LOCAL_WORLD_SIZE: 8, CUDA_VISIBLE_DEVICES: 1
+RANK: 5, LOCAL_RANK: 5, WORLD_SIZE: 8,LOCAL_WORLD_SIZE: 8, CUDA_VISIBLE_DEVICES: 5
+RANK: 7, LOCAL_RANK: 7, WORLD_SIZE: 8,LOCAL_WORLD_SIZE: 8, CUDA_VISIBLE_DEVICES: 7RANK: 6, LOCAL_RANK: 6, WORLD_SIZE: 8,LOCAL_WORLD_SIZE: 8, CUDA_VISIBLE_DEVICES: 6
+
+RANK: 3, LOCAL_RANK: 3, WORLD_SIZE: 8,LOCAL_WORLD_SIZE: 8, CUDA_VISIBLE_DEVICES: 3
+RANK: 4, LOCAL_RANK: 4, WORLD_SIZE: 8,LOCAL_WORLD_SIZE: 8, CUDA_VISIBLE_DEVICES: 4
+RANK: 2, LOCAL_RANK: 2, WORLD_SIZE: 8,LOCAL_WORLD_SIZE: 8, CUDA_VISIBLE_DEVICES: 2
+[2026-06-08 16:24:14] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load.
+[2026-06-08 16:24:14] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load.
+[2026-06-08 16:24:14] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load.
+[2026-06-08 16:24:14] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load.
+[2026-06-08 16:24:14] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load.
+[2026-06-08 16:24:14] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load.
+[2026-06-08 16:24:14] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load.
+[2026-06-08 16:24:14] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load.
+[92m16:24:43 - LiteLLM:WARNING[0m: get_model_cost_map.py:271 - LiteLLM: Failed to fetch remote model cost map from https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json: _ssl.c:1000: The handshake operation timed out. Falling back to local backup.
+[2026-06-08 16:24:43] WARNING - get_model_cost_map.py: get_model_cost_map - 271: LiteLLM: Failed to fetch remote model cost map from https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json: _ssl.c:1000: The handshake operation timed out. Falling back to local backup.
+[92m16:24:43 - LiteLLM:WARNING[0m: get_model_cost_map.py:271 - LiteLLM: Failed to fetch remote model cost map from https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json: The read operation timed out. Falling back to local backup.
+[2026-06-08 16:24:43] WARNING - get_model_cost_map.py: get_model_cost_map - 271: LiteLLM: Failed to fetch remote model cost map from https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json: The read operation timed out. Falling back to local backup.
+[92m16:24:43 - LiteLLM:WARNING[0m: get_model_cost_map.py:271 - LiteLLM: Failed to fetch remote model cost map from https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json: The read operation timed out. Falling back to local backup.
+[2026-06-08 16:24:43] WARNING - get_model_cost_map.py: get_model_cost_map - 271: LiteLLM: Failed to fetch remote model cost map from https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json: The read operation timed out. Falling back to local backup.
+[92m16:24:44 - LiteLLM:WARNING[0m: get_model_cost_map.py:271 - LiteLLM: Failed to fetch remote model cost map from https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json: The read operation timed out. Falling back to local backup.
+[2026-06-08 16:24:44] WARNING - get_model_cost_map.py: get_model_cost_map - 271: LiteLLM: Failed to fetch remote model cost map from https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json: The read operation timed out. Falling back to local backup.
+[2026-06-08 16:24:58] ERROR - misc.py: load_env - 220: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load. 
+[2026-06-08 16:24:58] ERROR - misc.py: load_env - 220: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load. 
+[2026-06-08 16:24:58] ERROR - misc.py: load_env - 220: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load. 
+[2026-06-08 16:24:58] ERROR - misc.py: load_env - 220: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load. 
+[2026-06-08 16:24:58] ERROR - misc.py: load_env - 220: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load. 
+[2026-06-08 16:24:58] ERROR - misc.py: load_env - 220: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load. 
+[2026-06-08 16:24:58] ERROR - misc.py: load_env - 220: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load. 
+[2026-06-08 16:24:58] ERROR - misc.py: load_env - 220: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load. 
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Bootstrap: Using eth0:33.3.178.31<0>
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO cudaDriverVersion 13000
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO cudaDriverVersion 13000
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO NCCL version 2.28.9+cuda13.0
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Comm config Blocking set to 1
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Bootstrap: Using eth0:33.3.178.31<0>
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO NCCL version 2.28.9+cuda13.0
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Comm config Blocking set to 1
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO cudaDriverVersion 13000
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Bootstrap: Using eth0:33.3.178.31<0>
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO NCCL version 2.28.9+cuda13.0
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Comm config Blocking set to 1
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO cudaDriverVersion 13000
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO cudaDriverVersion 13000
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Bootstrap: Using eth0:33.3.178.31<0>
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Bootstrap: Using eth0:33.3.178.31<0>
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO NCCL version 2.28.9+cuda13.0
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO NCCL version 2.28.9+cuda13.0
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Comm config Blocking set to 1
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Comm config Blocking set to 1
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO cudaDriverVersion 13000
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Bootstrap: Using eth0:33.3.178.31<0>
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO NCCL version 2.28.9+cuda13.0
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Comm config Blocking set to 1
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO cudaDriverVersion 13000
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Bootstrap: Using eth0:33.3.178.31<0>
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO NCCL version 2.28.9+cuda13.0
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Comm config Blocking set to 1
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO cudaDriverVersion 13000
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Bootstrap: Using eth0:33.3.178.31<0>
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO NCCL version 2.28.9+cuda13.0
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Comm config Blocking set to 1
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 1.
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO transport/net_ib.cc:852 -> 3
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Failed to initialize NET plugin IB
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 1.
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO transport/net_ib.cc:852 -> 3
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Failed to initialize NET plugin IB
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO NET/Socket : Using [0]eth0:33.3.178.31<0> [1]eth1:2001:db8:804:8d5:2:f000:0:533<0> [2]eth2:2001:db8:804:8f4:2:f000:0:438<0> [3]eth3:2001:db8:804:cf3:2:f000:0:338<0> [4]eth4:2001:db8:804:d01:2:f000:0:66<0> [5]eth5:2001:db8:804:d62:2:f000:0:438<0> [6]eth6:2001:db8:804:de0:2:f000:0:162<0> [7]eth7:2001:db8:804:e32:2:f000:0:633<0> [8]eth8:2001:db8:804:e57:2:f000:0:437<0>
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO NET/Socket : Using [0]eth0:33.3.178.31<0> [1]eth1:2001:db8:804:8d5:2:f000:0:533<0> [2]eth2:2001:db8:804:8f4:2:f000:0:438<0> [3]eth3:2001:db8:804:cf3:2:f000:0:338<0> [4]eth4:2001:db8:804:d01:2:f000:0:66<0> [5]eth5:2001:db8:804:d62:2:f000:0:438<0> [6]eth6:2001:db8:804:de0:2:f000:0:162<0> [7]eth7:2001:db8:804:e32:2:f000:0:633<0> [8]eth8:2001:db8:804:e57:2:f000:0:437<0>
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Initialized NET plugin Socket
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Initialized NET plugin Socket
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Assigned NET plugin Socket to comm
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Assigned NET plugin Socket to comm
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Using network Socket
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Using network Socket
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 1.
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO transport/net_ib.cc:852 -> 3
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Failed to initialize NET plugin IB
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO NET/Socket : Using [0]eth0:33.3.178.31<0> [1]eth1:2001:db8:804:8d5:2:f000:0:533<0> [2]eth2:2001:db8:804:8f4:2:f000:0:438<0> [3]eth3:2001:db8:804:cf3:2:f000:0:338<0> [4]eth4:2001:db8:804:d01:2:f000:0:66<0> [5]eth5:2001:db8:804:d62:2:f000:0:438<0> [6]eth6:2001:db8:804:de0:2:f000:0:162<0> [7]eth7:2001:db8:804:e32:2:f000:0:633<0> [8]eth8:2001:db8:804:e57:2:f000:0:437<0>
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Initialized NET plugin Socket
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Assigned NET plugin Socket to comm
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Using network Socket
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 1.
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO transport/net_ib.cc:852 -> 3
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Failed to initialize NET plugin IB
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO NET/Socket : Using [0]eth0:33.3.178.31<0> [1]eth1:2001:db8:804:8d5:2:f000:0:533<0> [2]eth2:2001:db8:804:8f4:2:f000:0:438<0> [3]eth3:2001:db8:804:cf3:2:f000:0:338<0> [4]eth4:2001:db8:804:d01:2:f000:0:66<0> [5]eth5:2001:db8:804:d62:2:f000:0:438<0> [6]eth6:2001:db8:804:de0:2:f000:0:162<0> [7]eth7:2001:db8:804:e32:2:f000:0:633<0> [8]eth8:2001:db8:804:e57:2:f000:0:437<0>
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Initialized NET plugin Socket
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Assigned NET plugin Socket to comm
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Using network Socket
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 1.
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO transport/net_ib.cc:852 -> 3
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Failed to initialize NET plugin IB
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO NET/Socket : Using [0]eth0:33.3.178.31<0> [1]eth1:2001:db8:804:8d5:2:f000:0:533<0> [2]eth2:2001:db8:804:8f4:2:f000:0:438<0> [3]eth3:2001:db8:804:cf3:2:f000:0:338<0> [4]eth4:2001:db8:804:d01:2:f000:0:66<0> [5]eth5:2001:db8:804:d62:2:f000:0:438<0> [6]eth6:2001:db8:804:de0:2:f000:0:162<0> [7]eth7:2001:db8:804:e32:2:f000:0:633<0> [8]eth8:2001:db8:804:e57:2:f000:0:437<0>
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Initialized NET plugin Socket
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Assigned NET plugin Socket to comm
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Using network Socket
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 1.
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO transport/net_ib.cc:852 -> 3
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Failed to initialize NET plugin IB
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO NET/Socket : Using [0]eth0:33.3.178.31<0> [1]eth1:2001:db8:804:8d5:2:f000:0:533<0> [2]eth2:2001:db8:804:8f4:2:f000:0:438<0> [3]eth3:2001:db8:804:cf3:2:f000:0:338<0> [4]eth4:2001:db8:804:d01:2:f000:0:66<0> [5]eth5:2001:db8:804:d62:2:f000:0:438<0> [6]eth6:2001:db8:804:de0:2:f000:0:162<0> [7]eth7:2001:db8:804:e32:2:f000:0:633<0> [8]eth8:2001:db8:804:e57:2:f000:0:437<0>
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Initialized NET plugin Socket
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Assigned NET plugin Socket to comm
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Using network Socket
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 1.
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO transport/net_ib.cc:852 -> 3
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Failed to initialize NET plugin IB
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO NET/Socket : Using [0]eth0:33.3.178.31<0> [1]eth1:2001:db8:804:8d5:2:f000:0:533<0> [2]eth2:2001:db8:804:8f4:2:f000:0:438<0> [3]eth3:2001:db8:804:cf3:2:f000:0:338<0> [4]eth4:2001:db8:804:d01:2:f000:0:66<0> [5]eth5:2001:db8:804:d62:2:f000:0:438<0> [6]eth6:2001:db8:804:de0:2:f000:0:162<0> [7]eth7:2001:db8:804:e32:2:f000:0:633<0> [8]eth8:2001:db8:804:e57:2:f000:0:437<0>
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Initialized NET plugin Socket
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Assigned NET plugin Socket to comm
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Using network Socket
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO ncclCommInitRankConfig comm 0x563d1c771300 rank 6 nranks 8 cudaDev 0 nvmlDev 6 busId 93000 commId 0x19021223a1c10e81 - Init START
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO ncclCommInitRankConfig comm 0x557a51b73030 rank 0 nranks 8 cudaDev 0 nvmlDev 0 busId e000 commId 0x19021223a1c10e81 - Init START
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 1.
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO transport/net_ib.cc:852 -> 3
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Failed to initialize NET plugin IB
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO NET/Socket : Using [0]eth0:33.3.178.31<0> [1]eth1:2001:db8:804:8d5:2:f000:0:533<0> [2]eth2:2001:db8:804:8f4:2:f000:0:438<0> [3]eth3:2001:db8:804:cf3:2:f000:0:338<0> [4]eth4:2001:db8:804:d01:2:f000:0:66<0> [5]eth5:2001:db8:804:d62:2:f000:0:438<0> [6]eth6:2001:db8:804:de0:2:f000:0:162<0> [7]eth7:2001:db8:804:e32:2:f000:0:633<0> [8]eth8:2001:db8:804:e57:2:f000:0:437<0>
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Initialized NET plugin Socket
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Assigned NET plugin Socket to comm
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Using network Socket
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO ncclCommInitRankConfig comm 0x557b4f74e6b0 rank 3 nranks 8 cudaDev 0 nvmlDev 3 busId 67000 commId 0x19021223a1c10e81 - Init START
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO ncclCommInitRankConfig comm 0x55f6fa154320 rank 7 nranks 8 cudaDev 0 nvmlDev 7 busId e4000 commId 0x19021223a1c10e81 - Init START
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO ncclCommInitRankConfig comm 0x55d1d274ef10 rank 5 nranks 8 cudaDev 0 nvmlDev 5 busId 8c000 commId 0x19021223a1c10e81 - Init START
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO ncclCommInitRankConfig comm 0x56187f1721d0 rank 1 nranks 8 cudaDev 0 nvmlDev 1 busId 15000 commId 0x19021223a1c10e81 - Init START
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO ncclCommInitRankConfig comm 0x561dec373220 rank 4 nranks 8 cudaDev 0 nvmlDev 4 busId 85000 commId 0x19021223a1c10e81 - Init START
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO ncclCommInitRankConfig comm 0x55af8474e7b0 rank 2 nranks 8 cudaDev 0 nvmlDev 2 busId 1c000 commId 0x19021223a1c10e81 - Init START
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Bootstrap timings total 0.008008 (create 0.000045, send 0.000062, recv 0.000078, ring 0.005896, delay 0.000011)
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Bootstrap timings total 0.091413 (create 0.000052, send 0.000070, recv 0.083445, ring 0.005870, delay 0.000009)
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Bootstrap timings total 0.084278 (create 0.000047, send 0.000067, recv 0.000085, ring 0.083767, delay 0.000014)
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Bootstrap timings total 0.536046 (create 0.000049, send 0.000061, recv 0.421270, ring 0.103966, delay 0.000009)
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Bootstrap timings total 0.181110 (create 0.000051, send 0.000076, recv 0.096882, ring 0.000095, delay 0.000010)
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Bootstrap timings total 0.114880 (create 0.000048, send 0.000074, recv 0.000111, ring 0.114313, delay 0.000010)
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Bootstrap timings total 0.501477 (create 0.000029, send 0.000061, recv 0.410149, ring 0.090866, delay 0.000009)
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Bootstrap timings total 0.104575 (create 0.000050, send 0.000072, recv 0.000057, ring 0.083729, delay 0.000010)
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO MNNVL busId 0x15000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO MNNVL busId 0x93000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO MNNVL busId 0x85000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO MNNVL busId 0xe4000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO MNNVL busId 0x8c000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO MNNVL busId 0x67000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO MNNVL busId 0xe000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO MNNVL busId 0x1c000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 2 is 0-23,96-119. (GPU affinity = 0-23,96-119 ; CPU affinity = 0-191).
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 4 is 48-71,144-167. (GPU affinity = 48-71,144-167 ; CPU affinity = 0-191).
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 0 is 0-23,96-119. (GPU affinity = 0-23,96-119 ; CPU affinity = 0-191).
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO NCCL_NVLS_ENABLE set by environment to 0.
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO NCCL_NVLS_ENABLE set by environment to 0.
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO NCCL_NVLS_ENABLE set by environment to 0.
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 1 is 0-23,96-119. (GPU affinity = 0-23,96-119 ; CPU affinity = 0-191).
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO NCCL_NVLS_ENABLE set by environment to 0.
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 3 is 24-47,120-143. (GPU affinity = 24-47,120-143 ; CPU affinity = 0-191).
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO NCCL_NVLS_ENABLE set by environment to 0.
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 5 is 48-71,144-167. (GPU affinity = 48-71,144-167 ; CPU affinity = 0-191).
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 6 is 48-71,144-167. (GPU affinity = 48-71,144-167 ; CPU affinity = 0-191).
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO NCCL_NVLS_ENABLE set by environment to 0.
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO NCCL_NVLS_ENABLE set by environment to 0.
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 7 is 72-95,168-191. (GPU affinity = 72-95,168-191 ; CPU affinity = 0-191).
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO NCCL_NVLS_ENABLE set by environment to 0.
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO comm 0x557a51b73030 rank 0 nRanks 8 nNodes 1 localRanks 8 localRank 0 MNNVL 0
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO comm 0x55f6fa154320 rank 7 nRanks 8 nNodes 1 localRanks 8 localRank 7 MNNVL 0
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO comm 0x56187f1721d0 rank 1 nRanks 8 nNodes 1 localRanks 8 localRank 1 MNNVL 0
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO comm 0x55af8474e7b0 rank 2 nRanks 8 nNodes 1 localRanks 8 localRank 2 MNNVL 0
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO comm 0x563d1c771300 rank 6 nRanks 8 nNodes 1 localRanks 8 localRank 6 MNNVL 0
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO comm 0x55d1d274ef10 rank 5 nRanks 8 nNodes 1 localRanks 8 localRank 5 MNNVL 0
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO comm 0x557b4f74e6b0 rank 3 nRanks 8 nNodes 1 localRanks 8 localRank 3 MNNVL 0
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO comm 0x561dec373220 rank 4 nRanks 8 nNodes 1 localRanks 8 localRank 4 MNNVL 0
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 00/24 : 0 1 2 3 4 5 6 7
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 01/24 : 0 1 2 3 4 5 6 7
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Trees [0] -1/-1/-1->7->6 [1] -1/-1/-1->7->6 [2] -1/-1/-1->7->6 [3] -1/-1/-1->7->6 [4] -1/-1/-1->7->6 [5] -1/-1/-1->7->6 [6] -1/-1/-1->7->6 [7] -1/-1/-1->7->6 [8] -1/-1/-1->7->6 [9] -1/-1/-1->7->6 [10] -1/-1/-1->7->6 [11] -1/-1/-1->7->6 [12] -1/-1/-1->7->6 [13] -1/-1/-1->7->6 [14] -1/-1/-1->7->6 [15] -1/-1/-1->7->6 [16] -1/-1/-1->7->6 [17] -1/-1/-1->7->6 [18] -1/-1/-1->7->6 [19] -1/-1/-1->7->6 [20] -1/-1/-1->7->6 [21] -1/-1/-1->7->6 [22] -1/-1/-1->7->6 [23] -1/-1/-1->7->6
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 02/24 : 0 1 2 3 4 5 6 7
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 03/24 : 0 1 2 3 4 5 6 7
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Trees [0] 6/-1/-1->5->4 [1] 6/-1/-1->5->4 [2] 6/-1/-1->5->4 [3] 6/-1/-1->5->4 [4] 6/-1/-1->5->4 [5] 6/-1/-1->5->4 [6] 6/-1/-1->5->4 [7] 6/-1/-1->5->4 [8] 6/-1/-1->5->4 [9] 6/-1/-1->5->4 [10] 6/-1/-1->5->4 [11] 6/-1/-1->5->4 [12] 6/-1/-1->5->4 [13] 6/-1/-1->5->4 [14] 6/-1/-1->5->4 [15] 6/-1/-1->5->4 [16] 6/-1/-1->5->4 [17] 6/-1/-1->5->4 [18] 6/-1/-1->5->4 [19] 6/-1/-1->5->4 [20] 6/-1/-1->5->4 [21] 6/-1/-1->5->4 [22] 6/-1/-1->5->4 [23] 6/-1/-1->5->4
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 04/24 : 0 1 2 3 4 5 6 7
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Trees [0] 7/-1/-1->6->5 [1] 7/-1/-1->6->5 [2] 7/-1/-1->6->5 [3] 7/-1/-1->6->5 [4] 7/-1/-1->6->5 [5] 7/-1/-1->6->5 [6] 7/-1/-1->6->5 [7] 7/-1/-1->6->5 [8] 7/-1/-1->6->5 [9] 7/-1/-1->6->5 [10] 7/-1/-1->6->5 [11] 7/-1/-1->6->5 [12] 7/-1/-1->6->5 [13] 7/-1/-1->6->5 [14] 7/-1/-1->6->5 [15] 7/-1/-1->6->5 [16] 7/-1/-1->6->5 [17] 7/-1/-1->6->5 [18] 7/-1/-1->6->5 [19] 7/-1/-1->6->5 [20] 7/-1/-1->6->5 [21] 7/-1/-1->6->5 [22] 7/-1/-1->6->5 [23] 7/-1/-1->6->5
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 05/24 : 0 1 2 3 4 5 6 7
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 06/24 : 0 1 2 3 4 5 6 7
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 3/-1/-1->2->1 [2] 3/-1/-1->2->1 [3] 3/-1/-1->2->1 [4] 3/-1/-1->2->1 [5] 3/-1/-1->2->1 [6] 3/-1/-1->2->1 [7] 3/-1/-1->2->1 [8] 3/-1/-1->2->1 [9] 3/-1/-1->2->1 [10] 3/-1/-1->2->1 [11] 3/-1/-1->2->1 [12] 3/-1/-1->2->1 [13] 3/-1/-1->2->1 [14] 3/-1/-1->2->1 [15] 3/-1/-1->2->1 [16] 3/-1/-1->2->1 [17] 3/-1/-1->2->1 [18] 3/-1/-1->2->1 [19] 3/-1/-1->2->1 [20] 3/-1/-1->2->1 [21] 3/-1/-1->2->1 [22] 3/-1/-1->2->1 [23] 3/-1/-1->2->1
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 07/24 : 0 1 2 3 4 5 6 7
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Trees [0] 4/-1/-1->3->2 [1] 4/-1/-1->3->2 [2] 4/-1/-1->3->2 [3] 4/-1/-1->3->2 [4] 4/-1/-1->3->2 [5] 4/-1/-1->3->2 [6] 4/-1/-1->3->2 [7] 4/-1/-1->3->2 [8] 4/-1/-1->3->2 [9] 4/-1/-1->3->2 [10] 4/-1/-1->3->2 [11] 4/-1/-1->3->2 [12] 4/-1/-1->3->2 [13] 4/-1/-1->3->2 [14] 4/-1/-1->3->2 [15] 4/-1/-1->3->2 [16] 4/-1/-1->3->2 [17] 4/-1/-1->3->2 [18] 4/-1/-1->3->2 [19] 4/-1/-1->3->2 [20] 4/-1/-1->3->2 [21] 4/-1/-1->3->2 [22] 4/-1/-1->3->2 [23] 4/-1/-1->3->2
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 08/24 : 0 1 2 3 4 5 6 7
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 09/24 : 0 1 2 3 4 5 6 7
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 10/24 : 0 1 2 3 4 5 6 7
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 11/24 : 0 1 2 3 4 5 6 7
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 12/24 : 0 1 2 3 4 5 6 7
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 13/24 : 0 1 2 3 4 5 6 7
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Trees [0] 2/-1/-1->1->0 [1] 2/-1/-1->1->0 [2] 2/-1/-1->1->0 [3] 2/-1/-1->1->0 [4] 2/-1/-1->1->0 [5] 2/-1/-1->1->0 [6] 2/-1/-1->1->0 [7] 2/-1/-1->1->0 [8] 2/-1/-1->1->0 [9] 2/-1/-1->1->0 [10] 2/-1/-1->1->0 [11] 2/-1/-1->1->0 [12] 2/-1/-1->1->0 [13] 2/-1/-1->1->0 [14] 2/-1/-1->1->0 [15] 2/-1/-1->1->0 [16] 2/-1/-1->1->0 [17] 2/-1/-1->1->0 [18] 2/-1/-1->1->0 [19] 2/-1/-1->1->0 [20] 2/-1/-1->1->0 [21] 2/-1/-1->1->0 [22] 2/-1/-1->1->0 [23] 2/-1/-1->1->0
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 14/24 : 0 1 2 3 4 5 6 7
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 15/24 : 0 1 2 3 4 5 6 7
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 16/24 : 0 1 2 3 4 5 6 7
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 17/24 : 0 1 2 3 4 5 6 7
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 18/24 : 0 1 2 3 4 5 6 7
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 19/24 : 0 1 2 3 4 5 6 7
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 20/24 : 0 1 2 3 4 5 6 7
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 21/24 : 0 1 2 3 4 5 6 7
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 22/24 : 0 1 2 3 4 5 6 7
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 23/24 : 0 1 2 3 4 5 6 7
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO P2P Chunksize set to 524288
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO P2P Chunksize set to 524288
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO P2P Chunksize set to 524288
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1 [2] 1/-1/-1->0->-1 [3] 1/-1/-1->0->-1 [4] 1/-1/-1->0->-1 [5] 1/-1/-1->0->-1 [6] 1/-1/-1->0->-1 [7] 1/-1/-1->0->-1 [8] 1/-1/-1->0->-1 [9] 1/-1/-1->0->-1 [10] 1/-1/-1->0->-1 [11] 1/-1/-1->0->-1 [12] 1/-1/-1->0->-1 [13] 1/-1/-1->0->-1 [14] 1/-1/-1->0->-1 [15] 1/-1/-1->0->-1 [16] 1/-1/-1->0->-1 [17] 1/-1/-1->0->-1 [18] 1/-1/-1->0->-1 [19] 1/-1/-1->0->-1 [20] 1/-1/-1->0->-1 [21] 1/-1/-1->0->-1 [22] 1/-1/-1->0->-1 [23] 1/-1/-1->0->-1
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO P2P Chunksize set to 524288
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO P2P Chunksize set to 524288
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO P2P Chunksize set to 524288
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Trees [0] 5/-1/-1->4->3 [1] 5/-1/-1->4->3 [2] 5/-1/-1->4->3 [3] 5/-1/-1->4->3 [4] 5/-1/-1->4->3 [5] 5/-1/-1->4->3 [6] 5/-1/-1->4->3 [7] 5/-1/-1->4->3 [8] 5/-1/-1->4->3 [9] 5/-1/-1->4->3 [10] 5/-1/-1->4->3 [11] 5/-1/-1->4->3 [12] 5/-1/-1->4->3 [13] 5/-1/-1->4->3 [14] 5/-1/-1->4->3 [15] 5/-1/-1->4->3 [16] 5/-1/-1->4->3 [17] 5/-1/-1->4->3 [18] 5/-1/-1->4->3 [19] 5/-1/-1->4->3 [20] 5/-1/-1->4->3 [21] 5/-1/-1->4->3 [22] 5/-1/-1->4->3 [23] 5/-1/-1->4->3
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO P2P Chunksize set to 524288
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO P2P Chunksize set to 524288
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+wings-05ed5e473f5f-master-0:12466:13401 [0] NCCL INFO [Proxy Service] Device 0 CPU core 185
+wings-05ed5e473f5f-master-0:12466:13402 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 186
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+wings-05ed5e473f5f-master-0:12459:13403 [0] NCCL INFO [Proxy Service] Device 0 CPU core 49
+wings-05ed5e473f5f-master-0:12459:13404 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 52
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+wings-05ed5e473f5f-master-0:12462:13405 [0] NCCL INFO [Proxy Service] Device 0 CPU core 69
+wings-05ed5e473f5f-master-0:12462:13406 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 145
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+wings-05ed5e473f5f-master-0:12464:13407 [0] NCCL INFO [Proxy Service] Device 0 CPU core 145
+wings-05ed5e473f5f-master-0:12464:13408 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 146
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+wings-05ed5e473f5f-master-0:12458:13409 [0] NCCL INFO [Proxy Service] Device 0 CPU core 121
+wings-05ed5e473f5f-master-0:12458:13410 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 122
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+wings-05ed5e473f5f-master-0:12456:13411 [0] NCCL INFO [Proxy Service] Device 0 CPU core 99
+wings-05ed5e473f5f-master-0:12456:13412 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 100
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+wings-05ed5e473f5f-master-0:12455:13413 [0] NCCL INFO [Proxy Service] Device 0 CPU core 3
+wings-05ed5e473f5f-master-0:12455:13414 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 4
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+wings-05ed5e473f5f-master-0:12457:13415 [0] NCCL INFO [Proxy Service] Device 0 CPU core 98
+wings-05ed5e473f5f-master-0:12457:13416 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 99
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 32 p2p channels per peer
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 32 p2p channels per peer
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 32 p2p channels per peer
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 32 p2p channels per peer
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 32 p2p channels per peer
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 32 p2p channels per peer
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 32 p2p channels per peer
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 32 p2p channels per peer
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO CC Off, workFifoBytes 1048576
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO ncclCommInitRankConfig comm 0x55d1d274ef10 rank 5 nranks 8 cudaDev 0 nvmlDev 5 busId 8c000 commId 0x19021223a1c10e81 - Init COMPLETE
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO ncclCommInitRankConfig comm 0x55f6fa154320 rank 7 nranks 8 cudaDev 0 nvmlDev 7 busId e4000 commId 0x19021223a1c10e81 - Init COMPLETE
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO ncclCommInitRankConfig comm 0x557b4f74e6b0 rank 3 nranks 8 cudaDev 0 nvmlDev 3 busId 67000 commId 0x19021223a1c10e81 - Init COMPLETE
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 5 nranks 8 total 1.55 (kernels 0.46, alloc 0.79, bootstrap 0.10, allgathers 0.01, topo 0.08, graphs 0.02, connections 0.06, rest 0.04)
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO ncclCommInitRankConfig comm 0x56187f1721d0 rank 1 nranks 8 cudaDev 0 nvmlDev 1 busId 15000 commId 0x19021223a1c10e81 - Init COMPLETE
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 7 nranks 8 total 1.55 (kernels 0.45, alloc 0.78, bootstrap 0.11, allgathers 0.01, topo 0.08, graphs 0.02, connections 0.06, rest 0.04)
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 3 nranks 8 total 1.58 (kernels 0.41, alloc 0.79, bootstrap 0.18, allgathers 0.01, topo 0.08, graphs 0.02, connections 0.06, rest 0.03)
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 1 nranks 8 total 1.53 (kernels 0.47, alloc 0.76, bootstrap 0.09, allgathers 0.01, topo 0.08, graphs 0.02, connections 0.06, rest 0.04)
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO ncclCommInitRankConfig comm 0x563d1c771300 rank 6 nranks 8 cudaDev 0 nvmlDev 6 busId 93000 commId 0x19021223a1c10e81 - Init COMPLETE
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO ncclCommInitRankConfig comm 0x55af8474e7b0 rank 2 nranks 8 cudaDev 0 nvmlDev 2 busId 1c000 commId 0x19021223a1c10e81 - Init COMPLETE
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 6 nranks 8 total 1.64 (kernels 0.34, alloc 0.56, bootstrap 0.54, allgathers 0.01, topo 0.08, graphs 0.02, connections 0.06, rest 0.03)
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 2 nranks 8 total 1.49 (kernels 0.80, alloc 0.48, bootstrap 0.01, allgathers 0.01, topo 0.07, graphs 0.02, connections 0.06, rest 0.04)
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO ncclCommInitRankConfig comm 0x557a51b73030 rank 0 nranks 8 cudaDev 0 nvmlDev 0 busId e000 commId 0x19021223a1c10e81 - Init COMPLETE
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 0 nranks 8 total 1.64 (kernels 0.34, alloc 0.60, bootstrap 0.50, allgathers 0.01, topo 0.08, graphs 0.02, connections 0.06, rest 0.04)
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO ncclCommInitRankConfig comm 0x561dec373220 rank 4 nranks 8 cudaDev 0 nvmlDev 4 busId 85000 commId 0x19021223a1c10e81 - Init COMPLETE
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 4 nranks 8 total 1.55 (kernels 0.50, alloc 0.76, bootstrap 0.08, allgathers 0.00, topo 0.07, graphs 0.03, connections 0.06, rest 0.04)
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Channel 00/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Channel 01/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Channel 00/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Channel 02/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Channel 01/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Channel 00/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Channel 03/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Channel 02/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Channel 01/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Channel 04/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Channel 03/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 02/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Channel 00/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Channel 02/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Channel 04/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 03/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Channel 00/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Channel 05/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Channel 03/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 04/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Channel 01/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Channel 05/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Channel 00/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Channel 06/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Channel 04/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Channel 01/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Channel 07/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Channel 00/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Channel 02/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 05/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Channel 05/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Channel 02/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Channel 08/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Channel 06/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Channel 01/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Channel 03/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Channel 01/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Channel 03/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Channel 09/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Channel 07/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 06/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Channel 06/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Channel 02/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Channel 02/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Channel 04/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Channel 08/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Channel 10/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Channel 04/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Channel 07/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Channel 03/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Channel 03/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Channel 05/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Channel 09/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 07/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Channel 05/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Channel 04/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Channel 04/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Channel 08/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Channel 06/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Channel 09/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Channel 11/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 08/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Channel 10/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Channel 05/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Channel 05/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Channel 10/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Channel 12/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 09/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Channel 06/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Channel 07/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Channel 06/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Channel 06/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Channel 11/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Channel 11/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Channel 07/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Channel 08/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Channel 07/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Channel 13/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Channel 12/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Channel 07/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Channel 08/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Channel 09/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Channel 08/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 10/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Channel 09/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Channel 12/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Channel 14/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Channel 10/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Channel 09/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Channel 11/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Channel 10/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 11/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Channel 08/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Channel 13/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Channel 15/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Channel 12/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Channel 11/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Channel 13/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 12/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Channel 10/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Channel 14/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Channel 13/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Channel 16/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Channel 12/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Channel 09/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Channel 11/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Channel 15/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Channel 14/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Channel 17/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Channel 13/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Channel 14/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 13/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Channel 14/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Channel 15/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Channel 15/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Channel 12/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 14/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Channel 15/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Channel 16/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Channel 16/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Channel 18/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Channel 10/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Channel 13/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Channel 16/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Channel 17/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Channel 11/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Channel 19/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Channel 18/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 15/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Channel 20/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Channel 19/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Channel 16/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Channel 17/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Channel 17/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Channel 14/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 16/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Channel 20/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Channel 15/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Channel 12/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Channel 21/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Channel 13/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Channel 17/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 17/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Channel 14/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Channel 18/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 18/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Channel 16/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Channel 18/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Channel 17/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Channel 15/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Channel 22/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Channel 21/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Channel 19/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 19/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Channel 18/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Channel 18/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Channel 16/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 20/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Channel 22/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Channel 19/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Channel 23/0 : 4[4] -> 5[5] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Channel 20/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Channel 19/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Channel 19/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 21/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Channel 23/0 : 1[1] -> 2[2] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Channel 20/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Channel 21/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Channel 20/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Channel 17/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Channel 20/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 22/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Channel 21/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Channel 21/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Channel 21/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Channel 23/0 : 0[0] -> 1[1] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Channel 22/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Channel 18/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Channel 22/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Channel 22/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Channel 22/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Channel 23/0 : 7[7] -> 0[0] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Channel 23/0 : 6[6] -> 7[7] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Channel 19/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Channel 23/0 : 5[5] -> 6[6] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Channel 20/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Channel 23/0 : 3[3] -> 4[4] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Channel 21/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Channel 22/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Channel 23/0 : 2[2] -> 3[3] via P2P/CUMEM
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+[2026-06-08 16:25:04] INFO - vlmeval.__main__: --reuse is set, reuse-aux=all
+[2026-06-08 16:25:04] INFO - vlmeval.__main__: =========== InternVL3_5-8B-Instruct ===========
+[2026-06-08 16:25:04] INFO - vlmeval.__main__: =========== InternVL3_5-8B-Instruct ===========
+[2026-06-08 16:25:04] INFO - vlmeval.__main__: =========== InternVL3_5-8B-Instruct ===========
+[2026-06-08 16:25:04] INFO - vlmeval.__main__: =========== InternVL3_5-8B-Instruct ===========
+[2026-06-08 16:25:04] INFO - vlmeval.__main__: =========== InternVL3_5-8B-Instruct ===========
+[2026-06-08 16:25:04] INFO - vlmeval.__main__: =========== InternVL3_5-8B-Instruct ===========
+[2026-06-08 16:25:04] INFO - vlmeval.__main__: =========== InternVL3_5-8B-Instruct ===========
+[2026-06-08 16:25:04] INFO - vlmeval.__main__: =========== InternVL3_5-8B-Instruct ===========
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 1174, in <module>
+[rank0]:     main()
+[rank0]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 1169, in main
+[rank0]:     run_local_mode(args)
+[rank0]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 607, in run_local_mode
+[rank0]:     model = build_model_from_config(cfg['model'], model_name, args.use_vllm)
+[rank0]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 156, in build_model_from_config
+[rank0]:     model = getattr(vlmeval.vlm, cls_name)(**config)
+[rank0]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/vlmeval/vlm/internvl/internvl_chat.py", line 196, in __init__
+[rank0]:     self.model = AutoModel.from_pretrained(model_path, **model_kwargs).eval()
+[rank0]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 379, in from_pretrained
+[rank0]:     model_class = get_class_from_dynamic_module(
+[rank0]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 627, in get_class_from_dynamic_module
+[rank0]:     return get_class_in_module(class_name, final_module, force_reload=force_download)
+[rank0]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 297, in get_class_in_module
+[rank0]:     module_files: list[Path] = [module_file] + sorted(map(Path, get_relative_import_files(module_file)))
+[rank0]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 164, in get_relative_import_files
+[rank0]:     new_imports.extend(get_relative_imports(f))
+[rank0]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 133, in get_relative_imports
+[rank0]:     with open(module_file, encoding="utf-8") as f:
+[rank0]: FileNotFoundError: [Errno 2] No such file or directory: '/root/.cache/huggingface/modules/transformers_modules/InternVL3_5_hyphen_8B_hyphen_Instruct/77f507bcb222b428/configuration_intern_vit.py'
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 1174, in <module>
+[rank7]:     main()
+[rank7]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 1169, in main
+[rank7]:     run_local_mode(args)
+[rank7]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 607, in run_local_mode
+[rank7]:     model = build_model_from_config(cfg['model'], model_name, args.use_vllm)
+[rank7]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 156, in build_model_from_config
+[rank7]:     model = getattr(vlmeval.vlm, cls_name)(**config)
+[rank7]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/vlmeval/vlm/internvl/internvl_chat.py", line 196, in __init__
+[rank7]:     self.model = AutoModel.from_pretrained(model_path, **model_kwargs).eval()
+[rank7]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 379, in from_pretrained
+[rank7]:     model_class = get_class_from_dynamic_module(
+[rank7]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 627, in get_class_from_dynamic_module
+[rank7]:     return get_class_in_module(class_name, final_module, force_reload=force_download)
+[rank7]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 297, in get_class_in_module
+[rank7]:     module_files: list[Path] = [module_file] + sorted(map(Path, get_relative_import_files(module_file)))
+[rank7]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 164, in get_relative_import_files
+[rank7]:     new_imports.extend(get_relative_imports(f))
+[rank7]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 133, in get_relative_imports
+[rank7]:     with open(module_file, encoding="utf-8") as f:
+[rank7]: FileNotFoundError: [Errno 2] No such file or directory: '/root/.cache/huggingface/modules/transformers_modules/InternVL3_5_hyphen_8B_hyphen_Instruct/77f507bcb222b428/configuration_intern_vit.py'
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 1174, in <module>
+[rank4]:     main()
+[rank4]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 1169, in main
+[rank4]:     run_local_mode(args)
+[rank4]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 607, in run_local_mode
+[rank4]:     model = build_model_from_config(cfg['model'], model_name, args.use_vllm)
+[rank4]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 156, in build_model_from_config
+[rank4]:     model = getattr(vlmeval.vlm, cls_name)(**config)
+[rank4]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/vlmeval/vlm/internvl/internvl_chat.py", line 196, in __init__
+[rank4]:     self.model = AutoModel.from_pretrained(model_path, **model_kwargs).eval()
+[rank4]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 379, in from_pretrained
+[rank4]:     model_class = get_class_from_dynamic_module(
+[rank4]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 627, in get_class_from_dynamic_module
+[rank4]:     return get_class_in_module(class_name, final_module, force_reload=force_download)
+[rank4]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 297, in get_class_in_module
+[rank4]:     module_files: list[Path] = [module_file] + sorted(map(Path, get_relative_import_files(module_file)))
+[rank4]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 164, in get_relative_import_files
+[rank4]:     new_imports.extend(get_relative_imports(f))
+[rank4]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 133, in get_relative_imports
+[rank4]:     with open(module_file, encoding="utf-8") as f:
+[rank4]: FileNotFoundError: [Errno 2] No such file or directory: '/root/.cache/huggingface/modules/transformers_modules/InternVL3_5_hyphen_8B_hyphen_Instruct/77f507bcb222b428/configuration_intern_vit.py'
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 1174, in <module>
+[rank6]:     main()
+[rank6]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 1169, in main
+[rank6]:     run_local_mode(args)
+[rank6]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 607, in run_local_mode
+[rank6]:     model = build_model_from_config(cfg['model'], model_name, args.use_vllm)
+[rank6]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 156, in build_model_from_config
+[rank6]:     model = getattr(vlmeval.vlm, cls_name)(**config)
+[rank6]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/vlmeval/vlm/internvl/internvl_chat.py", line 196, in __init__
+[rank6]:     self.model = AutoModel.from_pretrained(model_path, **model_kwargs).eval()
+[rank6]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 379, in from_pretrained
+[rank6]:     model_class = get_class_from_dynamic_module(
+[rank6]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 627, in get_class_from_dynamic_module
+[rank6]:     return get_class_in_module(class_name, final_module, force_reload=force_download)
+[rank6]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 297, in get_class_in_module
+[rank6]:     module_files: list[Path] = [module_file] + sorted(map(Path, get_relative_import_files(module_file)))
+[rank6]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 164, in get_relative_import_files
+[rank6]:     new_imports.extend(get_relative_imports(f))
+[rank6]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 133, in get_relative_imports
+[rank6]:     with open(module_file, encoding="utf-8") as f:
+[rank6]: FileNotFoundError: [Errno 2] No such file or directory: '/root/.cache/huggingface/modules/transformers_modules/InternVL3_5_hyphen_8B_hyphen_Instruct/77f507bcb222b428/configuration_intern_vit.py'
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 1174, in <module>
+[rank1]:     main()
+[rank1]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 1169, in main
+[rank1]:     run_local_mode(args)
+[rank1]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 607, in run_local_mode
+[rank1]:     model = build_model_from_config(cfg['model'], model_name, args.use_vllm)
+[rank1]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 156, in build_model_from_config
+[rank1]:     model = getattr(vlmeval.vlm, cls_name)(**config)
+[rank1]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/vlmeval/vlm/internvl/internvl_chat.py", line 196, in __init__
+[rank1]:     self.model = AutoModel.from_pretrained(model_path, **model_kwargs).eval()
+[rank1]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 379, in from_pretrained
+[rank1]:     model_class = get_class_from_dynamic_module(
+[rank1]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 627, in get_class_from_dynamic_module
+[rank1]:     return get_class_in_module(class_name, final_module, force_reload=force_download)
+[rank1]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 297, in get_class_in_module
+[rank1]:     module_files: list[Path] = [module_file] + sorted(map(Path, get_relative_import_files(module_file)))
+[rank1]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 164, in get_relative_import_files
+[rank1]:     new_imports.extend(get_relative_imports(f))
+[rank1]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 133, in get_relative_imports
+[rank1]:     with open(module_file, encoding="utf-8") as f:
+[rank1]: FileNotFoundError: [Errno 2] No such file or directory: '/root/.cache/huggingface/modules/transformers_modules/InternVL3_5_hyphen_8B_hyphen_Instruct/77f507bcb222b428/configuration_intern_vit.py'
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 1174, in <module>
+[rank5]:     main()
+[rank5]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 1169, in main
+[rank5]:     run_local_mode(args)
+[rank5]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 607, in run_local_mode
+[rank5]:     model = build_model_from_config(cfg['model'], model_name, args.use_vllm)
+[rank5]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 156, in build_model_from_config
+[rank5]:     model = getattr(vlmeval.vlm, cls_name)(**config)
+[rank5]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/vlmeval/vlm/internvl/internvl_chat.py", line 196, in __init__
+[rank5]:     self.model = AutoModel.from_pretrained(model_path, **model_kwargs).eval()
+[rank5]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 379, in from_pretrained
+[rank5]:     model_class = get_class_from_dynamic_module(
+[rank5]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 627, in get_class_from_dynamic_module
+[rank5]:     return get_class_in_module(class_name, final_module, force_reload=force_download)
+[rank5]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 297, in get_class_in_module
+[rank5]:     module_files: list[Path] = [module_file] + sorted(map(Path, get_relative_import_files(module_file)))
+[rank5]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 164, in get_relative_import_files
+[rank5]:     new_imports.extend(get_relative_imports(f))
+[rank5]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 133, in get_relative_imports
+[rank5]:     with open(module_file, encoding="utf-8") as f:
+[rank5]: FileNotFoundError: [Errno 2] No such file or directory: '/root/.cache/huggingface/modules/transformers_modules/InternVL3_5_hyphen_8B_hyphen_Instruct/77f507bcb222b428/configuration_intern_vit.py'
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 1174, in <module>
+[rank2]:     main()
+[rank2]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 1169, in main
+[rank2]:     run_local_mode(args)
+[rank2]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 607, in run_local_mode
+[rank2]:     model = build_model_from_config(cfg['model'], model_name, args.use_vllm)
+[rank2]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 156, in build_model_from_config
+[rank2]:     model = getattr(vlmeval.vlm, cls_name)(**config)
+[rank2]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/vlmeval/vlm/internvl/internvl_chat.py", line 196, in __init__
+[rank2]:     self.model = AutoModel.from_pretrained(model_path, **model_kwargs).eval()
+[rank2]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 379, in from_pretrained
+[rank2]:     model_class = get_class_from_dynamic_module(
+[rank2]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 627, in get_class_from_dynamic_module
+[rank2]:     return get_class_in_module(class_name, final_module, force_reload=force_download)
+[rank2]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 297, in get_class_in_module
+[rank2]:     module_files: list[Path] = [module_file] + sorted(map(Path, get_relative_import_files(module_file)))
+[rank2]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 164, in get_relative_import_files
+[rank2]:     new_imports.extend(get_relative_imports(f))
+[rank2]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 133, in get_relative_imports
+[rank2]:     with open(module_file, encoding="utf-8") as f:
+[rank2]: FileNotFoundError: [Errno 2] No such file or directory: '/root/.cache/huggingface/modules/transformers_modules/InternVL3_5_hyphen_8B_hyphen_Instruct/77f507bcb222b428/configuration_intern_vit.py'
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 1174, in <module>
+[rank3]:     main()
+[rank3]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 1169, in main
+[rank3]:     run_local_mode(args)
+[rank3]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 607, in run_local_mode
+[rank3]:     model = build_model_from_config(cfg['model'], model_name, args.use_vllm)
+[rank3]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/run.py", line 156, in build_model_from_config
+[rank3]:     model = getattr(vlmeval.vlm, cls_name)(**config)
+[rank3]:   File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/vlmeval/vlm/internvl/internvl_chat.py", line 196, in __init__
+[rank3]:     self.model = AutoModel.from_pretrained(model_path, **model_kwargs).eval()
+[rank3]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 379, in from_pretrained
+[rank3]:     model_class = get_class_from_dynamic_module(
+[rank3]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 627, in get_class_from_dynamic_module
+[rank3]:     return get_class_in_module(class_name, final_module, force_reload=force_download)
+[rank3]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 297, in get_class_in_module
+[rank3]:     module_files: list[Path] = [module_file] + sorted(map(Path, get_relative_import_files(module_file)))
+[rank3]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 164, in get_relative_import_files
+[rank3]:     new_imports.extend(get_relative_imports(f))
+[rank3]:   File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 133, in get_relative_imports
+[rank3]:     with open(module_file, encoding="utf-8") as f:
+[rank3]: FileNotFoundError: [Errno 2] No such file or directory: '/root/.cache/huggingface/modules/transformers_modules/InternVL3_5_hyphen_8B_hyphen_Instruct/77f507bcb222b428/configuration_intern_vit.py'
+[rank0]:[W608 16:25:06.044123741 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+[rank3]:[W608 16:25:06.044644428 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+wings-05ed5e473f5f-master-0:12455:13454 [0] NCCL INFO comm 0x557a51b73030 rank 0 nRanks 8 cudaDev 0 busId e000 - Abort START
+wings-05ed5e473f5f-master-0:12458:13455 [0] NCCL INFO comm 0x557b4f74e6b0 rank 3 nRanks 8 cudaDev 0 busId 67000 - Abort START
+wings-05ed5e473f5f-master-0:12455:13454 [0] NCCL INFO misc/socket.cc:64 -> 3
+wings-05ed5e473f5f-master-0:12455:13454 [0] NCCL INFO misc/socket.cc:81 -> 3
+wings-05ed5e473f5f-master-0:12455:13454 [0] NCCL INFO misc/socket.cc:868 -> 3
+wings-05ed5e473f5f-master-0:12458:13455 [0] NCCL INFO misc/socket.cc:64 -> 3
+wings-05ed5e473f5f-master-0:12458:13455 [0] NCCL INFO misc/socket.cc:81 -> 3
+wings-05ed5e473f5f-master-0:12458:13455 [0] NCCL INFO misc/socket.cc:868 -> 3
+wings-05ed5e473f5f-master-0:12455:13413 [0] NCCL INFO misc/socket.cc:943 -> 3
+wings-05ed5e473f5f-master-0:12455:13454 [0] NCCL INFO misc/socket.cc:64 -> 3
+wings-05ed5e473f5f-master-0:12455:13454 [0] NCCL INFO misc/socket.cc:81 -> 3
+wings-05ed5e473f5f-master-0:12458:13455 [0] NCCL INFO misc/socket.cc:64 -> 3
+wings-05ed5e473f5f-master-0:12455:13454 [0] NCCL INFO misc/socket.cc:868 -> 3
+wings-05ed5e473f5f-master-0:12458:13455 [0] NCCL INFO misc/socket.cc:81 -> 3
+wings-05ed5e473f5f-master-0:12458:13455 [0] NCCL INFO misc/socket.cc:868 -> 3
+wings-05ed5e473f5f-master-0:12455:13454 [0] NCCL INFO misc/socket.cc:64 -> 3
+wings-05ed5e473f5f-master-0:12455:13454 [0] NCCL INFO misc/socket.cc:81 -> 3
+wings-05ed5e473f5f-master-0:12455:13454 [0] NCCL INFO misc/socket.cc:868 -> 3
+wings-05ed5e473f5f-master-0:12458:13409 [0] NCCL INFO misc/socket.cc:943 -> 3
+wings-05ed5e473f5f-master-0:12458:13455 [0] NCCL INFO misc/socket.cc:64 -> 3
+wings-05ed5e473f5f-master-0:12458:13455 [0] NCCL INFO misc/socket.cc:81 -> 3
+wings-05ed5e473f5f-master-0:12458:13455 [0] NCCL INFO misc/socket.cc:868 -> 3
+[rank7]:[W608 16:25:06.079893349 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+wings-05ed5e473f5f-master-0:12466:13456 [0] NCCL INFO comm 0x55f6fa154320 rank 7 nRanks 8 cudaDev 0 busId e4000 - Abort START
+wings-05ed5e473f5f-master-0:12466:13456 [0] NCCL INFO misc/socket.cc:64 -> 3
+wings-05ed5e473f5f-master-0:12466:13456 [0] NCCL INFO misc/socket.cc:81 -> 3
+wings-05ed5e473f5f-master-0:12466:13456 [0] NCCL INFO misc/socket.cc:868 -> 3
+wings-05ed5e473f5f-master-0:12455:13413 [0] NCCL INFO misc/socket.cc:943 -> 3
+wings-05ed5e473f5f-master-0:12466:13456 [0] NCCL INFO misc/socket.cc:64 -> 3
+wings-05ed5e473f5f-master-0:12466:13456 [0] NCCL INFO misc/socket.cc:81 -> 3
+wings-05ed5e473f5f-master-0:12466:13456 [0] NCCL INFO misc/socket.cc:868 -> 3
+wings-05ed5e473f5f-master-0:12466:13456 [0] NCCL INFO misc/socket.cc:64 -> 3
+wings-05ed5e473f5f-master-0:12466:13456 [0] NCCL INFO misc/socket.cc:81 -> 3
+wings-05ed5e473f5f-master-0:12466:13456 [0] NCCL INFO misc/socket.cc:868 -> 3
+wings-05ed5e473f5f-master-0:12466:13401 [0] NCCL INFO misc/socket.cc:943 -> 3
+[rank4]:[W608 16:25:06.145723960 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+wings-05ed5e473f5f-master-0:12459:13457 [0] NCCL INFO comm 0x561dec373220 rank 4 nRanks 8 cudaDev 0 busId 85000 - Abort START
+wings-05ed5e473f5f-master-0:12459:13457 [0] NCCL INFO misc/socket.cc:64 -> 3
+wings-05ed5e473f5f-master-0:12459:13457 [0] NCCL INFO misc/socket.cc:81 -> 3
+wings-05ed5e473f5f-master-0:12459:13457 [0] NCCL INFO misc/socket.cc:868 -> 3
+wings-05ed5e473f5f-master-0:12459:13457 [0] NCCL INFO misc/socket.cc:64 -> 3
+wings-05ed5e473f5f-master-0:12459:13457 [0] NCCL INFO misc/socket.cc:81 -> 3
+wings-05ed5e473f5f-master-0:12459:13457 [0] NCCL INFO misc/socket.cc:868 -> 3
+wings-05ed5e473f5f-master-0:12458:13409 [0] NCCL INFO misc/socket.cc:943 -> 3
+wings-05ed5e473f5f-master-0:12459:13457 [0] NCCL INFO misc/socket.cc:64 -> 3
+wings-05ed5e473f5f-master-0:12459:13457 [0] NCCL INFO misc/socket.cc:81 -> 3
+wings-05ed5e473f5f-master-0:12459:13457 [0] NCCL INFO misc/socket.cc:868 -> 3
+wings-05ed5e473f5f-master-0:12459:13403 [0] NCCL INFO misc/socket.cc:943 -> 3
+[rank1]:[W608 16:25:06.147895369 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+wings-05ed5e473f5f-master-0:12456:13458 [0] NCCL INFO comm 0x56187f1721d0 rank 1 nRanks 8 cudaDev 0 busId 15000 - Abort START
+wings-05ed5e473f5f-master-0:12456:13458 [0] NCCL INFO misc/socket.cc:64 -> 3
+wings-05ed5e473f5f-master-0:12456:13458 [0] NCCL INFO misc/socket.cc:81 -> 3
+wings-05ed5e473f5f-master-0:12456:13458 [0] NCCL INFO misc/socket.cc:868 -> 3
+wings-05ed5e473f5f-master-0:12456:13458 [0] NCCL INFO misc/socket.cc:64 -> 3
+wings-05ed5e473f5f-master-0:12456:13458 [0] NCCL INFO misc/socket.cc:81 -> 3
+wings-05ed5e473f5f-master-0:12456:13458 [0] NCCL INFO misc/socket.cc:868 -> 3
+wings-05ed5e473f5f-master-0:12456:13411 [0] NCCL INFO misc/socket.cc:943 -> 3
+wings-05ed5e473f5f-master-0:12456:13458 [0] NCCL INFO misc/socket.cc:64 -> 3
+wings-05ed5e473f5f-master-0:12456:13458 [0] NCCL INFO misc/socket.cc:81 -> 3
+wings-05ed5e473f5f-master-0:12456:13458 [0] NCCL INFO misc/socket.cc:868 -> 3
+[rank6]:[W608 16:25:06.175495372 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+wings-05ed5e473f5f-master-0:12464:13460 [0] NCCL INFO comm 0x563d1c771300 rank 6 nRanks 8 cudaDev 0 busId 93000 - Abort START
+wings-05ed5e473f5f-master-0:12464:13460 [0] NCCL INFO misc/socket.cc:64 -> 3
+wings-05ed5e473f5f-master-0:12464:13460 [0] NCCL INFO misc/socket.cc:81 -> 3
+wings-05ed5e473f5f-master-0:12464:13460 [0] NCCL INFO misc/socket.cc:868 -> 3
+wings-05ed5e473f5f-master-0:12464:13460 [0] NCCL INFO misc/socket.cc:64 -> 3
+wings-05ed5e473f5f-master-0:12464:13460 [0] NCCL INFO misc/socket.cc:81 -> 3
+wings-05ed5e473f5f-master-0:12464:13460 [0] NCCL INFO misc/socket.cc:868 -> 3
+wings-05ed5e473f5f-master-0:12464:13460 [0] NCCL INFO misc/socket.cc:64 -> 3
+wings-05ed5e473f5f-master-0:12464:13460 [0] NCCL INFO misc/socket.cc:81 -> 3
+wings-05ed5e473f5f-master-0:12464:13460 [0] NCCL INFO misc/socket.cc:868 -> 3
+wings-05ed5e473f5f-master-0:12464:13407 [0] NCCL INFO misc/socket.cc:943 -> 3
+wings-05ed5e473f5f-master-0:12466:13401 [0] NCCL INFO misc/socket.cc:943 -> 3
+[rank5]:[W608 16:25:06.178539556 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+wings-05ed5e473f5f-master-0:12462:13461 [0] NCCL INFO comm 0x55d1d274ef10 rank 5 nRanks 8 cudaDev 0 busId 8c000 - Abort START
+wings-05ed5e473f5f-master-0:12462:13461 [0] NCCL INFO misc/socket.cc:64 -> 3
+wings-05ed5e473f5f-master-0:12462:13461 [0] NCCL INFO misc/socket.cc:81 -> 3
+wings-05ed5e473f5f-master-0:12462:13461 [0] NCCL INFO misc/socket.cc:868 -> 3
+wings-05ed5e473f5f-master-0:12459:13403 [0] NCCL INFO misc/socket.cc:943 -> 3
+wings-05ed5e473f5f-master-0:12462:13461 [0] NCCL INFO misc/socket.cc:64 -> 3
+wings-05ed5e473f5f-master-0:12462:13461 [0] NCCL INFO misc/socket.cc:81 -> 3
+wings-05ed5e473f5f-master-0:12462:13461 [0] NCCL INFO misc/socket.cc:868 -> 3
+wings-05ed5e473f5f-master-0:12462:13405 [0] NCCL INFO misc/socket.cc:943 -> 3
+wings-05ed5e473f5f-master-0:12464:13407 [0] NCCL INFO misc/socket.cc:943 -> 3
+wings-05ed5e473f5f-master-0:12462:13461 [0] NCCL INFO misc/socket.cc:64 -> 3
+wings-05ed5e473f5f-master-0:12462:13461 [0] NCCL INFO misc/socket.cc:81 -> 3
+wings-05ed5e473f5f-master-0:12462:13461 [0] NCCL INFO misc/socket.cc:868 -> 3
+[rank2]:[W608 16:25:06.189263226 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+wings-05ed5e473f5f-master-0:12457:13462 [0] NCCL INFO comm 0x55af8474e7b0 rank 2 nRanks 8 cudaDev 0 busId 1c000 - Abort START
+wings-05ed5e473f5f-master-0:12457:13462 [0] NCCL INFO misc/socket.cc:64 -> 3
+wings-05ed5e473f5f-master-0:12457:13462 [0] NCCL INFO misc/socket.cc:81 -> 3
+wings-05ed5e473f5f-master-0:12457:13462 [0] NCCL INFO misc/socket.cc:868 -> 3
+wings-05ed5e473f5f-master-0:12456:13411 [0] NCCL INFO misc/socket.cc:943 -> 3
+wings-05ed5e473f5f-master-0:12457:13462 [0] NCCL INFO misc/socket.cc:64 -> 3
+wings-05ed5e473f5f-master-0:12457:13462 [0] NCCL INFO misc/socket.cc:81 -> 3
+wings-05ed5e473f5f-master-0:12457:13462 [0] NCCL INFO misc/socket.cc:868 -> 3
+wings-05ed5e473f5f-master-0:12457:13415 [0] NCCL INFO misc/socket.cc:943 -> 3
+wings-05ed5e473f5f-master-0:12457:13462 [0] NCCL INFO misc/socket.cc:64 -> 3
+wings-05ed5e473f5f-master-0:12457:13462 [0] NCCL INFO misc/socket.cc:81 -> 3
+wings-05ed5e473f5f-master-0:12457:13462 [0] NCCL INFO misc/socket.cc:868 -> 3
+wings-05ed5e473f5f-master-0:12466:13456 [0] NCCL INFO comm 0x55f6fa154320 rank 7 nranks 8 cudaDev 0 busId e4000 - Abort COMPLETE
+wings-05ed5e473f5f-master-0:12455:13454 [0] NCCL INFO comm 0x557a51b73030 rank 0 nranks 8 cudaDev 0 busId e000 - Abort COMPLETE
+wings-05ed5e473f5f-master-0:12456:13458 [0] NCCL INFO comm 0x56187f1721d0 rank 1 nranks 8 cudaDev 0 busId 15000 - Abort COMPLETE
+wings-05ed5e473f5f-master-0:12458:13455 [0] NCCL INFO comm 0x557b4f74e6b0 rank 3 nranks 8 cudaDev 0 busId 67000 - Abort COMPLETE
+wings-05ed5e473f5f-master-0:12459:13457 [0] NCCL INFO comm 0x561dec373220 rank 4 nranks 8 cudaDev 0 busId 85000 - Abort COMPLETE
+wings-05ed5e473f5f-master-0:12464:13460 [0] NCCL INFO comm 0x563d1c771300 rank 6 nranks 8 cudaDev 0 busId 93000 - Abort COMPLETE
+wings-05ed5e473f5f-master-0:12462:13461 [0] NCCL INFO comm 0x55d1d274ef10 rank 5 nranks 8 cudaDev 0 busId 8c000 - Abort COMPLETE
+wings-05ed5e473f5f-master-0:12457:13462 [0] NCCL INFO comm 0x55af8474e7b0 rank 2 nranks 8 cudaDev 0 busId 1c000 - Abort COMPLETE
+wings-05ed5e473f5f-master-0:12458:12458 [0] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault
+wings-05ed5e473f5f-master-0:12455:12455 [0] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault
+wings-05ed5e473f5f-master-0:12466:12466 [0] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault
+wings-05ed5e473f5f-master-0:12456:12456 [0] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault
+wings-05ed5e473f5f-master-0:12459:12459 [0] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault
+wings-05ed5e473f5f-master-0:12464:12464 [0] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault
+wings-05ed5e473f5f-master-0:12462:12462 [0] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault
+wings-05ed5e473f5f-master-0:12457:12457 [0] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault
+W0608 16:25:08.818000 12348 site-packages/torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 12455 closing signal SIGTERM
+W0608 16:25:08.819000 12348 site-packages/torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 12457 closing signal SIGTERM
+W0608 16:25:08.820000 12348 site-packages/torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 12458 closing signal SIGTERM
+W0608 16:25:08.820000 12348 site-packages/torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 12459 closing signal SIGTERM
+W0608 16:25:08.820000 12348 site-packages/torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 12462 closing signal SIGTERM
+W0608 16:25:08.820000 12348 site-packages/torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 12464 closing signal SIGTERM
+E0608 16:25:09.380000 12348 site-packages/torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 1) local_rank: 1 (pid: 12456) of binary: /root/storage/miniconda3/envs/vlmevalkit/bin/python
+Traceback (most recent call last):
+  File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/torch/distributed/run.py", line 994, in <module>
+    main()
+  File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+  File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+run.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-06-08_16:25:08
+  host      : wings-05ed5e473f5f-master-0
+  rank      : 7 (local_rank: 7)
+  exitcode  : 1 (pid: 12466)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-06-08_16:25:09
+  host      : wings-05ed5e473f5f-master-0
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 12455)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-06-08_16:25:09
+  host      : wings-05ed5e473f5f-master-0
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 12457)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-06-08_16:25:09
+  host      : wings-05ed5e473f5f-master-0
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 12458)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-06-08_16:25:09
+  host      : wings-05ed5e473f5f-master-0
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 12459)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-06-08_16:25:09
+  host      : wings-05ed5e473f5f-master-0
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 12462)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-06-08_16:25:09
+  host      : wings-05ed5e473f5f-master-0
+  rank      : 6 (local_rank: 6)
+  exitcode  : 1 (pid: 12464)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-06-08_16:25:08
+  host      : wings-05ed5e473f5f-master-0
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 12456)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

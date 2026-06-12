@@ -1,0 +1,73 @@
+[2026-06-12 09:09:40] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/.env, failed to load.
+[92m09:10:01 - LiteLLM:WARNING[0m: get_model_cost_map.py:271 - LiteLLM: Failed to fetch remote model cost map from https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json: _ssl.c:1000: The handshake operation timed out. Falling back to local backup.
+[2026-06-12 09:10:01] WARNING - get_model_cost_map.py: get_model_cost_map - 271: LiteLLM: Failed to fetch remote model cost map from https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json: _ssl.c:1000: The handshake operation timed out. Falling back to local backup.
+VLLM_SMOKE_START model=/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct cuda_visible=0,1,2,3,4,5,6,7
+config=use_vllm=True tensor_parallel_size=auto(8) gpu_memory_utilization=0.85 max_new_tokens=512 max_model_len=32768 max_pixels=12845056
+[before_load] nvidia-smi
+0, 4, 81076, 0
+1, 4, 81076, 0
+2, 4, 81076, 0
+3, 4, 81076, 0
+4, 4, 81076, 0
+5, 4, 81076, 0
+6, 4, 81076, 0
+7, 4, 81076, 0
+INFO 06-12 09:10:21 [utils.py:278] non-default args: {'max_model_len': 32768, 'tensor_parallel_size': 8, 'gpu_memory_utilization': 0.85, 'max_num_seqs': 5, 'disable_log_stats': True, 'limit_mm_per_prompt': {'image': 24}, 'model': '/root/storage/mahaoxuan.mhx/model/Qwen2.5-VL-72B-Instruct'}
+INFO 06-12 09:10:42 [model.py:617] Resolved architecture: Qwen2_5_VLForConditionalGeneration
+INFO 06-12 09:10:42 [model.py:1752] Using max model len 32768
+INFO 06-12 09:10:42 [scheduler.py:239] Chunked prefill is enabled with max_num_batched_tokens=16384.
+INFO 06-12 09:10:42 [vllm.py:977] Asynchronous scheduling is enabled.
+INFO 06-12 09:10:42 [kernel.py:270] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+INFO 06-12 09:10:45 [compilation.py:312] Enabled custom fusions: allreduce_rms
+[transformers] The `use_fast` parameter is deprecated and will be removed in a future version. Use `backend="torchvision"` instead of `use_fast=True`, or `backend="pil"` instead of `use_fast=False`.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/runpy.py", line 288, in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+  File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/runpy.py", line 252, in _get_code_from_file
+    with io.open_code(decoded_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/root/storage/mahaoxuan.mhx/code/MMR-Bench/<stdin>'
+VLLM_LOAD_FAIL type=RuntimeError message=Engine core initialization failed. See root cause above. Failed core proc(s): {}
+[after_load_fail] nvidia-smi
+0, 4, 81076, 0
+1, 4, 81076, 0
+2, 4, 81076, 0
+3, 4, 81076, 0
+4, 4, 81076, 0
+5, 4, 81076, 0
+6, 4, 81076, 0
+7, 4, 81076, 0
+Traceback (most recent call last):
+  File "<stdin>", line 29, in <module>
+  File "/root/storage/mahaoxuan.mhx/code/MMR-Bench/third_party/VLMEvalKit/vlmeval/vlm/qwen2_vl/model.py", line 294, in __init__
+    self.llm = LLM(
+  File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/vllm/entrypoints/llm.py", line 349, in __init__
+    self.llm_engine = LLMEngine.from_engine_args(
+  File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py", line 170, in from_engine_args
+    return cls(
+  File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py", line 104, in __init__
+    self.engine_core = EngineCoreClient.make_client(
+  File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/vllm/v1/engine/core_client.py", line 102, in make_client
+    return SyncMPClient(vllm_config, executor_class, log_stats)
+  File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+    return func(*args, **kwargs)
+  File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/vllm/v1/engine/core_client.py", line 755, in __init__
+    super().__init__(
+  File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/vllm/v1/engine/core_client.py", line 567, in __init__
+    with launch_core_engines(
+  File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/contextlib.py", line 142, in __exit__
+    next(self.gen)
+  File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/vllm/v1/engine/utils.py", line 1150, in launch_core_engines
+    wait_for_engine_startup(
+  File "/root/storage/miniconda3/envs/vlmevalkit/lib/python3.10/site-packages/vllm/v1/engine/utils.py", line 1209, in wait_for_engine_startup
+    raise RuntimeError(
+RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}
+exit_status=1
