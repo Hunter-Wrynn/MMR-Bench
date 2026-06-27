@@ -1,48 +1,44 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-TARGET_DIR="/root/storage/mahaoxuan.mhx/model"
-HF_ENDPOINT_VALUE="https://hf-mirror.com"
-MAX_WORKERS="8"
+TARGET_DIR="${TARGET_DIR:-/root/storage/mahaoxuan.mhx/model}"
+HF_ENDPOINT_VALUE="${HF_ENDPOINT_VALUE:-https://hf-mirror.com}"
+MAX_WORKERS="${MAX_WORKERS:-8}"
 REVISION=""
 DRY_RUN=0
 
 usage() {
   cat <<'EOF'
 Usage:
-  scripts/download_qwen3vl_models_hf_mirror.sh [options] [2B|4B|8B|32B|30B-A3B ...]
+  scripts/download_selected_vlm_models_hf_mirror.sh [options] [Gemma4-12B|Gemma3-27B|InternVL35-38B ...]
 
-Download native Qwen3-VL Instruct models through hf-mirror without proxies.
-If no model size is specified, all default models are downloaded:
-  2B, 4B, 8B, 32B, 30B-A3B
+Sequentially download selected VLM checkpoints through hf-mirror without proxies.
+Default models:
+  Gemma4-12B, InternVL35-38B
 
 Options:
   --target-dir DIR      Download root. Default: /root/storage/mahaoxuan.mhx/model
-  --max-workers N       Parallel download workers for hf download. Default: 8
+  --max-workers N       Parallel file workers for one model download. Default: 8
   --revision REV        Optional Hugging Face revision.
   --dry-run             Print planned downloads only.
   -h, --help            Show this help.
 
-Examples:
-  scripts/download_qwen3vl_models_hf_mirror.sh
-  scripts/download_qwen3vl_models_hf_mirror.sh 32B 30B-A3B
+Notes:
+  google/gemma-3-27b-it is manual gated on Hugging Face. Downloading it requires
+  a token/account that has accepted the Gemma license.
 EOF
 }
 
 declare -A REPOS=(
-  ["2B"]="Qwen/Qwen3-VL-2B-Instruct"
-  ["4B"]="Qwen/Qwen3-VL-4B-Instruct"
-  ["8B"]="Qwen/Qwen3-VL-8B-Instruct"
-  ["32B"]="Qwen/Qwen3-VL-32B-Instruct"
-  ["30B-A3B"]="Qwen/Qwen3-VL-30B-A3B-Instruct"
+  ["Gemma4-12B"]="google/gemma-4-12B-it"
+  ["Gemma3-27B"]="google/gemma-3-27b-it"
+  ["InternVL35-38B"]="OpenGVLab/InternVL3_5-38B-Instruct"
 )
 
 declare -A LOCAL_NAMES=(
-  ["2B"]="Qwen3-VL-2B-Instruct"
-  ["4B"]="Qwen3-VL-4B-Instruct"
-  ["8B"]="Qwen3-VL-8B-Instruct"
-  ["32B"]="Qwen3-VL-32B-Instruct"
-  ["30B-A3B"]="Qwen3-VL-30B-A3B-Instruct"
+  ["Gemma4-12B"]="Gemma-4-12B-it"
+  ["Gemma3-27B"]="Gemma-3-27B-it"
+  ["InternVL35-38B"]="InternVL3_5-38B-Instruct"
 )
 
 SELECTED=()
@@ -69,28 +65,20 @@ while [[ $# -gt 0 ]]; do
       usage
       exit 0
       ;;
-    2b|2B)
-      SELECTED+=("2B")
+    Gemma4-12B|gemma4-12b|Gemma-4-12B|gemma-4-12b)
+      SELECTED+=("Gemma4-12B")
       shift
       ;;
-    4b|4B)
-      SELECTED+=("4B")
+    Gemma3-27B|gemma3-27b|Gemma-3-27B|gemma-3-27b)
+      SELECTED+=("Gemma3-27B")
       shift
       ;;
-    8b|8B)
-      SELECTED+=("8B")
-      shift
-      ;;
-    32b|32B)
-      SELECTED+=("32B")
-      shift
-      ;;
-    30b-a3b|30B-A3B|30b-A3B|30B-a3b)
-      SELECTED+=("30B-A3B")
+    InternVL35-38B|internvl35-38b|InternVL3_5-38B|internvl3_5-38b)
+      SELECTED+=("InternVL35-38B")
       shift
       ;;
     *)
-      echo "Unknown option or model size: $1" >&2
+      echo "Unknown option or model key: $1" >&2
       usage >&2
       exit 2
       ;;
@@ -98,13 +86,13 @@ while [[ $# -gt 0 ]]; do
 done
 
 if [[ ${#SELECTED[@]} -eq 0 ]]; then
-  SELECTED=("2B" "4B" "8B" "32B" "30B-A3B")
+  SELECTED=("Gemma4-12B" "InternVL35-38B")
 fi
 
 if command -v hf >/dev/null 2>&1; then
   HF_BIN="$(command -v hf)"
 else
-  echo "Missing hf CLI. Install huggingface_hub or activate the vlmevalkit environment." >&2
+  echo "Missing hf CLI. Activate an environment with huggingface_hub installed." >&2
   exit 1
 fi
 
@@ -114,11 +102,13 @@ mkdir -p "${TARGET_DIR}"
 unset HTTP_PROXY HTTPS_PROXY ALL_PROXY http_proxy https_proxy all_proxy
 export HF_ENDPOINT="${HF_ENDPOINT_VALUE}"
 export HUGGINGFACE_HUB_CACHE="${HUGGINGFACE_HUB_CACHE:-${TARGET_DIR}/.hf_cache}"
+export HF_HUB_DISABLE_XET="${HF_HUB_DISABLE_XET:-1}"
 export NO_PROXY="*"
 export no_proxy="*"
 
 echo "hf_bin=${HF_BIN}"
 echo "hf_endpoint=${HF_ENDPOINT}"
+echo "hf_hub_disable_xet=${HF_HUB_DISABLE_XET}"
 echo "target_dir=${TARGET_DIR}"
 echo "max_workers=${MAX_WORKERS}"
 echo "models=${SELECTED[*]}"
@@ -145,6 +135,7 @@ for key in "${SELECTED[@]}"; do
   printf '\n'
 
   if [[ "${DRY_RUN}" -eq 0 ]]; then
+    mkdir -p "${local_dir}"
     "${cmd[@]}"
   fi
 done

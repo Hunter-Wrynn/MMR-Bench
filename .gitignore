@@ -9,7 +9,7 @@ __pycache__/
 # Outputs / artifacts
 outputs/
 tmp/
-
+logs/
 # Data (keep docs)
 data/*
 !data/README.md

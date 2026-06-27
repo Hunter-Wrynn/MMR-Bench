@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+
+exec "${REPO_ROOT}/scripts/run_mmrbench_vlmeval_controlled_8gpu.sh" \
+  --config-file "${REPO_ROOT}/configs/internvl3_2b_mmrbench_controlled.env" \
+  --judge-ip 33.41.7.100 \
+  --gpus 4,5,6,7 \
+  --nproc 4 \
+  --master-port 29611 \
+  "$@"

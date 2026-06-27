@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import ast
+import json
 import shutil
 import sys
 from dataclasses import dataclass
@@ -31,6 +32,20 @@ SPECS = [
     DatasetSpec("MathVision", "MathVision", "mathvision"),
     DatasetSpec("MathVerse_MINI_Vision_Only", "MathVerse", "mathverse"),
 ]
+
+
+def load_tokenizer(model_path: str, tokenizer_kwargs: dict):
+    tokenizer_config = Path(model_path) / "tokenizer_config.json"
+    if tokenizer_config.exists():
+        try:
+            tokenizer_class = json.loads(tokenizer_config.read_text(encoding="utf-8")).get("tokenizer_class")
+        except Exception:
+            tokenizer_class = None
+        if tokenizer_class == "Qwen2Tokenizer":
+            from transformers import Qwen2Tokenizer
+
+            return Qwen2Tokenizer.from_pretrained(model_path, **tokenizer_kwargs)
+    return AutoTokenizer.from_pretrained(model_path, **tokenizer_kwargs)
 
 
 def normalize_index(value) -> str:
@@ -227,7 +242,7 @@ def main() -> None:
     tokenizer_kwargs = {"trust_remote_code": True}
     if args.fix_mistral_regex:
         tokenizer_kwargs["fix_mistral_regex"] = True
-    tokenizer = AutoTokenizer.from_pretrained(args.model_path, **tokenizer_kwargs)
+    tokenizer = load_tokenizer(args.model_path, tokenizer_kwargs)
     cols, source_counts = build_model_columns(df, model_root, args.model, args.judge, tokenizer)
     merged = insert_columns(df, cols)
 

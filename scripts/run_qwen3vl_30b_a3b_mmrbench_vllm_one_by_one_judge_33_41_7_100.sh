@@ -4,6 +4,6 @@ set -euo pipefail
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
 exec "${REPO_ROOT}/scripts/run_mmrbench_vlmeval_one_by_one.sh" \
-  --config-file "${REPO_ROOT}/configs/qwen25vl_72b_vllm_mmrbench.env" \
-  --judge-ip 33.3.183.91 \
+  --config-file "${REPO_ROOT}/configs/qwen3vl_30b_a3b_mmrbench_vllm.env" \
+  --judge-ip 33.41.7.100 \
   "$@"

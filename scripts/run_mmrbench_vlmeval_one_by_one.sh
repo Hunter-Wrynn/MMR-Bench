@@ -28,6 +28,7 @@ CLI_NPROC=""
 CLI_MASTER_PORT=""
 CLI_USE_VLLM=""
 CLI_USE_COT=""
+CLI_SLEEP_BETWEEN_SECONDS=""
 CONTINUE_ON_ERROR=0
 MERGE_REQUESTED=""
 DO_BACKUP=1
@@ -43,7 +44,7 @@ launch and log file, while all outputs are written under the same work-dir so
 the final merge can collect the standard 7 benchmarks.
 
 Default target:
-  Qwen2.5-VL-72B-Instruct, vLLM TP=8, judge http://33.41.18.26:8000/v1.
+  Qwen2.5-VL-72B-Instruct, vLLM TP=8, judge http://33.3.183.91:8000/v1.
 
 Examples:
   # Full MMR-Bench, one benchmark at a time
@@ -61,7 +62,7 @@ Examples:
 Options:
   --config-file PATH      Runtime config file.
   --benchmarks LIST       Comma-separated or space-separated benchmark list.
-  --judge-ip IP           Judge host IP. Default: 33.41.18.26.
+  --judge-ip IP           Judge host IP. Default: 33.3.183.91.
   --judge-port PORT       Judge port. Default: 8000.
   --judge-base-url URL    Full judge base URL.
   --judge-model NAME      Judge model name.
@@ -81,6 +82,7 @@ Options:
   --use-vllm              Enable VLMEvalKit --use-vllm.
   --no-use-vllm           Disable VLMEvalKit --use-vllm.
   --use-cot 0|1           Set USE_COT.
+  --sleep-between SECONDS Sleep between completed benchmarks. Default: 0.
   --merge                 Force final merge. Only valid for the standard 7 benchmarks.
   --no-merge              Skip final merge.
   --no-backup             Do not create data/MMR-Bench.before_<model>.csv.
@@ -114,6 +116,7 @@ while [[ $# -gt 0 ]]; do
     --use-vllm) CLI_USE_VLLM=1; shift ;;
     --no-use-vllm) CLI_USE_VLLM=0; shift ;;
     --use-cot) CLI_USE_COT="$2"; shift 2 ;;
+    --sleep-between) CLI_SLEEP_BETWEEN_SECONDS="$2"; shift 2 ;;
     --merge) MERGE_REQUESTED=1; shift ;;
     --no-merge) MERGE_REQUESTED=0; shift ;;
     --no-backup) DO_BACKUP=0; shift ;;
@@ -148,7 +151,7 @@ CSV_PATH="${CLI_CSV_PATH:-${MMR_CSV_PATH:-${CSV_PATH:-${REPO_ROOT}/data/MMR-Benc
 BENCHMARKS="${CLI_BENCHMARKS:-${MMR_BENCHMARKS:-${BENCHMARKS:-${DEFAULT_MMR_BENCHMARKS}}}}"
 
 JUDGE_MODEL="${CLI_JUDGE_MODEL:-${MMR_JUDGE_MODEL:-${JUDGE_MODEL:-Qwen3.5-122B-A10B}}}"
-JUDGE_IP="${CLI_JUDGE_IP:-${MMR_JUDGE_IP:-33.41.18.26}}"
+JUDGE_IP="${CLI_JUDGE_IP:-${MMR_JUDGE_IP:-${JUDGE_IP:-33.3.183.91}}}"
 JUDGE_PORT="${CLI_JUDGE_PORT:-${MMR_JUDGE_PORT:-${JUDGE_PORT:-8000}}}"
 JUDGE_BASE_URL="${CLI_JUDGE_BASE_URL:-${MMR_JUDGE_BASE_URL:-${JUDGE_BASE_URL:-}}}"
 JUDGE_KEY="${CLI_JUDGE_KEY:-${MMR_JUDGE_KEY:-${JUDGE_KEY:-EMPTY}}}"
@@ -159,6 +162,7 @@ MASTER_PORT="${CLI_MASTER_PORT:-${MMR_MASTER_PORT:-${MASTER_PORT:-29574}}}"
 MODE="${CLI_MODE:-${MMR_MODE:-${MODE:-all}}}"
 USE_VLLM="${CLI_USE_VLLM:-${MMR_USE_VLLM:-${USE_VLLM:-0}}}"
 USE_COT="${CLI_USE_COT:-${MMR_USE_COT:-${USE_COT:-1}}}"
+SLEEP_BETWEEN_SECONDS="${CLI_SLEEP_BETWEEN_SECONDS:-${MMR_SLEEP_BETWEEN_SECONDS:-${SLEEP_BETWEEN_SECONDS:-0}}}"
 LOG_DIR="${CLI_LOG_DIR:-${MMR_LOG_DIR:-${LOG_DIR:-${REPO_ROOT}/logs}}}"
 
 if [[ -z "${MODEL}" || -z "${MODEL_PATH}" || -z "${MODEL_CLASS}" ]]; then
@@ -174,6 +178,10 @@ if [[ "${MODE}" != "all" && "${MODE}" != "infer" && "${MODE}" != "eval" ]]; then
 fi
 if [[ "${USE_VLLM}" != "0" && "${USE_VLLM}" != "1" ]]; then
   echo "Invalid USE_VLLM value: ${USE_VLLM}. Expected 0 or 1." >&2
+  exit 2
+fi
+if ! [[ "${SLEEP_BETWEEN_SECONDS}" =~ ^[0-9]+$ ]]; then
+  echo "Invalid --sleep-between: ${SLEEP_BETWEEN_SECONDS}. Expected non-negative integer seconds." >&2
   exit 2
 fi
 if [[ ! -x "${CONDA_ENV}/bin/python" ]]; then
@@ -235,6 +243,7 @@ echo "mode=${MODE}"
 echo "use_vllm=${USE_VLLM}"
 echo "gpus=${GPUS}"
 echo "nproc=${NPROC:-auto}"
+echo "sleep_between_seconds=${SLEEP_BETWEEN_SECONDS}"
 echo "work_dir=${WORK_DIR}"
 echo "log_dir=${LOG_DIR}"
 echo "final_merge_to_mmr_csv=${DO_MERGE}"
@@ -294,6 +303,12 @@ PY
       echo "Stopping after failed benchmark: ${bench}" >&2
       exit 1
     fi
+  fi
+
+  if [[ "${DRY_RUN}" -ne 1 && "${SLEEP_BETWEEN_SECONDS}" -gt 0 && "${idx}" -lt "$((${#BENCH_ARRAY[@]} - 1))" ]]; then
+    echo
+    echo "Sleeping ${SLEEP_BETWEEN_SECONDS}s before next benchmark..."
+    sleep "${SLEEP_BETWEEN_SECONDS}"
   fi
 done
 

@@ -60,6 +60,8 @@ USE_VLLM="${MMR_USE_VLLM:-${USE_VLLM:-0}}"
 USE_COT="${MMR_USE_COT:-${USE_COT:-1}}"
 API_NPROC="${MMR_API_NPROC:-${API_NPROC:-1}}"
 PREWARM_REMOTE_CODE="${MMR_PREWARM_REMOTE_CODE:-${PREWARM_REMOTE_CODE:-1}}"
+REUSE="${MMR_REUSE:-${REUSE:-0}}"
+REUSE_AUX="${MMR_REUSE_AUX:-${REUSE_AUX:-all}}"
 
 TIMESTAMP="$(date -u +%Y%m%d_%H%M%S)"
 RUN_NAME="${MMR_RUN_NAME:-${RUN_NAME:-mmrbench_controlled_${MODEL:-model}_${TIMESTAMP}}}"
@@ -114,6 +116,9 @@ Options:
   --use-vllm              Pass --use-vllm to VLMEvalKit run.py.
   --no-use-vllm           Disable --use-vllm even if config enables it.
   --use-cot 0|1           Set USE_COT. Default comes from config.
+  --reuse                 Ask VLMEvalKit to reuse complete prediction/eval files from previous runs under work-dir.
+  --reuse-aux all|infer|none
+                          Reuse auxiliary files. Default: all.
   --no-prewarm-remote-code
                           Disable local trust_remote_code cache prewarm before torchrun.
   --merge                 Force merge. Only valid for the standard 7 MMR-Bench benchmarks.
@@ -148,6 +153,8 @@ while [[ $# -gt 0 ]]; do
     --use-vllm) USE_VLLM=1; shift ;;
     --no-use-vllm) USE_VLLM=0; shift ;;
     --use-cot) USE_COT="$2"; shift 2 ;;
+    --reuse) REUSE=1; shift ;;
+    --reuse-aux) REUSE_AUX="$2"; shift 2 ;;
     --no-prewarm-remote-code) PREWARM_REMOTE_CODE=0; shift ;;
     --merge) MERGE_REQUESTED=1; shift ;;
     --no-merge) MERGE_REQUESTED=0; shift ;;
@@ -198,6 +205,19 @@ if [[ "${MODE}" != "all" && "${MODE}" != "infer" && "${MODE}" != "eval" ]]; then
 fi
 if [[ "${USE_VLLM}" != "0" && "${USE_VLLM}" != "1" ]]; then
   echo "Invalid USE_VLLM value: ${USE_VLLM}. Expected 0 or 1." >&2
+  exit 2
+fi
+if [[ "${REUSE}" != "0" && "${REUSE}" != "1" ]]; then
+  echo "Invalid REUSE value: ${REUSE}. Expected 0 or 1." >&2
+  exit 2
+fi
+if [[ "${REUSE_AUX}" != "all" && "${REUSE_AUX}" != "infer" && "${REUSE_AUX}" != "none" ]]; then
+  echo "Invalid REUSE_AUX value: ${REUSE_AUX}. Expected all, infer, or none." >&2
+  exit 2
+fi
+if [[ "${USE_VLLM}" -eq 1 && "${NPROC}" -gt 1 ]]; then
+  echo "Invalid vLLM launch: USE_VLLM=1 with nproc=${NPROC} would nest vLLM workers under torchrun." >&2
+  echo "Set --nproc 1 and expose all desired GPUs through --gpus, e.g. --gpus 0,1,2,3,4,5,6,7." >&2
   exit 2
 fi
 
@@ -312,7 +332,7 @@ write_metadata() {
     "$MODEL_ARGS_JSON" "$GENERATED_CONFIG" "$BENCHMARK_REGISTRY" "$BENCHMARKS_CANON" \
     "$CSV_PATH" "$WORK_DIR" "$LOG_FILE" "$MODE" "$USE_VLLM" "$USE_COT" "$JUDGE_MODEL" "$JUDGE_BASE_URL" \
     "$JUDGE_NPROC" "$JUDGE_RETRY" "$JUDGE_TIMEOUT" "$JUDGE_ARGS" "$GPUS" "$NPROC" \
-    "$MASTER_PORT" "$DO_MERGE" <<'PY'
+    "$MASTER_PORT" "$DO_MERGE" "$REUSE" "$REUSE_AUX" <<'PY'
 import json
 import pathlib
 import sys
@@ -322,7 +342,7 @@ import sys
     model_args_json, generated_config, benchmark_registry, benchmarks,
     csv_path, work_dir, log_file, vlmeval_mode, use_vllm, use_cot, judge_model, judge_base_url,
     judge_nproc, judge_retry, judge_timeout, judge_args, gpus, nproc,
-    master_port, do_merge,
+    master_port, do_merge, reuse, reuse_aux,
 ) = sys.argv[1:]
 
 meta = {
@@ -345,6 +365,8 @@ meta = {
         "use_vllm": bool(int(use_vllm)),
         "use_cot": use_cot,
         "pred_format": "xlsx",
+        "reuse": bool(int(reuse)),
+        "reuse_aux": reuse_aux,
     },
     "judge": {
         "model": judge_model,
@@ -369,25 +391,46 @@ PY
 
 write_metadata >/dev/null
 
-CMD=(
-  "${CONDA_ENV}/bin/python" -m torch.distributed.run
-  "--nproc-per-node=${NPROC}"
-  "--master-port=${MASTER_PORT}"
-  run.py
-  --config "${GENERATED_CONFIG}"
-  --judge "${JUDGE_MODEL}"
-  --judge-base-url "${JUDGE_BASE_URL}"
-  --judge-key "${JUDGE_KEY}"
-  --judge-api-nproc "${JUDGE_NPROC}"
-  --judge-retry "${JUDGE_RETRY}"
-  --judge-timeout "${JUDGE_TIMEOUT}"
-  --judge-args "${JUDGE_ARGS}"
-  --api-nproc "${API_NPROC}"
-  --work-dir "${WORK_DIR}"
-  --mode "${MODE}"
-)
+if [[ "${USE_VLLM}" -eq 1 && "${NPROC}" -eq 1 ]]; then
+  CMD=(
+    "${CONDA_ENV}/bin/python"
+    run.py
+    --config "${GENERATED_CONFIG}"
+    --judge "${JUDGE_MODEL}"
+    --judge-base-url "${JUDGE_BASE_URL}"
+    --judge-key "${JUDGE_KEY}"
+    --judge-api-nproc "${JUDGE_NPROC}"
+    --judge-retry "${JUDGE_RETRY}"
+    --judge-timeout "${JUDGE_TIMEOUT}"
+    --judge-args "${JUDGE_ARGS}"
+    --api-nproc "${API_NPROC}"
+    --work-dir "${WORK_DIR}"
+    --mode "${MODE}"
+  )
+else
+  CMD=(
+    "${CONDA_ENV}/bin/python" -m torch.distributed.run
+    "--nproc-per-node=${NPROC}"
+    "--master-port=${MASTER_PORT}"
+    run.py
+    --config "${GENERATED_CONFIG}"
+    --judge "${JUDGE_MODEL}"
+    --judge-base-url "${JUDGE_BASE_URL}"
+    --judge-key "${JUDGE_KEY}"
+    --judge-api-nproc "${JUDGE_NPROC}"
+    --judge-retry "${JUDGE_RETRY}"
+    --judge-timeout "${JUDGE_TIMEOUT}"
+    --judge-args "${JUDGE_ARGS}"
+    --api-nproc "${API_NPROC}"
+    --work-dir "${WORK_DIR}"
+    --mode "${MODE}"
+  )
+fi
 if [[ "${USE_VLLM}" -eq 1 ]]; then
   CMD+=(--use-vllm)
+fi
+if [[ "${REUSE}" -eq 1 ]]; then
+  CMD+=(--reuse --reuse-aux "${REUSE_AUX}")
 fi
 
 echo "run_name=${RUN_NAME}"
@@ -401,12 +444,15 @@ echo "gpus=${GPUS}"
 echo "nproc=${NPROC}"
 echo "mode=${MODE}"
 echo "use_vllm=${USE_VLLM}"
+echo "reuse=${REUSE}"
+echo "reuse_aux=${REUSE_AUX}"
 echo "merge_to_mmr_csv=${DO_MERGE}"
 echo "work_dir=${WORK_DIR}"
 echo "log_file=${LOG_FILE}"
 echo "metadata=${META_FILE}"
 printf 'command='
-printf ' %q' CUDA_VISIBLE_DEVICES="${GPUS}" USE_COT="${USE_COT}" PRED_FORMAT=xlsx NO_PROXY="${NO_PROXY_VALUE}" "${CMD[@]}"
+printf ' %q' CUDA_VISIBLE_DEVICES="${GPUS}" USE_COT="${USE_COT}" PRED_FORMAT=xlsx \
+  NO_PROXY="${NO_PROXY_VALUE}" no_proxy="${NO_PROXY_VALUE}" "${CMD[@]}"
 printf '\n'
 
 if [[ "${DRY_RUN}" -eq 1 ]]; then
@@ -451,7 +497,19 @@ if "fix_mistral_regex" in model_args:
     tokenizer_kwargs["fix_mistral_regex"] = model_args["fix_mistral_regex"]
 
 print(f"prewarm_remote_code_cache=model_path:{model_path}")
-AutoTokenizer.from_pretrained(str(model_path), **tokenizer_kwargs)
+tokenizer_config = model_path / "tokenizer_config.json"
+tokenizer_class = None
+if tokenizer_config.exists():
+    try:
+        tokenizer_class = json.loads(tokenizer_config.read_text(encoding="utf-8")).get("tokenizer_class")
+    except Exception:
+        tokenizer_class = None
+if tokenizer_class == "Qwen2Tokenizer":
+    from transformers import Qwen2Tokenizer
+
+    Qwen2Tokenizer.from_pretrained(str(model_path), **tokenizer_kwargs)
+else:
+    AutoTokenizer.from_pretrained(str(model_path), **tokenizer_kwargs)
 cfg = AutoConfig.from_pretrained(str(model_path), trust_remote_code=True)
 
 auto_map = getattr(cfg, "auto_map", None) or {}
