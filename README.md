@@ -5,7 +5,9 @@
 </p>
 
 <p align="center">
-  <img alt="ECCV 2026" src="https://img.shields.io/badge/ECCV-2026%20Accepted-6A5ACD?style=for-the-badge">
+  <a href="https://doi.org/10.1007/978-3-032-37083-9_34">
+    <img alt="ECCV 2026" src="https://img.shields.io/badge/ECCV-2026-6A5ACD?style=for-the-badge">
+  </a>
   <a href="https://huggingface.co/datasets/gh0stHunter/MMR-Bench-V2">
     <img alt="MMR-Bench V2" src="https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-MMR--Bench%20V2-FFD21E?style=for-the-badge">
   </a>
@@ -15,6 +17,20 @@
 </p>
 
 <p align="center">
+  Haoxuan Ma<sup>†</sup> ·
+  <a href="https://www.lamda.nju.edu.cn/laign/">Guannan Lai</a><sup>†</sup> ·
+  <a href="https://www.lamda.nju.edu.cn/yehj/">Han-Jia Ye</a>
+  <br>
+  Nanjing University · <sup>†</sup>Equal contribution
+</p>
+
+<p align="center">
+  <a href="https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/11867.pdf"><b>ECCV Final PDF</b></a>
+  &nbsp;&bull;&nbsp;
+  <a href="https://doi.org/10.1007/978-3-032-37083-9_34"><b>Proceedings</b></a>
+  &nbsp;&bull;&nbsp;
+  <a href="https://arxiv.org/abs/2601.17814"><b>arXiv Preprint</b></a>
+  &nbsp;&bull;&nbsp;
   <a href="https://huggingface.co/datasets/gh0stHunter/MMR-Bench-V2"><b>Dataset</b></a>
   &nbsp;&bull;&nbsp;
   <a href="#quick-start"><b>Quick Start</b></a>
@@ -26,6 +42,7 @@
 
 ## News
 
+- **October 4, 2026 — The [ECCV 2026 proceedings version](https://doi.org/10.1007/978-3-032-37083-9_34) is published.** The [conference final PDF](https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/11867.pdf) and [BibTeX](#citation) are available below.
 - **August 2026 — Accepted to ECCV 2026!** 🎉
 - **August 2026 — [MMR-Bench V2](https://huggingface.co/datasets/gh0stHunter/MMR-Bench-V2) is now available on Hugging Face.** V2 expands the benchmark to 18 datasets and 44 multimodal models, with a normalized and reproducible data release.
 
@@ -68,6 +85,12 @@ V2 unifies the benchmark into a consistent release with:
 - manifests, model metadata, checksums, and validation utilities for reproducibility.
 
 The Hugging Face data card documents the current file layout, schemas, coverage, and known issues. Large data artifacts are intentionally hosted there instead of in this Git repository.
+
+### Paper and release versions
+
+The **ECCV 2026 paper** evaluates 10 candidate models on 8 datasets, with 11,000 instances across three routing scenarios. **MMR-Bench V2** is the expanded data release covering 18 datasets and 44 multimodal models. When comparing with the paper's tables, use the candidate pools, dataset combinations, splits, and cost definitions specified in the [conference final version](https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/11867.pdf).
+
+The [Springer proceedings record](https://doi.org/10.1007/978-3-032-37083-9_34) is the published version; the [arXiv entry](https://arxiv.org/abs/2601.17814) hosts the earlier preprint.
 
 ## Installation
 
@@ -177,7 +200,23 @@ Contributions to routing methods, benchmark adapters, evaluation, and documentat
 
 ## Citation
 
-If you find MMR-Bench useful, please cite our ECCV 2026 paper. The final BibTeX entry will be added when the proceedings metadata is available.
+If you find MMR-Bench useful, please cite the published [ECCV 2026 paper](https://doi.org/10.1007/978-3-032-37083-9_34):
+
+```bibtex
+@inproceedings{ma2026mmrbench,
+  title     = {{MMR-Bench}: A Comprehensive Benchmark for Multimodal {LLM} Routing},
+  author    = {Ma, Haoxuan and Lai, Guannan and Ye, Han-Jia},
+  booktitle = {Computer Vision -- ECCV 2026},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {17058},
+  pages     = {610--626},
+  publisher = {Springer Nature Switzerland},
+  address   = {Cham},
+  year      = {2026},
+  doi       = {10.1007/978-3-032-37083-9_34},
+  url       = {https://doi.org/10.1007/978-3-032-37083-9_34}
+}
+```
 
 ## License
 
